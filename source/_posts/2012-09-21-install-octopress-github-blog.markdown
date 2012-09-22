@@ -6,9 +6,11 @@ comments: true
 categories: 
 ---
 
-create a github repository
+#create a github repository#
 
-install octopress
+
+
+install octopress  
 `
 git clone git://github.com/imathis/octopress.git octopress
 `
