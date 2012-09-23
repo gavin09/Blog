@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: blog - My Octopress Blog</title>
+  <title>writting dratfs octopress with github page - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="Category: blog">
+  <meta name="description" content="first use create a branch called drafts git branch drafts write drafts git checkout drafts
+write article....
+git add [article name]
+git commit -m ' &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blogblog/categories/blog/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -63,49 +66,106 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Blog</h1>
+    
+      <h1 class="entry-title">Writting Dratfs Octopress With Github Page</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-23T08:31:00-07:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h2>first use</h2>
 
-  
-  <h2>2012</h2>
+<p>create a branch called drafts</p>
 
-<article>
-  
-<h1><a href="/Blog/blog/2012/09/23/octopress-drafts/">writting dratfs octopress with github page</a></h1>
-<time datetime="2012-09-23T08:31:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>23</span> <span class='year'>2012</span></time>
+<pre><code>git branch drafts
+</code></pre>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/blog/'>blog</a>, <a class='category' href='/Blog/blog/categories/git/'>git</a></span>
-</footer>
+<h2>write drafts</h2>
 
+<pre><code>git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git push
+</code></pre>
 
-</article>
+<h2>post</h2>
 
-
-
-<article>
-  
-<h1><a href="/Blog/blog/2012/09/21/install-octopress-github-blog/">install-octopress-github-blog</a></h1>
-<time datetime="2012-09-21T19:58:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>21</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/blog/'>blog</a>, <a class='category' href='/Blog/blog/categories/git/'>git</a>, <a class='category' href='/Blog/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
+<pre><code>git checkout master
+git merge drafts
+rake generate
+rake deploy
+</code></pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-23T08:31:00-07:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/Blog/blog/categories/blog/'>blog</a>, <a class='category' href='/Blog/blog/categories/git/'>git</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/Blog/blog/2012/09/23/pip-unknown-command-install/" title="Previous Post: pip-Unknown-command-install">&laquo; pip-Unknown-command-install</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
