@@ -3,7 +3,7 @@ layout: post
 title: "pip-Unknown-command-install"
 date: 2012-09-23 07:45
 comments: true
-categories: Linux
+categories: python
 ---
 
 When seeing this error, it may be that you have installed * pip *
