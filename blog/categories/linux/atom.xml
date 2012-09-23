@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-23T07:53:56-07:00</updated>
+  <updated>2012-09-23T07:55:47-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -29,7 +29,7 @@ so, you need to remove pip</p>
 <pre><code>sudo apt-get install python-pip
 </code></pre>
 
-<p>reference
+<p>reference<br/>
 [1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
 ]]></content>
   </entry>
