@@ -43,7 +43,7 @@ take my repository as an example
 	rake generate
 	rake deploy
 
-##reference##  
+##reference##
 
 - <http://octopress.org/docs/setup/rvm/>
 - <http://lyhdev.com/note:octopress>
