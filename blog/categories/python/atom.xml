@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Linux | My Octopress Blog]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
+  <title><![CDATA[Category: python | My Octopress Blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-23T07:55:47-07:00</updated>
+  <updated>2012-09-23T08:17:10-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,13 +18,13 @@
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
     <updated>2012-09-23T07:45:00-07:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install</id>
-    <content type="html"><![CDATA[<p>When seeing this error, it may be that you have installed * pip *
+    <content type="html"><![CDATA[<p>When seeing this error, it may be that you have installed  <em>pip</em>
 so, you need to remove pip</p>
 
 <pre><code>sudo apt-get remove pip
 </code></pre>
 
-<p>Then, install * python-pip *</p>
+<p>Then, install <em>python-pip</em></p>
 
 <pre><code>sudo apt-get install python-pip
 </code></pre>
