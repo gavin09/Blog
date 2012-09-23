@@ -6,12 +6,12 @@ comments: true
 categories: python
 ---
 
-When seeing this error, it may be that you have installed * pip *
+When seeing this error, it may be that you have installed  _pip_
 so, you need to remove pip
 
 	sudo apt-get remove pip
 
-Then, install * python-pip *
+Then, install _python-pip_
 
 	sudo apt-get install python-pip
 
