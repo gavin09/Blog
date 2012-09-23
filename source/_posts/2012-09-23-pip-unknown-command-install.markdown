@@ -15,6 +15,6 @@ Then, install * python-pip *
 
 	sudo apt-get install python-pip
 
-reference
+reference  
 [1] <http://stackoverflow.com/questions/8013581/pip-not-working>
 
