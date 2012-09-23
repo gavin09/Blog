@@ -9,7 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="create a github repository install octopress git clone git://github.com/imathis/octopress.git octopress ">
+  <meta name="description" content="requirement sudo apt-get install curl zlib1g-dev create a github repository install RVM curl -L https://get.rvm.io | bash -s stable --ruby install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,12 +90,61 @@
   </header>
 
 
-<div class="entry-content"><h2>create a github repository</h2>
+<div class="entry-content"><h2>requirement</h2>
 
-<p>install octopress<br/>
-<code>
-git clone git://github.com/imathis/octopress.git octopress
-</code></p>
+<pre><code>sudo apt-get install curl zlib1g-dev
+</code></pre>
+
+<h2>create a github repository</h2>
+
+<h2>install RVM</h2>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<h2>install Ruby</h2>
+
+<pre><code>source ~/.rvm/scripts/rvm
+rvm pkg install openssl
+rvm install 1.9.2
+rvm use 1.9.2
+rvm rubygems latest
+</code></pre>
+
+<h2>install octopress</h2>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+gem install bundler
+bundle install
+rake install
+</code></pre>
+
+<h2>setup repository link</h2>
+
+<p>take my repository as an example</p>
+
+<pre><code>git@github.com:gavin09/Blog.git
+</code></pre>
+
+<h2>generate web page</h2>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<h2>reference##</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
+<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
+<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
+</ul>
+
 </div>
 
 
@@ -120,6 +169,12 @@ git clone git://github.com/imathis/octopress.git octopress
 
 <time datetime="2012-09-21T19:58:00-07:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/Blog/blog/categories/git/'>git</a>, <a class='category' href='/Blog/blog/categories/octopress/'>octopress</a>
+  
+</span>
 
 
     </p>

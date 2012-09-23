@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: git | My Octopress Blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
   <updated>2012-09-23T08:27:34-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
@@ -12,36 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[pip-Unknown-command-install]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
-    <updated>2012-09-23T07:45:00-07:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install</id>
-    <content type="html"><![CDATA[<p>When seeing this error, it may be that you have installed  <em>pip</em>
-so, you need to remove pip</p>
-
-<pre><code>sudo apt-get remove pip
-</code></pre>
-
-<p>Then, install <em>python-pip</em></p>
-
-<pre><code>sudo apt-get install python-pip
-</code></pre>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[markdown_syntax]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax/"/>
-    <updated>2012-09-21T20:11:00-07:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>
