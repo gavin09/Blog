@@ -1,0 +1,19 @@
+---
+layout: post
+title: "git-note"
+date: 2012-09-23 20:00
+comments: true
+categories: git
+---
+
+##安裝##
+
+	sudo apt-get install git-core
+
+##產生新的branch##
+
+	git branch [branch_name]
+
+##git 切換##
+
+	git checkout [branch_name]
