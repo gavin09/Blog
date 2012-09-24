@@ -9,8 +9,10 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="下載dropbox wget http://www.getdropbox.com/download?plat=lnx.x86_64
+mv download?plat=lnx.x86_64 dropbox.tar.gz
+tar zxvf dropgox.tar.gz
+cd .dropbox-dist &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +73,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/dropbox-linux-command-line/">在linux Command Line 環境下使用dropbox</a></h1>
+      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/dropbox-command-line/">在linux Command Line 環境下安裝dropbox</a></h1>
     
     
       <p class="meta">
@@ -87,14 +89,40 @@
   
 
 
-<time datetime="2012-09-23T20:38:00-07:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+<time datetime="2012-09-23T22:32:00-07:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><h2>下載dropbox</h2>
+
+<pre><code>wget http://www.getdropbox.com/download?plat=lnx.x86_64
+mv download?plat=lnx.x86_64 dropbox.tar.gz
+tar zxvf dropgox.tar.gz
+cd .dropbox-dist
+</code></pre>
+
+<h2>執行dropbox</h2>
+
+<pre><code>./dropboxd
+</code></pre>
+
+<p>此時將會出現底下的message</p>
+
+<p><em>Please visit https://www.dropbox.com/cli_link?host_id= to link this machine.
+This client is not linked to any account…</em></p>
+
+<p>將此連結複製到有gui環境的電腦作授權，若授權成功將會出現successful的訊息<br/>
+此時按Ctrl + c 結束</p>
+
+<h2>執行dropbox</h2>
+
+<pre><code>./dropboxd &amp;
+</code></pre>
+
+<p>&amp;  的目的是為了讓dropbox在背景執行，此時dropbox 便開始同步</p>
 </div>
   
   
@@ -431,7 +459,7 @@ rake deploy
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/Blog/blog/2012/09/23/dropbox-linux-command-line/">在linux command line 環境下使用dropbox</a>
+        <a href="/Blog/blog/2012/09/23/dropbox-command-line/">在linux command line 環境下安裝dropbox</a>
       </li>
     
       <li class="post">
