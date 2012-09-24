@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-23T20:06:06-07:00</updated>
+  <updated>2012-09-23T20:10:34-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,9 @@
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
     <updated>2012-09-23T20:00:00-07:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/git-note</id>
-    <content type="html"><![CDATA[<h2>安裝</h2>
+    <content type="html"><![CDATA[<p>在這邊記錄平常會使用到的git 指令。</p>
+
+<h2>安裝git</h2>
 
 <pre><code>sudo apt-get install git-core
 </code></pre>
@@ -32,6 +34,15 @@
 
 <pre><code>git checkout [branch_name]
 </code></pre>
+
+<h2>git tree</h2>
+
+<pre><code>git log --graph --pretty=oneline --abbrev-commit
+</code></pre>
+
+<p>更多詳細的指令可以看reference
+reference<br/>
+<a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a></p>
 ]]></content>
   </entry>
   
