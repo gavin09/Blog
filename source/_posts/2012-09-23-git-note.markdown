@@ -24,6 +24,6 @@ categories: git
 
 	git log --graph --pretty=oneline --abbrev-commit
 
-更多詳細的指令可以看reference
+更多詳細的指令可以看reference 
 reference  
 <http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal>
