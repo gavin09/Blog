@@ -6,7 +6,7 @@ comments: true
 categories: [git,blog]
 ---
 
-## first use##
+##第一次撰寫草稿##
 新增一個branch，名稱是drafts
 
 	git branch drafts
