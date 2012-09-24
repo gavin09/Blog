@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-23T20:50:46-07:00</updated>
+  <updated>2012-09-23T22:15:34-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -25,9 +25,16 @@
 <pre><code>sudo apt-get install git-core
 </code></pre>
 
-<h2>產生新的branch</h2>
+<h2>branch</h2>
+
+<h3>產生新的branch</h3>
 
 <pre><code>git branch [branch_name]
+</code></pre>
+
+<h3>查看目前有哪一些branch,在哪一個branch</h3>
+
+<pre><code>git branch
 </code></pre>
 
 <h2>git 切換</h2>
