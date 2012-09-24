@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-23T20:13:15-07:00</updated>
+  <updated>2012-09-23T20:14:30-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -40,9 +40,8 @@
 <pre><code>git log --graph --pretty=oneline --abbrev-commit
 </code></pre>
 
-<p>更多詳細的指令可以看reference</p>
-
-<p>reference<br/>
+<p>更多詳細的指令可以看reference<br/>
+reference<br/>
 <a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a></p>
 ]]></content>
   </entry>
