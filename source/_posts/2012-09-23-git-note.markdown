@@ -12,9 +12,15 @@ categories: git
 
 	sudo apt-get install git-core
 
-##產生新的branch##
+##branch#
+###產生新的branch###
 
 	git branch [branch_name]
+
+###查看目前有哪一些branch,在哪一個branch###
+
+	git branch
+
 
 ##git 切換##
 
