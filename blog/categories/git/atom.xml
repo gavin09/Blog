@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-23T22:15:34-07:00</updated>
+  <updated>2012-09-23T22:24:18-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -47,9 +47,26 @@
 <pre><code>git log --graph --pretty=oneline --abbrev-commit
 </code></pre>
 
-<p>更多詳細的指令可以看reference<br/>
-reference<br/>
-<a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a></p>
+<p>更多詳細的指令可以看reference[1]</p>
+
+<h2>git merge</h2>
+
+<p>把[branch_name] 的東西合併到現在的branch</p>
+
+<pre><code>git merge [branch_name]
+</code></pre>
+
+<p>merge其他branch的file則是</p>
+
+<pre><code>git checkout [branch_name] [file_path]
+</code></pre>
+
+<p>see reference [2]</p>
+
+<h2>reference##</h2>
+
+<p>[1] <a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a>
+[2] <a href="http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge">http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge</a></p>
 ]]></content>
   </entry>
   
