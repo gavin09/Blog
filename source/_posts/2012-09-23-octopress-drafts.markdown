@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "writting dratfs octopress with github page"
+title: "使用octopress和github撰寫草稿"
 date: 2012-09-23 08:31
 comments: true
 categories: [git,blog]
 ---
 
 ## first use##
-create a branch called drafts
+新增一個branch，名稱是drafts
 
 	git branch drafts
 
