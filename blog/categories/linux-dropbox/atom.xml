@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux,dropbox | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux-dropbox/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-24T18:53:40-07:00</updated>
+  <updated>2012-09-24T18:54:53-07:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -46,7 +46,7 @@ This client is not linked to any account…</em></p>
 
 <p>&amp;  的目的是為了讓dropbox在背景執行，此時dropbox 便開始同步</p>
 
-<h2>reference##</h2>
+<h2>reference</h2>
 
 <p><a href="http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/">http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/</a></p>
 ]]></content>
