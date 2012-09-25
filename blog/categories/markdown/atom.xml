@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: markdown | My Octopress Blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/markdown/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2012-09-25T14:50:05+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[markdown_syntax]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax/"/>
+    <updated>2012-09-21T20:11:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
+    <content type="html"><![CDATA[<h2>Comment</h2>
+
+<pre><code>&lt;!---
+    comment
+--&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

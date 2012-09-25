@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-24T18:54:53-07:00</updated>
+  <updated>2012-09-25T14:50:05+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,9 +14,55 @@
 
   
   <entry>
+    <title type="html"><![CDATA[child-process-input]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input/"/>
+    <updated>2012-09-25T14:27:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[vim python-code-complete]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete/"/>
+    <updated>2012-09-24T16:45:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete</id>
+    <content type="html"><![CDATA[<h2>Download pydiction</h2>
+
+<pre><code>    git clone https://github.com/vim-scripts/Pydiction.git
+</code></pre>
+
+<h2>Install</h2>
+
+<pre><code>    mkdir $HOME/.vim/after/ftplugin/
+</code></pre>
+
+<p>資料夾名稱一定要使用上述名稱。系統預設，可以下指令</p>
+
+<pre><code>    :set runtimepath
+</code></pre>
+
+<p>查看系統預設路徑</p>
+
+<h2>Vim Setting</h2>
+
+<pre><code>    vim $HOME/.vimrc
+
+            filetype plugin on 
+            let g:pydiction_location = '~/.vim/after/ftplugin/complete-dict'
+</code></pre>
+
+<h2>reference</h2>
+
+<p><a href="https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu">https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu</a><br/>
+<a href="http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html">http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[在linux command line 環境下安裝dropbox]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line/"/>
-    <updated>2012-09-23T22:32:00-07:00</updated>
+    <updated>2012-09-23T22:32:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line</id>
     <content type="html"><![CDATA[<h2>下載dropbox</h2>
 
@@ -55,7 +101,7 @@ This client is not linked to any account…</em></p>
   <entry>
     <title type="html"><![CDATA[git-note]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
-    <updated>2012-09-23T20:00:00-07:00</updated>
+    <updated>2012-09-23T20:00:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/git-note</id>
     <content type="html"><![CDATA[<p>在這邊記錄平常會使用到的git 指令。</p>
 
@@ -112,7 +158,7 @@ This client is not linked to any account…</em></p>
   <entry>
     <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/"/>
-    <updated>2012-09-23T08:31:00-07:00</updated>
+    <updated>2012-09-23T08:31:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts</id>
     <content type="html"><![CDATA[<h2>第一次撰寫草稿</h2>
 
@@ -143,7 +189,7 @@ rake deploy
   <entry>
     <title type="html"><![CDATA[pip-Unknown-command-install]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
-    <updated>2012-09-23T07:45:00-07:00</updated>
+    <updated>2012-09-23T07:45:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install</id>
     <content type="html"><![CDATA[<p>When seeing this error, it may be that you have installed  <em>pip</em>
 so, you need to remove pip</p>
@@ -164,16 +210,21 @@ so, you need to remove pip</p>
   <entry>
     <title type="html"><![CDATA[markdown_syntax]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax/"/>
-    <updated>2012-09-21T20:11:00-07:00</updated>
+    <updated>2012-09-21T20:11:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h2>Comment</h2>
+
+<pre><code>&lt;!---
+    comment
+--&gt;
+</code></pre>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
-    <updated>2012-09-21T19:58:00-07:00</updated>
+    <updated>2012-09-21T19:58:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog</id>
     <content type="html"><![CDATA[<h2>requirement</h2>
 

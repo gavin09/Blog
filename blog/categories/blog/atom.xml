@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-24T18:54:53-07:00</updated>
+  <updated>2012-09-25T14:50:05+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/"/>
-    <updated>2012-09-23T08:31:00-07:00</updated>
+    <updated>2012-09-23T08:31:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts</id>
     <content type="html"><![CDATA[<h2>第一次撰寫草稿</h2>
 
@@ -47,7 +47,7 @@ rake deploy
   <entry>
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
-    <updated>2012-09-21T19:58:00-07:00</updated>
+    <updated>2012-09-21T19:58:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog</id>
     <content type="html"><![CDATA[<h2>requirement</h2>
 
