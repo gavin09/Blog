@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-25T14:50:05+08:00</updated>
+  <updated>2012-09-25T14:51:24+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[child-process-input]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input/"/>
-    <updated>2012-09-25T14:27:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[vim python-code-complete]]></title>
