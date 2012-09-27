@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo updatedb
 locate "conflicted copy"  | (
 
     IFS='
