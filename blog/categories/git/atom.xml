@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | My Octopress Blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2012-09-24T18:54:53-07:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[git-note]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
+    <updated>2012-09-23T20:00:00-07:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/23/git-note</id>
+    <content type="html"><![CDATA[<p>在這邊記錄平常會使用到的git 指令。</p>
+
+<h2>安裝git</h2>
+
+<pre><code>sudo apt-get install git-core
+</code></pre>
+
+<h2>branch</h2>
+
+<h3>產生新的branch</h3>
+
+<pre><code>git branch [branch_name]
+</code></pre>
+
+<h3>查看目前有哪一些branch,在哪一個branch</h3>
+
+<pre><code>git branch
+</code></pre>
+
+<h2>git 切換</h2>
+
+<pre><code>git checkout [branch_name]
+</code></pre>
+
+<h2>git tree</h2>
+
+<pre><code>git log --graph --pretty=oneline --abbrev-commit
+</code></pre>
+
+<p>更多詳細的指令可以看reference[1]</p>
+
+<h2>git merge</h2>
+
+<p>把[branch_name] 的東西合併到現在的branch</p>
+
+<pre><code>git merge [branch_name]
+</code></pre>
+
+<p>merge其他branch的file則是</p>
+
+<pre><code>git checkout [branch_name] [file_path]
+</code></pre>
+
+<p>see reference [2]</p>
+
+<h2>reference##</h2>
+
+<p>[1] <a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a><br/>
+[2] <a href="http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge">http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/"/>
+    <updated>2012-09-23T08:31:00-07:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts</id>
+    <content type="html"><![CDATA[<h2>第一次撰寫草稿</h2>
+
+<p>新增一個branch，名稱是drafts</p>
+
+<pre><code>git branch drafts
+</code></pre>
+
+<h2>write drafts</h2>
+
+<pre><code>git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git push
+</code></pre>
+
+<h2>post</h2>
+
+<pre><code>git checkout master
+git merge drafts
+rake generate
+rake deploy
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[install-octopress-github-blog]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
+    <updated>2012-09-21T19:58:00-07:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog</id>
+    <content type="html"><![CDATA[<h2>requirement</h2>
+
+<pre><code>sudo apt-get install curl zlib1g-dev
+</code></pre>
+
+<h2>create a github repository</h2>
+
+<h2>install RVM</h2>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<h2>install Ruby</h2>
+
+<pre><code>source ~/.rvm/scripts/rvm
+rvm pkg install openssl
+rvm install 1.9.2
+rvm use 1.9.2
+rvm rubygems latest
+</code></pre>
+
+<h2>install octopress</h2>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+gem install bundler
+bundle install
+rake install
+</code></pre>
+
+<h2>setup repository link</h2>
+
+<p>take my repository as an example</p>
+
+<pre><code>git@github.com:gavin09/Blog.git
+</code></pre>
+
+<h2>generate web page</h2>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<h2>reference</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
+<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
+<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
