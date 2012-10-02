@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-09-28T01:35:43+08:00</updated>
+  <updated>2012-10-02T13:49:28+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/"/>
+    <updated>2012-10-02T10:58:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean</id>
+    <content type="html"><![CDATA[<h1>Warning message</h1>
+
+<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
+</code></pre>
+
+<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
+
+<h1>solution</h1>
+
+<pre><code>git fetch --all
+git reset --hard origin/master
+</code></pre>
+
+<h1>reference</h1>
+
+<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
+<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[child-process-input]]></title>

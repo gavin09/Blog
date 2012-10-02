@@ -9,8 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。 #include&lt;stdio.h&gt; #define num_child 2
-int main(){ int i; int cpid[ &hellip;">
+  <meta name="description" content="Warning message error: Untracked working tree file ‘XXXX’ would be overwritten by merge. 原因來自於 git rm file 之後，切換branch 的緣故 solution git fetch --all &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +64,58 @@ int main(){ int i; int cpid[ &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/10/02/git-version-control-clean/">Git : Error: Untracked Working Tree File ‘XXXX’ Would Be Overwritten by Merge</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Warning message</h1>
+
+<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
+</code></pre>
+
+<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
+
+<h1>solution</h1>
+
+<pre><code>git fetch --all
+git reset --hard origin/master
+</code></pre>
+
+<h1>reference</h1>
+
+<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
+<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -627,6 +678,10 @@ rake deploy
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/Blog/blog/2012/10/02/git-version-control-clean/">git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge</a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2012/09/25/child-process-input/">child-process-input</a>
       </li>
     
@@ -640,10 +695,6 @@ rake deploy
     
       <li class="post">
         <a href="/Blog/blog/2012/09/23/git-note/">git-note</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a>
       </li>
     
   </ul>
