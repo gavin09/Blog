@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-02T13:49:28+08:00</updated>
+  <updated>2012-10-02T15:40:34+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[putty-type-chinese]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/"/>
+    <updated>2012-10-02T15:31:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>Open Putty</p></li>
+<li></li>
+</ol>
+
+
+<p>-Windows
+|
+&#8211;Translation
+|
+  character set 改為 UTF-8</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge]]></title>
