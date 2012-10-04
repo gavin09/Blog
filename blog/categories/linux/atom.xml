@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-04T20:55:27+08:00</updated>
+  <updated>2012-10-04T20:57:10+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,7 @@
     <link href="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/"/>
     <updated>2012-10-04T20:37:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator</id>
-    <content type="html"><![CDATA[<p><img src="/home/rtes/Dropbox/octopress/source/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
+    <content type="html"><![CDATA[<p><img src="/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
 ]]></content>
   </entry>
   
