@@ -6,4 +6,4 @@ comments: true
 categories: [Linux]
 ---
 
-	![Terminator](/home/rtes/Dropbox/octopress/source/images/2012-10-04-intro-terminator.png)
+{% img /home/rtes/Dropbox/octopress/source/images/2012-10-04-intro-terminator.png    Terminator %} 
