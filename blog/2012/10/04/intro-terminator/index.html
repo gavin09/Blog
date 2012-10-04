@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>child-process-input - My Octopress Blog</title>
+  <title>Terminator介紹 - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。 #include&lt;stdio.h&gt; #define num_child 2
-int main(){ int i; int cpid[ &hellip;">
+  <meta name="description" content="![Terminator](/home/rtes/Dropbox/octopress/source/images/2012-10-04-intro-terminator.png) ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ int main(){ int i; int cpid[ &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +67,7 @@ int main(){ int i; int cpid[ &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Child-process-input</h1>
+      <h1 class="entry-title">Terminator介紹</h1>
     
     
       <p class="meta">
@@ -84,75 +83,15 @@ int main(){ int i; int cpid[ &hellip;">
   
 
 
-<time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+<time datetime="2012-10-04T20:37:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。</p>
-
-<pre><code>#include&lt;stdio.h&gt;
-
-#define num_child 2
-int main(){
-
-        int i;
-        int cpid[num_child];
-        int input;
-        for(i=0; i &lt; num_child;i++){
-                cpid[i] = fork();
-                if(cpid[i] == 0){
-                        //i=10;
-                        scanf("%d",&amp;input);
-                        printf("im child:%d : %d\n",getpid(),input);
-
-                        break;
-                }
-        }
-
-
-        return 0;
-}
+<div class="entry-content"><pre><code>![Terminator](/home/rtes/Dropbox/octopress/source/images/2012-10-04-intro-terminator.png)
 </code></pre>
-
-<p>覺得這個結果很奇怪，如果stdin跑掉的話，應該也看不到stdout 的結果，後來發現，因為parent process 因為已經先離開了，所以child process 不知道該把stdin 導至何方，而因為程式執行的很快，所以一開始的stdout 才可以導出來，底下才是正確的版本。</p>
-
-<pre><code>#include&lt;stdio.h&gt;
-
-#define num_child 2
-int main(){
-
-        int i;
-        int cpid[num_child];
-        int input;
-        for(i=0; i &lt; num_child;i++){
-                cpid[i] = fork();
-                if(cpid[i] == 0){
-                        //i=10;
-                        scanf("%d",&amp;input);
-                        printf("im child:%d : %d\n",getpid(),input);
-
-                        break;
-                }
-                else{
-                        wait(NULL);
-
-                }
-        }
-
-
-        return 0;
-}
-</code></pre>
-
-<p>2012-9-8 update
-thread 也有同樣的情形，要用pthread_join 等 thread return value (等thread結束)
-pthread_join(t1, NULL);</p>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/1510922/waiting-for-all-child-processes-before-parent-resumes-execution-unix">http://stackoverflow.com/questions/1510922/waiting-for-all-child-processes-before-parent-resumes-execution-unix</a></p>
 </div>
 
 
@@ -175,12 +114,12 @@ pthread_join(t1, NULL);</p>
   
 
 
-<time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+<time datetime="2012-10-04T20:37:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/c/'>C</a>
+    <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>
   
 </span>
 
@@ -189,7 +128,7 @@ pthread_join(t1, NULL);</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/" >Tweet</a>
   
   
   
@@ -198,10 +137,8 @@ pthread_join(t1, NULL);</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2012/09/24/vim-python-code-complete/" title="Previous Post: vim python-code-complete">&laquo; vim python-code-complete</a>
+        <a class="basic-alignment left" href="/Blog/blog/2012/10/02/putty-type-chinese/" title="Previous Post: putty-type-chinese">&laquo; putty-type-chinese</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2012/10/02/git-version-control-clean/" title="Next Post: git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge">git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge &raquo;</a>
       
     </p>
   </footer>

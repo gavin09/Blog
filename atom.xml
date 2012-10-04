@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-02T15:48:37+08:00</updated>
+  <updated>2012-10-04T20:50:45+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Terminator介紹]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/"/>
+    <updated>2012-10-04T20:37:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator</id>
+    <content type="html"><![CDATA[<pre><code>![Terminator](/home/rtes/Dropbox/octopress/source/images/2012-10-04-intro-terminator.png)
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[putty-type-chinese]]></title>
