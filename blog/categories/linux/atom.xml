@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | My Octopress Blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2012-10-04T21:21:09+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[putty-type-chinese]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/"/>
+    <updated>2012-10-02T15:31:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>Open Putty</p></li>
+<li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

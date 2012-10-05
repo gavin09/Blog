@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>install-octopress-github-blog - My Octopress Blog</title>
+  <title>git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="requirement sudo apt-get install curl zlib1g-dev create a github repository install RVM curl -L https://get.rvm.io | bash -s stable --ruby install &hellip;">
+  <meta name="description" content="Warning message error: Untracked working tree file ‘XXXX’ would be overwritten by merge. 原因來自於 git rm file 之後，切換branch 的緣故 solution git fetch --all &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Install-octopress-github-blog</h1>
+      <h1 class="entry-title">Git : Error: Untracked Working Tree File ‘XXXX’ Would Be Overwritten by Merge</h1>
     
     
       <p class="meta">
@@ -83,72 +83,30 @@
   
 
 
-<<<<<<< HEAD
-<time datetime="2012-09-21T19:58:00-07:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
-=======
-<time datetime="2012-09-21T19:58:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
->>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
+<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>requirement</h2>
+<div class="entry-content"><h1>Warning message</h1>
 
-<pre><code>sudo apt-get install curl zlib1g-dev
+<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
 </code></pre>
 
-<h2>create a github repository</h2>
+<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
 
-<h2>install RVM</h2>
+<h1>solution</h1>
 
-<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+<pre><code>git fetch --all
+git reset --hard origin/master
 </code></pre>
 
-<h2>install Ruby</h2>
+<h1>reference</h1>
 
-<pre><code>source ~/.rvm/scripts/rvm
-rvm pkg install openssl
-rvm install 1.9.2
-rvm use 1.9.2
-rvm rubygems latest
-</code></pre>
-
-<h2>install octopress</h2>
-
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
-ruby --version  # Should report Ruby 1.9.2
-gem install bundler
-bundle install
-rake install
-</code></pre>
-
-<h2>setup repository link</h2>
-
-<p>take my repository as an example</p>
-
-<pre><code>git@github.com:gavin09/Blog.git
-</code></pre>
-
-<h2>generate web page</h2>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<h2>reference</h2>
-
-<ul>
-<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
-<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
-<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
-</ul>
-
+<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
+<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
 </div>
 
 
@@ -171,16 +129,12 @@ rake deploy
   
 
 
-<<<<<<< HEAD
-<time datetime="2012-09-21T19:58:00-07:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
-=======
-<time datetime="2012-09-21T19:58:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
->>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
+<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/blog/'>blog</a>, <a class='category' href='/Blog/blog/categories/git/'>git</a>, <a class='category' href='/Blog/blog/categories/octopress/'>octopress</a>
+    <a class='category' href='/Blog/blog/categories/git/'>git</a>
   
 </span>
 
@@ -189,7 +143,7 @@ rake deploy
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/" >Tweet</a>
   
   
   
@@ -198,8 +152,10 @@ rake deploy
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/Blog/blog/2012/09/25/child-process-input/" title="Previous Post: child-process-input">&laquo; child-process-input</a>
       
-        <a class="basic-alignment right" href="/Blog/blog/2012/09/21/markdown-syntax/" title="Next Post: markdown_syntax">markdown_syntax &raquo;</a>
+      
+        <a class="basic-alignment right" href="/Blog/blog/2012/10/02/putty-type-chinese/" title="Next Post: putty-type-chinese">putty-type-chinese &raquo;</a>
       
     </p>
   </footer>
@@ -214,25 +170,6 @@ rake deploy
   <ul id="recent_posts">
     
       <li class="post">
-<<<<<<< HEAD
-        <a href="/Blog/blog/2012/09/23/dropbox-command-line/">在linux command line 環境下安裝dropbox</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/09/23/git-note/">git-note</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/09/23/pip-unknown-command-install/">pip-Unknown-command-install</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/09/21/markdown-syntax/">markdown_syntax</a>
-=======
         <a href="/Blog/blog/2012/10/04/intro-terminator/">Terminator介紹</a>
       </li>
     
@@ -250,7 +187,6 @@ rake deploy
     
       <li class="post">
         <a href="/Blog/blog/2012/09/24/vim-python-code-complete/">vim python-code-complete</a>
->>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
       </li>
     
   </ul>
