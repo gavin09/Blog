@@ -5,7 +5,11 @@
   <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <updated>2012-09-24T18:54:53-07:00</updated>
+=======
+  <updated>2012-10-04T21:21:09+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
   <updated>2012-10-04T21:21:09+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -19,10 +23,13 @@
   
   <entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title type="html"><![CDATA[git-note]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
     <updated>2012-09-23T20:00:00-07:00</updated>
 =======
+=======
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <title type="html"><![CDATA[git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/"/>
     <updated>2012-10-02T10:58:00+08:00</updated>
@@ -51,6 +58,9 @@ git reset --hard origin/master
     <title type="html"><![CDATA[git-note]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
     <updated>2012-09-23T20:00:00+08:00</updated>
+<<<<<<< HEAD
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
+=======
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/git-note</id>
     <content type="html"><![CDATA[<p>在這邊記錄平常會使用到的git 指令。</p>
@@ -109,7 +119,11 @@ git reset --hard origin/master
     <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-23T08:31:00-07:00</updated>
+=======
+    <updated>2012-09-23T08:31:00+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
     <updated>2012-09-23T08:31:00+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -144,7 +158,11 @@ rake deploy
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-21T19:58:00-07:00</updated>
+=======
+    <updated>2012-09-21T19:58:00+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
     <updated>2012-09-21T19:58:00+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5

@@ -5,7 +5,11 @@
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <updated>2012-09-24T18:54:53-07:00</updated>
+=======
+  <updated>2012-10-04T21:21:09+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
   <updated>2012-10-04T21:21:09+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -19,10 +23,13 @@
   
   <entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title type="html"><![CDATA[在linux command line 環境下安裝dropbox]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line/"/>
     <updated>2012-09-23T22:32:00-07:00</updated>
 =======
+=======
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <title type="html"><![CDATA[Terminator介紹]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/"/>
     <updated>2012-10-04T20:37:00+08:00</updated>
@@ -201,6 +208,9 @@ pthread_join(t1, NULL);</p>
     <title type="html"><![CDATA[在linux command line 環境下安裝dropbox]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line/"/>
     <updated>2012-09-23T22:32:00+08:00</updated>
+<<<<<<< HEAD
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
+=======
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line</id>
     <content type="html"><![CDATA[<h2>下載dropbox</h2>
@@ -241,7 +251,11 @@ This client is not linked to any account…</em></p>
     <title type="html"><![CDATA[git-note]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-23T20:00:00-07:00</updated>
+=======
+    <updated>2012-09-23T20:00:00+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
     <updated>2012-09-23T20:00:00+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -302,7 +316,11 @@ This client is not linked to any account…</em></p>
     <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-23T08:31:00-07:00</updated>
+=======
+    <updated>2012-09-23T08:31:00+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
     <updated>2012-09-23T08:31:00+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -337,7 +355,11 @@ rake deploy
     <title type="html"><![CDATA[pip-Unknown-command-install]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-23T07:45:00-07:00</updated>
+=======
+    <updated>2012-09-23T07:45:00+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
     <updated>2012-09-23T07:45:00+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -362,10 +384,13 @@ so, you need to remove pip</p>
     <title type="html"><![CDATA[markdown_syntax]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-21T20:11:00-07:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
     <content type="html"><![CDATA[
 =======
+=======
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <updated>2012-09-21T20:11:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
     <content type="html"><![CDATA[<h2>Comment</h2>
@@ -374,6 +399,9 @@ so, you need to remove pip</p>
     comment
 --&gt;
 </code></pre>
+<<<<<<< HEAD
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
+=======
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 ]]></content>
   </entry>
@@ -382,7 +410,11 @@ so, you need to remove pip</p>
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <updated>2012-09-21T19:58:00-07:00</updated>
+=======
+    <updated>2012-09-21T19:58:00+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
     <updated>2012-09-21T19:58:00+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5

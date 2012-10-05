@@ -5,7 +5,11 @@
   <link href="http://gavin09.github.com/Blog/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <updated>2012-09-24T18:54:53-07:00</updated>
+=======
+  <updated>2012-10-04T21:21:09+08:00</updated>
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
 =======
   <updated>2012-10-04T21:21:09+08:00</updated>
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
@@ -19,10 +23,13 @@
   
   <entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title type="html"><![CDATA[pip-Unknown-command-install]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
     <updated>2012-09-23T07:45:00-07:00</updated>
 =======
+=======
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <title type="html"><![CDATA[vim python-code-complete]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete/"/>
     <updated>2012-09-24T16:45:00+08:00</updated>
@@ -63,6 +70,9 @@
     <title type="html"><![CDATA[pip-Unknown-command-install]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
     <updated>2012-09-23T07:45:00+08:00</updated>
+<<<<<<< HEAD
+>>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
+=======
 >>>>>>> d2439b7bf56bc293a18f739e7a3e9458d83e06c5
     <id>http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install</id>
     <content type="html"><![CDATA[<p>When seeing this error, it may be that you have installed  <em>pip</em>
