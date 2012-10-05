@@ -33,5 +33,8 @@ This client is not linked to any account…*
 &  的目的是為了讓dropbox在背景執行，此時dropbox 便開始同步
 
 
+<<<<<<< HEAD
 ##reference  
 <http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/>
+=======
+>>>>>>> drafts
