@@ -8,15 +8,11 @@ categories: [Linux,putty]
 
 1. Open Putty
 
-<<<<<<< HEAD
 2. Windows -> Translation -> character set 改為 UTF-8
-=======
-2. 
 
 -Windows
 |
 --Translation
 |
   character set 改為 UTF-8
->>>>>>> drafts
 
