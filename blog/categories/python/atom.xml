@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-06T00:51:12+08:00</updated>
+  <updated>2012-10-09T02:28:46+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,43 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[vim python-code-complete]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete/"/>
-    <updated>2012-09-24T16:45:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete</id>
-    <content type="html"><![CDATA[<h2>Download pydiction</h2>
-
-<pre><code>    git clone https://github.com/vim-scripts/Pydiction.git
-</code></pre>
-
-<h2>Install</h2>
-
-<pre><code>    mkdir $HOME/.vim/after/ftplugin/
-</code></pre>
-
-<p>資料夾名稱一定要使用上述名稱。系統預設，可以下指令</p>
-
-<pre><code>    :set runtimepath
-</code></pre>
-
-<p>查看系統預設路徑</p>
-
-<h2>Vim Setting</h2>
-
-<pre><code>    vim $HOME/.vimrc
-
-            filetype plugin on 
-            let g:pydiction_location = '~/.vim/after/ftplugin/complete-dict'
-</code></pre>
-
-<h2>reference</h2>
-
-<p><a href="https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu">https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu</a><br/>
-<a href="http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html">http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html</a></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[pip-Unknown-command-install]]></title>

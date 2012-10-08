@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-06T00:51:12+08:00</updated>
+  <updated>2012-10-09T02:28:46+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using less with colors]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/"/>
+    <updated>2012-10-08T17:57:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color</id>
+    <content type="html"><![CDATA[<p>當使用ls | less 時，原本ls 的結果就會變成黑白的。
+如果要變成彩色的，則要輸入 ls &#8211;color=always | less -R</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Terminator介紹]]></title>
@@ -53,6 +63,12 @@
 <li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
 </ol>
 
+
+<p>-Windows
+|
+&#8211;Translation
+|
+  character set 改為 UTF-8</p>
 ]]></content>
   </entry>
   
@@ -152,11 +168,20 @@ pthread_join(t1, NULL);</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[vim python-code-complete]]></title>
+    <title type="html"><![CDATA[Vim Python Code Complete]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete/"/>
-    <updated>2012-09-24T16:45:00+08:00</updated>
+    <updated>2012-09-24T00:00:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/09/24/vim-python-code-complete</id>
-    <content type="html"><![CDATA[<h2>Download pydiction</h2>
+    <content type="html"><![CDATA[<hr />
+
+<p>layout: post
+title: &#8220;vim python-code-complete&#8221;
+date: 2012-09-24 16:45
+comments: true</p>
+
+<h1>categories: [vim,python]</h1>
+
+<h2>Download pydiction</h2>
 
 <pre><code>    git clone https://github.com/vim-scripts/Pydiction.git
 </code></pre>
@@ -347,6 +372,8 @@ so, you need to remove pip</p>
     comment
 --&gt;
 </code></pre>
+
+<h2>categories: </h2>
 ]]></content>
   </entry>
   
