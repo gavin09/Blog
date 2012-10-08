@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-09T02:28:46+08:00</updated>
+  <updated>2012-10-09T02:34:45+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,8 +18,11 @@
     <link href="http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/"/>
     <updated>2012-10-08T17:57:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color</id>
-    <content type="html"><![CDATA[<p>當使用ls | less 時，原本ls 的結果就會變成黑白的。
-如果要變成彩色的，則要輸入 ls --color=always | less -R</p>
+    <content type="html"><![CDATA[<p>當使用ls | less 時，原本ls 的結果就會變成黑白的。<br/>
+如果要變成彩色的，則要輸入</p>
+
+<pre><code>ls --color=always | less -R
+</code></pre>
 ]]></content>
   </entry>
   
