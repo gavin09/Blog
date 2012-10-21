@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-22T00:06:21+08:00</updated>
+  <updated>2012-10-22T00:15:03+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,11 +18,8 @@
     <link href="http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/"/>
     <updated>2012-10-08T17:57:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color</id>
-    <content type="html"><![CDATA[<p>當使用ls | less 時，原本ls 的結果就會變成黑白的。<br/>
-如果要變成彩色的，則要輸入</p>
-
-<pre><code>ls --color=always | less -R
-</code></pre>
+    <content type="html"><![CDATA[<p>當使用ls | less 時，原本ls 的結果就會變成黑白的。
+如果要變成彩色的，則要輸入 ls &#8211;color=always | less -R</p>
 ]]></content>
   </entry>
   
