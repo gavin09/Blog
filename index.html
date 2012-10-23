@@ -9,9 +9,11 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="當使用ls | less 時，原本ls 的結果就會變成黑白的。
-如果要變成彩色的，則要輸入 ls &#8211;color=always | less -R
-">
+  <meta name="description" content="mkdir $HOME/.config/autostart vi Dropbox.desktop [Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +68,64 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/10/22/dropbox-auto-run/">Dropbox-auto-run</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-22T00:16:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>mkdir $HOME/.config/autostart
+</code></pre>
+
+<p>vi Dropbox.desktop</p>
+
+<pre><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/panel/22/dropboxstatus-logo.svg
+Exec=bash /home/*user*/.dropbox-dist/dropboxd
+Terminal=false
+Type=Application
+</code></pre>
+
+<p>Note:</p>
+
+<pre><code>Icon need to be checked  
+</code></pre>
+
+<h3>Reference</h3>
+
+<p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -637,54 +697,6 @@ rake deploy
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/pip-unknown-command-install/">pip-Unknown-command-install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-23T07:45:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When seeing this error, it may be that you have installed  <em>pip</em>
-so, you need to remove pip</p>
-
-<pre><code>sudo apt-get remove pip
-</code></pre>
-
-<p>Then, install <em>python-pip</em></p>
-
-<pre><code>sudo apt-get install python-pip
-</code></pre>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -700,6 +712,10 @@ so, you need to remove pip</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/Blog/blog/2012/10/22/dropbox-auto-run/">dropbox-auto-run</a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2012/10/08/less-with-color/">Using less with colors</a>
       </li>
     
@@ -713,10 +729,6 @@ so, you need to remove pip</p>
     
       <li class="post">
         <a href="/Blog/blog/2012/10/02/git-version-control-clean/">git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/09/25/child-process-input/">child-process-input</a>
       </li>
     
   </ul>

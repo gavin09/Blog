@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-10-22T00:15:03+08:00</updated>
+  <updated>2012-10-23T13:31:25+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[dropbox-auto-run]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run/"/>
+    <updated>2012-10-22T00:16:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run</id>
+    <content type="html"><![CDATA[<pre><code>mkdir $HOME/.config/autostart
+</code></pre>
+
+<p>vi Dropbox.desktop</p>
+
+<pre><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/panel/22/dropboxstatus-logo.svg
+Exec=bash /home/*user*/.dropbox-dist/dropboxd
+Terminal=false
+Type=Application
+</code></pre>
+
+<p>Note:</p>
+
+<pre><code>Icon need to be checked  
+</code></pre>
+
+<h3>Reference</h3>
+
+<p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Using less with colors]]></title>

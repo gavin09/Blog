@@ -5,11 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Linux - My Octopress Blog</title>
+  <title>dropbox-auto-run - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="Category: Linux">
+  <meta name="description" content="mkdir $HOME/.config/autostart vi Dropbox.desktop [Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blogblog/categories/linux/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -63,49 +67,106 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Linux</h1>
+    
+      <h1 class="entry-title">Dropbox-auto-run</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-22T00:16:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><pre><code>mkdir $HOME/.config/autostart
+</code></pre>
 
-  
-  <h2>2012</h2>
+<p>vi Dropbox.desktop</p>
 
-<article>
-  
-<h1><a href="/Blog/blog/2012/10/08/less-with-color/">Using less with colors</a></h1>
-<time datetime="2012-10-08T17:57:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>08</span> <span class='year'>2012</span></time>
+<pre><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/panel/22/dropboxstatus-logo.svg
+Exec=bash /home/*user*/.dropbox-dist/dropboxd
+Terminal=false
+Type=Application
+</code></pre>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/linux/'>Linux</a></span>
-</footer>
+<p>Note:</p>
 
+<pre><code>Icon need to be checked  
+</code></pre>
 
-</article>
+<h3>Reference</h3>
 
-
-
-<article>
-  
-<h1><a href="/Blog/blog/2012/10/02/putty-type-chinese/">putty-type-chinese</a></h1>
-<time datetime="2012-10-02T15:31:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>02</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>, <a class='category' href='/Blog/blog/categories/putty/'>putty</a></span>
-</footer>
-
-
-</article>
-
+<p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-22T00:16:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/Blog/blog/categories/dropbox/'>dropbox</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/Blog/blog/2012/10/08/less-with-color/" title="Previous Post: Using less with colors">&laquo; Using less with colors</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
