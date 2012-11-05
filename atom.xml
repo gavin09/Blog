@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-11-05T15:18:43+08:00</updated>
+  <updated>2012-11-05T15:20:11+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -29,7 +29,9 @@
 </ul>
 
 
-<p>Reference
+<hr />
+
+<p>Reference<br/>
 [1] <a href="http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-">http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-</a><br/>
 [2] <a href="http://flyingwie.blogspot.tw/2011/03/trace-code.html">http://flyingwie.blogspot.tw/2011/03/trace-code.html</a></p>
 ]]></content>
