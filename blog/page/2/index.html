@@ -9,8 +9,11 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="When seeing this error, it may be that you have installed pip
-so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo apt- &hellip;">
+  <meta name="description" content="第一次撰寫草稿 新增一個branch，名稱是drafts git branch drafts write drafts git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +68,64 @@ so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-23T08:31:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>第一次撰寫草稿</h2>
+
+<p>新增一個branch，名稱是drafts</p>
+
+<pre><code>git branch drafts
+</code></pre>
+
+<h2>write drafts</h2>
+
+<pre><code>git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git push
+</code></pre>
+
+<h2>post</h2>
+
+<pre><code>git checkout master
+git merge drafts
+rake generate
+rake deploy
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -262,6 +323,10 @@ rake deploy
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/Blog/blog/2012/11/05/vim-skill/">vim內建技巧</a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2012/10/22/dropbox-auto-run/">dropbox-auto-run</a>
       </li>
     
@@ -275,10 +340,6 @@ rake deploy
     
       <li class="post">
         <a href="/Blog/blog/2012/10/02/putty-type-chinese/">putty-type-chinese</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/10/02/git-version-control-clean/">git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge</a>
       </li>
     
   </ul>

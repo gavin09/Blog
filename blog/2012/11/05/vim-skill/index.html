@@ -5,11 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge - Coder blog</title>
+  <title>vim內建技巧 - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Warning message error: Untracked working tree file ‘XXXX’ would be overwritten by merge. 原因來自於 git rm file 之後，切換branch 的緣故 solution git fetch --all &hellip;">
+  <meta name="description" content="記錄一些使用vi的技巧
+無論是在coding或者是在trace code的時候都會有很多的幫助 在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。
+% 可以從左括號跳到右括號。反之亦然。
+dd : delete 該行
+也可以安裝ctag，顯示function list Reference &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/11/05/vim-skill/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">Git : Error: Untracked Working Tree File ‘XXXX’ Would Be Overwritten by Merge</h1>
+      <h1 class="entry-title">Vim內建技巧</h1>
     
     
       <p class="meta">
@@ -83,30 +87,27 @@
   
 
 
-<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
+<time datetime="2012-11-05T14:59:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>Warning message</h1>
+<div class="entry-content"><p>記錄一些使用vi的技巧
+無論是在coding或者是在trace code的時候都會有很多的幫助</p>
 
-<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
-</code></pre>
+<ul>
+<li>在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。</li>
+<li>% 可以從左括號跳到右括號。反之亦然。</li>
+<li>dd : delete 該行</li>
+<li>也可以安裝ctag，顯示function list</li>
+</ul>
 
-<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
 
-<h1>solution</h1>
-
-<pre><code>git fetch --all
-git reset --hard origin/master
-</code></pre>
-
-<h1>reference</h1>
-
-<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
-<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
+<p>Reference
+[1] <a href="http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-">http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-</a><br/>
+[2] <a href="http://flyingwie.blogspot.tw/2011/03/trace-code.html">http://flyingwie.blogspot.tw/2011/03/trace-code.html</a></p>
 </div>
 
 
@@ -129,12 +130,12 @@ git reset --hard origin/master
   
 
 
-<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
+<time datetime="2012-11-05T14:59:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/git/'>git</a>
+    <a class='category' href='/Blog/blog/categories/vi/'>vi</a>
   
 </span>
 
@@ -143,7 +144,7 @@ git reset --hard origin/master
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/11/05/vim-skill/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/11/05/vim-skill/" >Tweet</a>
   
   
   
@@ -152,10 +153,8 @@ git reset --hard origin/master
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2012/09/25/child-process-input/" title="Previous Post: child-process-input">&laquo; child-process-input</a>
+        <a class="basic-alignment left" href="/Blog/blog/2012/10/22/dropbox-auto-run/" title="Previous Post: dropbox-auto-run">&laquo; dropbox-auto-run</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2012/10/02/putty-type-chinese/" title="Next Post: putty-type-chinese">putty-type-chinese &raquo;</a>
       
     </p>
   </footer>
