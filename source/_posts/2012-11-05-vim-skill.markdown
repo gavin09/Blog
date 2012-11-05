@@ -1,0 +1,7 @@
+---
+layout: post
+title: "vim-skill"
+date: 2012-11-05 14:59
+comments: true
+categories: 
+---
