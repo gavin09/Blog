@@ -9,7 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 [1] 的地方找到了如何清理buffer 在此做紀錄 ps. 使用了方法1之後， &hellip;">
+  <meta name="description" content="tc 可以限制網路卡的速度 tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096 限制速度400 kbit, latency 50ms, burst 4096 若不要使用則是 tc qdisk del dev eth0 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/11/18/tc-rate-limit/">Tc Rate Limit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-18T15:10:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>tc 可以限制網路卡的速度</p>
+
+<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+
+<p>限制速度400 kbit, latency 50ms, burst 4096</p>
+
+<p>若不要使用則是</p>
+
+<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -618,72 +662,6 @@ comments: true</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/dropbox-command-line/">在linux Command Line 環境下安裝dropbox</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-23T22:32:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>下載dropbox</h2>
-
-<pre><code>wget http://www.getdropbox.com/download?plat=lnx.x86_64
-mv download?plat=lnx.x86_64 dropbox.tar.gz
-tar zxvf dropgox.tar.gz
-cd .dropbox-dist
-</code></pre>
-
-<h2>執行dropbox</h2>
-
-<pre><code>./dropboxd
-</code></pre>
-
-<p>此時將會出現底下的message</p>
-
-<p><em>Please visit https://www.dropbox.com/cli_link?host_id= to link this machine.
-This client is not linked to any account…</em></p>
-
-<p>將此連結複製到有gui環境的電腦作授權，若授權成功將會出現successful的訊息<br/>
-此時按Ctrl + c 結束</p>
-
-<h2>執行dropbox</h2>
-
-<pre><code>./dropboxd &amp;
-</code></pre>
-
-<p>&amp;  的目的是為了讓dropbox在背景執行，此時dropbox 便開始同步</p>
-
-<h2>reference</h2>
-
-<p><a href="http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/">http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -699,6 +677,10 @@ This client is not linked to any account…</em></p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/Blog/blog/2012/11/18/tc-rate-limit/">tc rate limit</a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux buffer cache</a>
       </li>
     
@@ -712,10 +694,6 @@ This client is not linked to any account…</em></p>
     
       <li class="post">
         <a href="/Blog/blog/2012/10/08/less-with-color/">Using less with colors</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/10/04/intro-terminator/">Terminator介紹</a>
       </li>
     
   </ul>

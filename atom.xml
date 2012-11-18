@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-11-18T15:09:21+08:00</updated>
+  <updated>2012-11-18T15:14:55+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[tc rate limit]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit/"/>
+    <updated>2012-11-18T15:10:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit</id>
+    <content type="html"><![CDATA[<p>tc 可以限制網路卡的速度</p>
+
+<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+
+<p>限制速度400 kbit, latency 50ms, burst 4096</p>
+
+<p>若不要使用則是</p>
+
+<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Clear Linux buffer cache]]></title>

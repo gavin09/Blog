@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>git-note - Coder blog</title>
+  <title>tc rate limit - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="在這邊記錄平常會使用到的git 指令。 安裝git sudo apt-get install git-core branch 產生新的branch git branch [branch_name] 查看目前有哪一些branch,在哪一個branch git branch git 切換 git &hellip;">
+  <meta name="description" content="tc 可以限制網路卡的速度 tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096 限制速度400 kbit, latency 50ms, burst 4096 若不要使用則是 tc qdisk del dev eth0 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Git-note</h1>
+      <h1 class="entry-title">Tc Rate Limit</h1>
     
     
       <p class="meta">
@@ -83,62 +83,22 @@
   
 
 
-<time datetime="2012-09-23T20:00:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+<time datetime="2012-11-18T15:10:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>在這邊記錄平常會使用到的git 指令。</p>
+<div class="entry-content"><p>tc 可以限制網路卡的速度</p>
 
-<h2>安裝git</h2>
+<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
 
-<pre><code>sudo apt-get install git-core
-</code></pre>
+<p>限制速度400 kbit, latency 50ms, burst 4096</p>
 
-<h2>branch</h2>
+<p>若不要使用則是</p>
 
-<h3>產生新的branch</h3>
-
-<pre><code>git branch [branch_name]
-</code></pre>
-
-<h3>查看目前有哪一些branch,在哪一個branch</h3>
-
-<pre><code>git branch
-</code></pre>
-
-<h2>git 切換</h2>
-
-<pre><code>git checkout [branch_name]
-</code></pre>
-
-<h2>git tree</h2>
-
-<pre><code>git log --graph --pretty=oneline --abbrev-commit
-</code></pre>
-
-<p>更多詳細的指令可以看reference[1]</p>
-
-<h2>git merge</h2>
-
-<p>把[branch_name] 的東西合併到現在的branch</p>
-
-<pre><code>git merge [branch_name]
-</code></pre>
-
-<p>merge其他branch的file則是</p>
-
-<pre><code>git checkout [branch_name] [file_path]
-</code></pre>
-
-<p>see reference [2]</p>
-
-<h2>reference##</h2>
-
-<p>[1] <a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a><br/>
-[2] <a href="http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge">http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge</a></p>
+<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
 </div>
 
 
@@ -161,12 +121,12 @@
   
 
 
-<time datetime="2012-09-23T20:00:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+<time datetime="2012-11-18T15:10:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/git/'>git</a>
+    <a class='category' href='/Blog/blog/categories/linux/'>linux</a>, <a class='category' href='/Blog/blog/categories/network/'>network</a>, <a class='category' href='/Blog/blog/categories/tc/'>tc</a>
   
 </span>
 
@@ -175,7 +135,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit/" >Tweet</a>
   
   
   
@@ -184,10 +144,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2012/09/23/octopress-drafts/" title="Previous Post: 使用octopress和github撰寫草稿">&laquo; 使用octopress和github撰寫草稿</a>
+        <a class="basic-alignment left" href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/" title="Previous Post: Clear Linux buffer cache">&laquo; Clear Linux buffer cache</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2012/09/23/dropbox-command-line/" title="Next Post: 在linux command line 環境下安裝dropbox">在linux command line 環境下安裝dropbox &raquo;</a>
       
     </p>
   </footer>
