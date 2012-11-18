@@ -9,7 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 [1] 的地方找到了如何清理buffer 在此做紀錄 使用了方法1之後， &hellip;">
+  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 [1] 的地方找到了如何清理buffer 在此做紀錄 ps. 使用了方法1之後， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,7 +107,7 @@
 
 <p>在此做紀錄</p>
 
-<p>使用了方法1之後，確實throughput 就恢復正常了</p>
+<p>ps. 使用了方法1之後，確實throughput 就恢復正常了</p>
 
 <ol>
 <li><p>Empty the linux buffer cache</p>
