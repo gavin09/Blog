@@ -9,11 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="第一次撰寫草稿 新增一個branch，名稱是drafts git branch drafts write drafts git checkout drafts
-write article....
-git add [article name]
-git commit -m 'message'
-git &hellip;">
+  <meta name="description" content="在這邊記錄平常會使用到的git 指令。 安裝git sudo apt-get install git-core branch 產生新的branch git branch [branch_name] 查看目前有哪一些branch,在哪一個branch git branch git 切換 git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +64,90 @@ git &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/git-note/">Git-note</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-23T20:00:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在這邊記錄平常會使用到的git 指令。</p>
+
+<h2>安裝git</h2>
+
+<pre><code>sudo apt-get install git-core
+</code></pre>
+
+<h2>branch</h2>
+
+<h3>產生新的branch</h3>
+
+<pre><code>git branch [branch_name]
+</code></pre>
+
+<h3>查看目前有哪一些branch,在哪一個branch</h3>
+
+<pre><code>git branch
+</code></pre>
+
+<h2>git 切換</h2>
+
+<pre><code>git checkout [branch_name]
+</code></pre>
+
+<h2>git tree</h2>
+
+<pre><code>git log --graph --pretty=oneline --abbrev-commit
+</code></pre>
+
+<p>更多詳細的指令可以看reference[1]</p>
+
+<h2>git merge</h2>
+
+<p>把[branch_name] 的東西合併到現在的branch</p>
+
+<pre><code>git merge [branch_name]
+</code></pre>
+
+<p>merge其他branch的file則是</p>
+
+<pre><code>git checkout [branch_name] [file_path]
+</code></pre>
+
+<p>see reference [2]</p>
+
+<h2>reference##</h2>
+
+<p>[1] <a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a><br/>
+[2] <a href="http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge">http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -323,6 +403,10 @@ rake deploy
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux buffer cache</a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2012/11/05/vim-skill/">vim內建技巧</a>
       </li>
     
@@ -336,10 +420,6 @@ rake deploy
     
       <li class="post">
         <a href="/Blog/blog/2012/10/04/intro-terminator/">Terminator介紹</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/10/02/putty-type-chinese/">putty-type-chinese</a>
       </li>
     
   </ul>

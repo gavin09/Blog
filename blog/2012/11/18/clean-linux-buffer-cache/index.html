@@ -5,17 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>putty-type-chinese - Coder blog</title>
+  <title>Clear Linux buffer cache - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="
-Open Putty
-Windows -> Translation -> character set 改為 UTF-8 -Windows
-|
-&#8211;Translation
-| character set 改為 UTF-8
-">
+  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 1 的地方找到了如何清理buffer 在此做紀錄 使用了方法1之後， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +18,7 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -73,7 +67,7 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
   
   <header>
     
-      <h1 class="entry-title">Putty-type-chinese</h1>
+      <h1 class="entry-title">Clear Linux Buffer Cache</h1>
     
     
       <p class="meta">
@@ -89,24 +83,54 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
   
 
 
-<time datetime="2012-10-02T15:31:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
+<time datetime="2012-11-18T14:24:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><ol>
-<li><p>Open Putty</p></li>
-<li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
+<div class="entry-content"><p>在測試網卡throughput的時候使用了tcpreplay</p>
+
+<p>發現在Xen DomU 做測試時</p>
+
+<p>第二次以後的結果都快的驚人</p>
+
+<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
+
+<p>（網路線拔掉，使用udp 傳輸）</p>
+
+<p>後來在 <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache" title="commandlinefu.com">1</a> 的地方找到了如何清理buffer</p>
+
+<p>在此做紀錄</p>
+
+<p>使用了方法1之後，確實throughput 就恢復正常了</p>
+
+<ol>
+<li>Empty the linux buffer cache
+ sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</li>
+<li>Release memory used by the Linux kernel on caches
+ free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</li>
+<li>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</li>
 </ol>
 
 
-<p>-Windows
-|
-&#8211;Translation
-|
-  character set 改為 UTF-8</p>
+<p>run sync first to flush useful things out to disk!!!
+To free pagecache:
+echo 1 > /proc/sys/vm/drop_caches
+To free dentries and inodes:
+echo 2 > /proc/sys/vm/drop_caches
+To free pagecache, dentries and inodes:
+echo 3 > /proc/sys/vm/drop_caches</p>
+
+<pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
+</code></pre>
+
+<ol>
+<li>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
+ clean up memory on linux</li>
+</ol>
+
 </div>
 
 
@@ -129,12 +153,12 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
   
 
 
-<time datetime="2012-10-02T15:31:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
+<time datetime="2012-11-18T14:24:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>, <a class='category' href='/Blog/blog/categories/putty/'>putty</a>
+    <a class='category' href='/Blog/blog/categories/linux/'>linux</a>, <a class='category' href='/Blog/blog/categories/tcpreplay/'>tcpreplay</a>
   
 </span>
 
@@ -143,7 +167,7 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/" >Tweet</a>
   
   
   
@@ -152,10 +176,8 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2012/10/02/git-version-control-clean/" title="Previous Post: git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge">&laquo; git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge</a>
+        <a class="basic-alignment left" href="/Blog/blog/2012/11/05/vim-skill/" title="Previous Post: vim內建技巧">&laquo; vim內建技巧</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2012/10/04/intro-terminator/" title="Next Post: Terminator介紹">Terminator介紹 &raquo;</a>
       
     </p>
   </footer>

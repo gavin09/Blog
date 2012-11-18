@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2012-11-05T15:20:11+08:00</updated>
+  <updated>2012-11-18T14:38:30+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Clear Linux buffer cache]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
+    <updated>2012-11-18T14:24:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
+    <content type="html"><![CDATA[<p>在測試網卡throughput的時候使用了tcpreplay</p>
+
+<p>發現在Xen DomU 做測試時</p>
+
+<p>第二次以後的結果都快的驚人</p>
+
+<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
+
+<p>（網路線拔掉，使用udp 傳輸）</p>
+
+<p>後來在 <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache" title="commandlinefu.com">1</a> 的地方找到了如何清理buffer</p>
+
+<p>在此做紀錄</p>
+
+<p>使用了方法1之後，確實throughput 就恢復正常了</p>
+
+<ol>
+<li>Empty the linux buffer cache
+ sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</li>
+<li>Release memory used by the Linux kernel on caches
+ free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</li>
+<li>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</li>
+</ol>
+
+
+<p>run sync first to flush useful things out to disk!!!
+To free pagecache:
+echo 1 > /proc/sys/vm/drop_caches
+To free dentries and inodes:
+echo 2 > /proc/sys/vm/drop_caches
+To free pagecache, dentries and inodes:
+echo 3 > /proc/sys/vm/drop_caches</p>
+
+<pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
+</code></pre>
+
+<ol>
+<li>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
+ clean up memory on linux</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[vim內建技巧]]></title>
