@@ -16,7 +16,7 @@ categories: [linux,tcpreplay]
 
 （網路線拔掉，使用udp 傳輸）
 
-後來在 [commandlinefu.com] 的地方找到了如何清理buffer
+後來在 [1] 的地方找到了如何清理buffer
 
 在此做紀錄
 
@@ -47,4 +47,5 @@ echo 3 > /proc/sys/vm/drop\_caches
 
 	clean up memory on linux
 
-[commandlinefu.com]: <http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache>
+Reference  
+[1] <http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache>
