@@ -9,7 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 1 的地方找到了如何清理buffer 在此做紀錄 使用了方法1之後， &hellip;">
+  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 &#8221; title=&#8221;commandlinefu.com&# &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,35 +103,38 @@
 
 <p>（網路線拔掉，使用udp 傳輸）</p>
 
-<p>後來在 <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache" title="commandlinefu.com">1</a> 的地方找到了如何清理buffer</p>
+<p>後來在 <a href="&lt;http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache>&#8221; title=&#8221;commandlinefu.com&#8221;>1</a> 的地方找到了如何清理buffer</p>
 
 <p>在此做紀錄</p>
 
 <p>使用了方法1之後，確實throughput 就恢復正常了</p>
 
 <ol>
-<li>Empty the linux buffer cache
- sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</li>
-<li>Release memory used by the Linux kernel on caches
- free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</li>
-<li>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</li>
+<li><p>Empty the linux buffer cache</p>
+
+<p> sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</p></li>
+<li><p>Release memory used by the Linux kernel on caches</p>
+
+<p> free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</p></li>
+<li><p>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</p></li>
 </ol>
 
 
-<p>run sync first to flush useful things out to disk!!!
-To free pagecache:
-echo 1 > /proc/sys/vm/drop_caches
-To free dentries and inodes:
-echo 2 > /proc/sys/vm/drop_caches
-To free pagecache, dentries and inodes:
+<p>run sync first to flush useful things out to disk!!!<br/>
+To free pagecache:<br/>
+echo 1 > /proc/sys/vm/drop_caches<br/>
+To free dentries and inodes:<br/>
+echo 2 > /proc/sys/vm/drop_caches<br/>
+To free pagecache, dentries and inodes:<br/>
 echo 3 > /proc/sys/vm/drop_caches</p>
 
 <pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
 </code></pre>
 
 <ol>
-<li>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
- clean up memory on linux</li>
+<li><p>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p>
+
+<p> clean up memory on linux</p></li>
 </ol>
 
 </div>
