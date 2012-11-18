@@ -24,22 +24,27 @@ categories: [linux,tcpreplay]
 
 
 1. Empty the linux buffer cache
+
 	sync && echo 3 > /proc/sys/vm/drop_caches
+
 2. Release memory used by the Linux kernel on caches
+
 	free && sync && echo 3 > /proc/sys/vm/drop_caches && free
+
 3. clean up memory of unnecessary things (Kernerl 2.6.16 or newer)
 
-run sync first to flush useful things out to disk!!!
-To free pagecache:
-echo 1 > /proc/sys/vm/drop\_caches
-To free dentries and inodes:
-echo 2 > /proc/sys/vm/drop\_caches
-To free pagecache, dentries and inodes:
-echo 3 > /proc/sys/vm/drop\_caches
+run sync first to flush useful things out to disk!!!  
+To free pagecache:  
+echo 1 > /proc/sys/vm/drop\_caches  
+To free dentries and inodes:  
+echo 2 > /proc/sys/vm/drop\_caches  
+To free pagecache, dentries and inodes:  
+echo 3 > /proc/sys/vm/drop\_caches  
 
 	sync && echo 1 > /proc/sys/vm/drop_caches
 
 4. sync; echo 3 | sudo tee /proc/sys/vm/drop\_caches
+
 	clean up memory on linux
 
-[1]: http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache "commandlinefu.com"
+[1]: <http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache> "commandlinefu.com"
