@@ -20,7 +20,7 @@ categories: [linux,tcpreplay]
 
 在此做紀錄
 
-使用了方法1之後，確實throughput 就恢復正常了
+ps. 使用了方法1之後，確實throughput 就恢復正常了
 
 
 1. Empty the linux buffer cache
