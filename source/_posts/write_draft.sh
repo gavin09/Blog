@@ -11,4 +11,4 @@ echo "checkout to drafts, remember to checkback"
 git add $dir/$filename
 git commit -m "new drafts $filename"
 
-mv $dir/$filename $dir/draft
+git mv $dir/$filename $dir/draft
