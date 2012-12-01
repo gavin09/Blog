@@ -8,7 +8,7 @@ rake new_post["$1"]
 
 echo "checkout to drafts, remember to checkback"
 
-git add $dir/$filename
+mv $dir/$filename $dir/draft
+git add $dir/draft/$filename
 git commit -m "new drafts $filename"
 
-mv $dir/$filename $dir/draft
