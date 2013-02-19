@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: git - Coder blog</title>
+  <title>kernel space and user space - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Category: git">
+  <meta name="description" content="最近在面試的時候被問到這個如何用程式作轉換的流程。
+感覺當下不是非常的清楚。所以又回來看了一下。 User space 位於 0 ~ 3G
+Kernel space 位於 3G ~ 4G 通常切換到kernel space 都是呼叫system call, ex : fork, open, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blogblog/categories/git/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -63,77 +65,96 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Git</h1>
+    
+      <h1 class="entry-title">Kernel Space and User Space</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T15:23:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>最近在面試的時候被問到這個如何用程式作轉換的流程。
+感覺當下不是非常的清楚。所以又回來看了一下。</p>
 
-  
-  <h2>2012</h2>
+<p>User   space 位於 0  ~ 3G
+Kernel space 位於 3G ~ 4G</p>
 
-<article>
-  
-<h1><a href="/Blog/blog/2012/10/02/git-version-control-clean/">git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge</a></h1>
-<time datetime="2012-10-02T10:58:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>02</span> <span class='year'>2012</span></time>
+<p>通常切換到kernel space 都是呼叫system call, ex : fork, open, read, write
+切換時會作80號中斷。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/git/'>git</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/Blog/blog/2012/09/23/git-note/">git-note</a></h1>
-<time datetime="2012-09-23T20:00:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>23</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/git/'>git</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a></h1>
-<time datetime="2012-09-23T08:31:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>23</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/blog/'>blog</a>, <a class='category' href='/Blog/blog/categories/git/'>git</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/Blog/blog/2012/09/21/install-octopress-github-blog/">install-octopress-github-blog</a></h1>
-<time datetime="2012-09-21T19:58:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>21</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/blog/'>blog</a>, <a class='category' href='/Blog/blog/categories/git/'>git</a>, <a class='category' href='/Blog/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
+<p>Reference<br/>
+[1] <a href="http://www.study-area.org/cyril/opentools/opentools/x952.html">http://www.study-area.org/cyril/opentools/opentools/x952.html</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Gavin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T15:23:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/Blog/blog/categories/os/'>OS</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/Blog/blog/2012/11/05/vim-skill/" title="Previous Post: vim內建技巧">&laquo; vim內建技巧</a>
+      
+      
+        <a class="basic-alignment right" href="/Blog/blog/2012/11/05/kernel-space-and-user-space/" title="Next Post: kernel space and user space">kernel space and user space &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>

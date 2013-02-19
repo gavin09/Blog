@@ -119,6 +119,58 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/Blog/blog/2012/11/30/why-static-function/">Why Static Function ?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-30T22:56:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在trace code 的時候會發現有的人會用static function.</p>
+
+<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
+
+<p>所以做了一系列的 google ，在這邊做了一些整理</p>
+
+<ol>
+<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
+做出一個對外使用的function，內部做translate unit
+事實上，static function 的scope 是local 的。</li>
+<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
+在這個討論串特別強調的是有無必要使用object
+若是沒有的話就用static，可以節省memory</li>
+</ol>
+
+
+<p>Reference</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/">Lvalue Rvalue</a></h1>
     
     
@@ -291,6 +343,88 @@ echo 3 > /proc/sys/vm/drop_caches</p>
       
   <header>
     
+      <h1 class="entry-title"><a href="/Blog/blog/2012/11/05/kernel-space-and-user-space/">Kernel-space-and-user-space</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T15:23:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/11/05/kernel-space-and-user-space/">Kernel Space and User Space</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T15:23:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在面試的時候被問到這個如何用程式作轉換的流程。
+感覺當下不是非常的清楚。所以又回來看了一下。</p>
+
+<p>User   space 位於 0  ~ 3G
+Kernel space 位於 3G ~ 4G</p>
+
+<p>通常切換到kernel space 都是呼叫system call, ex : fork, open, read, write
+切換時會作80號中斷。</p>
+
+<p>Reference<br/>
+[1] <a href="http://www.study-area.org/cyril/opentools/opentools/x952.html">http://www.study-area.org/cyril/opentools/opentools/x952.html</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/Blog/blog/2012/11/05/vim-skill/">Vim內建技巧</a></h1>
     
     
@@ -423,163 +557,7 @@ Type=Application
   </header>
 
 
-  <div class="entry-content"><p>當使用ls | less 時，原本ls 的結果就會變成黑白的。
-如果要變成彩色的，則要輸入 ls &#8211;color=always | less -R</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/10/04/intro-terminator/">Terminator介紹</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-04T20:37:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/Blog/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
-
-<p>Terminator 可以切割出多個terminal，相當方便。對於要對照兩個視窗的文件是特別的好用。</p>
-
-<h1>安裝</h1>
-
-<pre><code>sudo apt-get install terminator
-</code></pre>
-
-<h1>常用快捷鍵</h1>
-
-<p>Ctrl + Shift + O : 開啟水平的terminal</p>
-
-<p>Ctrl + Shift + E : 開啟垂直的terminal</p>
-
-<p>Ctrl + Shift + + : 字體變大</p>
-
-<p>Ctrl +  -        : 字體變小</p>
-
-<p>Ctrl + Shift + w : 關閉terminal</p>
-
-<p>Ctrl + Shift + t : 開啟一個新的分頁(tab)</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/10/02/putty-type-chinese/">Putty-type-chinese</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-02T15:31:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li><p>Open Putty</p></li>
-<li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
-</ol>
-
-
-<p>-Windows
-|
-&#8211;Translation
-|
-  character set 改為 UTF-8</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/10/02/git-version-control-clean/">Git : Error: Untracked Working Tree File ‘XXXX’ Would Be Overwritten by Merge</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Warning message</h1>
-
-<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
-</code></pre>
-
-<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
-
-<h1>solution</h1>
-
-<pre><code>git fetch --all
-git reset --hard origin/master
-</code></pre>
-
-<h1>reference</h1>
-
-<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
-<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
+  <div class="entry-content">
 </div>
   
   
@@ -606,6 +584,10 @@ git reset --hard origin/master
       </li>
     
       <li class="post">
+        <a href="/Blog/blog/2012/11/30/why-static-function/">Why Static Function ? </a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/">lvalue rvalue</a>
       </li>
     
@@ -615,10 +597,6 @@ git reset --hard origin/master
     
       <li class="post">
         <a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux buffer cache</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/11/05/vim-skill/">vim內建技巧</a>
       </li>
     
   </ul>
