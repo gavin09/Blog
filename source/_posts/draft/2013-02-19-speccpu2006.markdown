@@ -1,7 +1,31 @@
 ---
 layout: post
-title: "speccpu2006"
+title: "SPEC CPU2006 note"
 date: 2013-02-19 18:06
 comments: true
-categories: 
+categories: Tool
 ---
+
+Recently, I'm trying to install SPEC CPU2006 for some experiment. 
+
+I found setting up a SPEC CPU2006 environment is not easy to me. 
+
+However, there is little information for my questions. 
+
+So, I log some steps and some problems I encounter here. 
+
+pre: 
+
+  $sudo apt-get install build-essential libdeal.ii-dev
+
+$ sudo mount <iso file> /mnt
+$ cp -r SPECCPU2006 ~
+$ chmod -R 755 result config benchspec
+
+./install.sh
+. ./shrc
+
+
+some argument:
+
+about config file:
