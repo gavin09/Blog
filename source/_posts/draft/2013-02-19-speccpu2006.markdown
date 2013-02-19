@@ -1,0 +1,7 @@
+---
+layout: post
+title: "speccpu2006"
+date: 2013-02-19 18:06
+comments: true
+categories: 
+---
