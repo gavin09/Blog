@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-02-19T20:00:50+08:00</updated>
+  <updated>2013-02-19T22:38:07+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -32,31 +32,6 @@
 
 <pre><code>brew install app_name
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why Static Function ? ]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/"/>
-    <updated>2012-11-30T22:56:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function</id>
-    <content type="html"><![CDATA[<p>最近在trace code 的時候會發現有的人會用static function.</p>
-
-<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
-
-<p>所以做了一系列的 google ，在這邊做了一些整理</p>
-
-<ol>
-<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
-做出一個對外使用的function，內部做translate unit
-事實上，static function 的scope 是local 的。</li>
-<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
-在這個討論串特別強調的是有無必要使用object
-若是沒有的話就用static，可以節省memory</li>
-</ol>
-
-
-<p>Reference</p>
 ]]></content>
   </entry>
   
@@ -161,25 +136,6 @@ echo 3 > /proc/sys/vm/drop_caches</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[kernel space and user space]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space/"/>
-    <updated>2012-11-05T15:23:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space</id>
-    <content type="html"><![CDATA[<p>最近在面試的時候被問到這個如何用程式作轉換的流程。
-感覺當下不是非常的清楚。所以又回來看了一下。</p>
-
-<p>User   space 位於 0  ~ 3G
-Kernel space 位於 3G ~ 4G</p>
-
-<p>通常切換到kernel space 都是呼叫system call, ex : fork, open, read, write
-切換時會作80號中斷。</p>
-
-<p>Reference<br/>
-[1] <a href="http://www.study-area.org/cyril/opentools/opentools/x952.html">http://www.study-area.org/cyril/opentools/opentools/x952.html</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[vim內建技巧]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/11/05/vim-skill/"/>
     <updated>2012-11-05T14:59:00+08:00</updated>
@@ -231,15 +187,6 @@ Type=Application
 <h3>Reference</h3>
 
 <p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using less with colors]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/"/>
-    <updated>2012-10-08T17:57:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
@@ -587,6 +534,85 @@ so, you need to remove pip</p>
 
 <p>reference<br/>
 [1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[markdown_syntax]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax/"/>
+    <updated>2012-09-21T20:11:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
+    <content type="html"><![CDATA[<h2>Comment</h2>
+
+<pre><code>&lt;!---
+    comment
+--&gt;
+</code></pre>
+
+<h2>categories: </h2>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[install-octopress-github-blog]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
+    <updated>2012-09-21T19:58:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog</id>
+    <content type="html"><![CDATA[<h2>requirement</h2>
+
+<pre><code>sudo apt-get install curl zlib1g-dev
+</code></pre>
+
+<h2>create a github repository</h2>
+
+<h2>install RVM</h2>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<h2>install Ruby</h2>
+
+<pre><code>source ~/.rvm/scripts/rvm
+rvm pkg install openssl
+rvm install 1.9.2
+rvm use 1.9.2
+rvm rubygems latest
+</code></pre>
+
+<h2>install octopress</h2>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+gem install bundler
+bundle install
+rake install
+</code></pre>
+
+<h2>setup repository link</h2>
+
+<p>take my repository as an example</p>
+
+<pre><code>git@github.com:gavin09/Blog.git
+</code></pre>
+
+<h2>generate web page</h2>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<h2>reference</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
+<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
+<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
+</ul>
+
 ]]></content>
   </entry>
   

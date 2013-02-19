@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>kernel space and user space - Coder blog</title>
+  <title>kernel-space-and-user-space - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="最近在面試的時候被問到這個如何用程式作轉換的流程。
-感覺當下不是非常的清楚。所以又回來看了一下。 User space 位於 0 ~ 3G
-Kernel space 位於 3G ~ 4G 通常切換到kernel space 都是呼叫system call, ex : fork, open, &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,7 +68,7 @@ Kernel space 位於 3G ~ 4G 通常切換到kernel space 都是呼叫system call,
   
   <header>
     
-      <h1 class="entry-title">Kernel Space and User Space</h1>
+      <h1 class="entry-title">Kernel-space-and-user-space</h1>
     
     
       <p class="meta">
@@ -92,17 +91,7 @@ Kernel space 位於 3G ~ 4G 通常切換到kernel space 都是呼叫system call,
   </header>
 
 
-<div class="entry-content"><p>最近在面試的時候被問到這個如何用程式作轉換的流程。
-感覺當下不是非常的清楚。所以又回來看了一下。</p>
-
-<p>User   space 位於 0  ~ 3G
-Kernel space 位於 3G ~ 4G</p>
-
-<p>通常切換到kernel space 都是呼叫system call, ex : fork, open, read, write
-切換時會作80號中斷。</p>
-
-<p>Reference<br/>
-[1] <a href="http://www.study-area.org/cyril/opentools/opentools/x952.html">http://www.study-area.org/cyril/opentools/opentools/x952.html</a></p>
+<div class="entry-content">
 </div>
 
 
@@ -128,12 +117,6 @@ Kernel space 位於 3G ~ 4G</p>
 <time datetime="2012-11-05T15:23:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
       
 
-<span class="categories">
-  
-    <a class='category' href='/Blog/blog/categories/os/'>OS</a>
-  
-</span>
-
 
     </p>
     
@@ -151,7 +134,7 @@ Kernel space 位於 3G ~ 4G</p>
         <a class="basic-alignment left" href="/Blog/blog/2012/11/05/vim-skill/" title="Previous Post: vim內建技巧">&laquo; vim內建技巧</a>
       
       
-        <a class="basic-alignment right" href="/Blog/blog/2012/11/05/kernel-space-and-user-space/" title="Next Post: kernel space and user space">kernel space and user space &raquo;</a>
+        <a class="basic-alignment right" href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/" title="Next Post: Clear Linux buffer cache">Clear Linux buffer cache &raquo;</a>
       
     </p>
   </footer>
@@ -170,10 +153,6 @@ Kernel space 位於 3G ~ 4G</p>
       </li>
     
       <li class="post">
-        <a href="/Blog/blog/2012/11/30/why-static-function/">Why Static Function ? </a>
-      </li>
-    
-      <li class="post">
         <a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/">lvalue rvalue</a>
       </li>
     
@@ -183,6 +162,10 @@ Kernel space 位於 3G ~ 4G</p>
     
       <li class="post">
         <a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux buffer cache</a>
+      </li>
+    
+      <li class="post">
+        <a href="/Blog/blog/2012/11/05/kernel-space-and-user-space/">kernel-space-and-user-space</a>
       </li>
     
   </ul>
