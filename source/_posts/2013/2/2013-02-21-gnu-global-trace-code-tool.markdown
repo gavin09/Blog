@@ -6,24 +6,24 @@ comments: true
 categories: tool
 ---
 
-Before using this tool, I use vim and grep only for tracing code.
+Before using this tool, I use vim and grep for tracing code.
 
 I found this tool is so wonderful and easy to use. 
 
 official website [GNU Global][1] for downloading source code.
 
 ##Installation 
+
    ./configure
    make
    make install
 
-##argument
+##usage
 
--G
+   cd <root src code>
+   htags -G -F -f 
 
--F
-
--f
+Then, open HTML/index.html 
 
 Reference: 
 [1]: http://www.gnu.org/software/global/
