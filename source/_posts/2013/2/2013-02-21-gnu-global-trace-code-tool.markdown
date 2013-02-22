@@ -25,5 +25,4 @@ official website [GNU Global][1] for downloading source code.
 
 Then, open HTML/index.html 
 
-Reference: 
 [1]: http://www.gnu.org/software/global/
