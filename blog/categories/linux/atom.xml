@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Linux | Coder blog]]></title>
+  <title><![CDATA[Category: linux | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-02-22T10:57:06+08:00</updated>
+  <updated>2013-02-22T10:58:44+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -14,21 +14,74 @@
 
   
   <entry>
-    <title type="html"><![CDATA[putty-type-chinese]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/"/>
-    <updated>2012-10-02T15:31:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese</id>
-    <content type="html"><![CDATA[<ol>
-<li><p>Open Putty</p></li>
-<li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
+    <title type="html"><![CDATA[tc rate limit]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit/"/>
+    <updated>2012-11-18T15:10:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit</id>
+    <content type="html"><![CDATA[<p>tc 可以限制網路卡的速度</p>
+
+<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+
+<p>限制速度400 kbit, latency 50ms, burst 4096</p>
+
+<p>若不要使用則是</p>
+
+<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Clear Linux buffer cache]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
+    <updated>2012-11-18T14:24:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
+    <content type="html"><![CDATA[<p>在測試網卡throughput的時候使用了tcpreplay</p>
+
+<p>發現在Xen DomU 做測試時</p>
+
+<p>第二次以後的結果都快的驚人</p>
+
+<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
+
+<p>（網路線拔掉，使用udp 傳輸）</p>
+
+<p>後來在 [1] 的地方找到了如何清理buffer</p>
+
+<p>在此做紀錄</p>
+
+<p>ps. 使用了方法1之後，確實throughput 就恢復正常了</p>
+
+<ol>
+<li><p>Empty the linux buffer cache</p>
+
+<p> sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</p></li>
+<li><p>Release memory used by the Linux kernel on caches</p>
+
+<p> free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</p></li>
+<li><p>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</p></li>
 </ol>
 
 
-<p>-Windows
-|
---Translation
-|
-  character set 改為 UTF-8</p>
+<p>run sync first to flush useful things out to disk!!!<br/>
+To free pagecache:<br/>
+echo 1 > /proc/sys/vm/drop_caches<br/>
+To free dentries and inodes:<br/>
+echo 2 > /proc/sys/vm/drop_caches<br/>
+To free pagecache, dentries and inodes:<br/>
+echo 3 > /proc/sys/vm/drop_caches</p>
+
+<pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
+</code></pre>
+
+<ol>
+<li><p>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p>
+
+<p> clean up memory on linux</p></li>
+</ol>
+
+
+<p>Reference<br/>
+[1] <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache">http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache</a></p>
 ]]></content>
   </entry>
   

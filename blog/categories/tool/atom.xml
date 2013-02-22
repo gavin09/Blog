@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Tool | Coder blog]]></title>
+  <title><![CDATA[Category: tool | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/tool/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-02-22T10:57:06+08:00</updated>
+  <updated>2013-02-22T10:58:44+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -14,32 +14,28 @@
 
   
   <entry>
-    <title type="html"><![CDATA[SPEC CPU2006 note]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006/"/>
-    <updated>2013-02-19T18:06:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006</id>
-    <content type="html"><![CDATA[<p>Recently, I'm trying to install SPEC CPU2006 for some experiment.</p>
+    <title type="html"><![CDATA[GNU global trace code tool]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/"/>
+    <updated>2013-02-21T23:56:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool</id>
+    <content type="html"><![CDATA[<p>Before using this tool, I use vim and grep for tracing code.</p>
 
-<p>I found setting up a SPEC CPU2006 environment is not easy to me.</p>
+<p>I found this tool is so wonderful and easy to use.</p>
 
-<p>However, there is little information for my questions.</p>
+<p>official website <a href="http://www.gnu.org/software/global/">GNU Global</a> for downloading source code.</p>
 
-<p>So, I log some steps and some problems I encounter here.</p>
+<h2>Installation</h2>
 
-<p>pre:</p>
+<p>   ./configure  <br/>
+   make      <br/>
+   make install</p>
 
-<p>  $sudo apt-get install build-essential libdeal.ii-dev</p>
+<h2>usage</h2>
 
-<p>$ sudo mount <iso file> /mnt
-$ cp -r SPECCPU2006 ~
-$ chmod -R 755 result config benchspec</p>
+<p>   cd &lt;root src code > <br/>
+   htags -G -F -f</p>
 
-<p>./install.sh
-. ./shrc</p>
-
-<p>some argument:</p>
-
-<p>about config file:</p>
+<p>Then, open HTML/index.html</p>
 ]]></content>
   </entry>
   

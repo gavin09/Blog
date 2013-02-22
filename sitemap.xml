@@ -46,10 +46,6 @@
     </url>
     <url>
         <loc>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/</loc>
-        <lastmod>2013-02-22T10:40:07+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/</loc>
         <lastmod>2013-02-01T00:56:40+08:00</lastmod>
     </url>
     <url>
@@ -65,10 +61,6 @@
         <lastmod>2013-02-01T00:56:40+08:00</lastmod>
     </url>
     <url>
-        <loc>http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space/</loc>
-        <lastmod>2013-02-22T10:40:07+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/</loc>
         <lastmod>2013-02-01T00:56:32+08:00</lastmod>
     </url>
@@ -81,35 +73,19 @@
         <lastmod>2013-02-01T00:56:32+08:00</lastmod>
     </url>
     <url>
-        <loc>http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/</loc>
-        <lastmod>2013-02-22T10:40:07+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://gavin09.github.com/Blog/blog/2012/12/22/mac-homebrew-install/</loc>
         <lastmod>2013-02-01T00:56:32+08:00</lastmod>
     </url>
     <url>
-        <loc>http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006/</loc>
-        <lastmod>2013-02-22T10:40:07+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gavin09.github.com/Blog/blog/2013/02/19/script-record/</loc>
-        <lastmod>2013-02-22T10:40:07+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gavin09.github.com/Blog/blog/2013/02/20/reverse-ssh/</loc>
-        <lastmod>2013-02-22T10:40:07+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/</loc>
-        <lastmod>2013-02-22T10:57:03+08:00</lastmod>
+        <lastmod>2013-02-22T10:58:27+08:00</lastmod>
     </url>
     <url>
         <loc>http://gavin09.github.com/Blog/blog/archives/</loc>
-        <lastmod>2013-02-22T10:57:03+08:00</lastmod>
+        <lastmod>2013-02-22T10:58:27+08:00</lastmod>
     </url>
     <url>
         <loc>http://gavin09.github.com/Blog/</loc>
-        <lastmod>2013-02-22T10:57:03+08:00</lastmod>
+        <lastmod>2013-02-22T10:58:27+08:00</lastmod>
     </url>
 </urlset>
