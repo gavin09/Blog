@@ -14,9 +14,11 @@ official website [GNU Global][1] for downloading source code.
 
 ##Installation 
 
-   ./configure
-   make
+
+   ./configure    
+   make        
    make install
+
 
 ##usage
 
