@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tool | Coder blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/tool/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2013-02-22T10:48:57+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[SPEC CPU2006 note]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006/"/>
+    <updated>2013-02-19T18:06:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006</id>
+    <content type="html"><![CDATA[<p>Recently, I'm trying to install SPEC CPU2006 for some experiment.</p>
+
+<p>I found setting up a SPEC CPU2006 environment is not easy to me.</p>
+
+<p>However, there is little information for my questions.</p>
+
+<p>So, I log some steps and some problems I encounter here.</p>
+
+<p>pre:</p>
+
+<p>  $sudo apt-get install build-essential libdeal.ii-dev</p>
+
+<p>$ sudo mount <iso file> /mnt
+$ cp -r SPECCPU2006 ~
+$ chmod -R 755 result config benchspec</p>
+
+<p>./install.sh
+. ./shrc</p>
+
+<p>some argument:</p>
+
+<p>about config file:</p>
+]]></content>
+  </entry>
+  
+</feed>
