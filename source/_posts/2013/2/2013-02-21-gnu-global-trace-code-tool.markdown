@@ -22,7 +22,7 @@ official website [GNU Global][1] for downloading source code.
 
 ##usage
 
-   cd <root src code>
+   cd \<root src code \>   
    htags -G -F -f 
 
 Then, open HTML/index.html 
