@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: network - Coder blog</title>
+  <title>Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Category: network">
+  <meta name="description" content="requirement sudo apt-get install curl zlib1g-dev create a github repository install RVM curl -L https://get.rvm.io | bash -s stable --ruby install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blogblog/categories/network/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/page/3/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -62,40 +62,107 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
-    <h1 class="entry-title">Category: Network</h1>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/09/21/install-octopress-github-blog/">Install-octopress-github-blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-21T19:58:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+  <div class="entry-content"><h2>requirement</h2>
 
-  
-  <h2>2012</h2>
+<pre><code>sudo apt-get install curl zlib1g-dev
+</code></pre>
 
-<article>
-  
-<h1><a href="/Blog/blog/2012/11/18/tc-rate-limit/">tc rate limit</a></h1>
-<time datetime="2012-11-18T15:10:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>18</span> <span class='year'>2012</span></time>
+<h2>create a github repository</h2>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/linux/'>linux</a>, <a class='category' href='/Blog/blog/categories/network/'>network</a>, <a class='category' href='/Blog/blog/categories/tc/'>tc</a></span>
-</footer>
+<h2>install RVM</h2>
 
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
 
-</article>
+<h2>install Ruby</h2>
+
+<pre><code>source ~/.rvm/scripts/rvm
+rvm pkg install openssl
+rvm install 1.9.2
+rvm use 1.9.2
+rvm rubygems latest
+</code></pre>
+
+<h2>install octopress</h2>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+gem install bundler
+bundle install
+rake install
+</code></pre>
+
+<h2>setup repository link</h2>
+
+<p>take my repository as an example</p>
+
+<pre><code>git@github.com:gavin09/Blog.git
+</code></pre>
+
+<h2>generate web page</h2>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<h2>reference</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
+<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
+<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
+<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
+</ul>
 
 </div>
-
   
-</article>
+  
 
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/Blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/Blog/blog/page/2/">Newer &rarr;</a>
+    
+  </div>
 </div>
-
 <aside class="sidebar">
   
     <section>
@@ -132,7 +199,6 @@
 
   
 </aside>
-
 
     </div>
   </div>

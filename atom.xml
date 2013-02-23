@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-02-23T20:28:35+08:00</updated>
+  <updated>2013-02-23T20:49:31+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/hide-unity/"/>
+    <updated>2013-02-23T20:37:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/02/23/hide-unity</id>
+    <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
+
+<h2>Install</h2>
+
+<pre><code>sudo apt-get install compizconfig-settings-manager
+</code></pre>
+
+<h2>command</h2>
+
+<pre><code>$ccsm
+</code></pre>
+
+<p>enter &#8220;Ubuntu Unity plugin&#8221;
+Hide Launcher: Never -> AutoHide</p>
+
+<p>Reference:
+[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GNU global trace code tool]]></title>
@@ -576,69 +601,6 @@ so, you need to remove pip</p>
 </code></pre>
 
 <h2>categories: </h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[install-octopress-github-blog]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
-    <updated>2012-09-21T19:58:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog</id>
-    <content type="html"><![CDATA[<h2>requirement</h2>
-
-<pre><code>sudo apt-get install curl zlib1g-dev
-</code></pre>
-
-<h2>create a github repository</h2>
-
-<h2>install RVM</h2>
-
-<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
-</code></pre>
-
-<h2>install Ruby</h2>
-
-<pre><code>source ~/.rvm/scripts/rvm
-rvm pkg install openssl
-rvm install 1.9.2
-rvm use 1.9.2
-rvm rubygems latest
-</code></pre>
-
-<h2>install octopress</h2>
-
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
-ruby --version  # Should report Ruby 1.9.2
-gem install bundler
-bundle install
-rake install
-</code></pre>
-
-<h2>setup repository link</h2>
-
-<p>take my repository as an example</p>
-
-<pre><code>git@github.com:gavin09/Blog.git
-</code></pre>
-
-<h2>generate web page</h2>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<h2>reference</h2>
-
-<ul>
-<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
-<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
-<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
-</ul>
-
 ]]></content>
   </entry>
   

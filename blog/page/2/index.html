@@ -9,13 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="
-Open Putty
-Windows -> Translation -> character set 改為 UTF-8 -Windows
-|
-&#8211;Translation
-| character set 改為 UTF-8
-">
+  <meta name="description" content="Terminator 可以切割出多個terminal，相當方便。對於要對照兩個視窗的文件是特別的好用。 安裝 sudo apt-get install terminator 常用快捷鍵 Ctrl + Shift + O : 開啟水平的terminal Ctrl + Shift + E : &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +64,63 @@ Windows -> Translation -> character set 改為 UTF-8 -Windows
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/10/04/intro-terminator/">Terminator介紹</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-04T20:37:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/Blog/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
+
+<p>Terminator 可以切割出多個terminal，相當方便。對於要對照兩個視窗的文件是特別的好用。</p>
+
+<h1>安裝</h1>
+
+<pre><code>sudo apt-get install terminator
+</code></pre>
+
+<h1>常用快捷鍵</h1>
+
+<p>Ctrl + Shift + O : 開啟水平的terminal</p>
+
+<p>Ctrl + Shift + E : 開啟垂直的terminal</p>
+
+<p>Ctrl + Shift + + : 字體變大</p>
+
+<p>Ctrl +  -        : 字體變小</p>
+
+<p>Ctrl + Shift + w : 關閉terminal</p>
+
+<p>Ctrl + Shift + t : 開啟一個新的分頁(tab)</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -638,97 +689,9 @@ so, you need to remove pip</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/21/install-octopress-github-blog/">Install-octopress-github-blog</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-21T19:58:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>requirement</h2>
-
-<pre><code>sudo apt-get install curl zlib1g-dev
-</code></pre>
-
-<h2>create a github repository</h2>
-
-<h2>install RVM</h2>
-
-<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
-</code></pre>
-
-<h2>install Ruby</h2>
-
-<pre><code>source ~/.rvm/scripts/rvm
-rvm pkg install openssl
-rvm install 1.9.2
-rvm use 1.9.2
-rvm rubygems latest
-</code></pre>
-
-<h2>install octopress</h2>
-
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
-ruby --version  # Should report Ruby 1.9.2
-gem install bundler
-bundle install
-rake install
-</code></pre>
-
-<h2>setup repository link</h2>
-
-<p>take my repository as an example</p>
-
-<pre><code>git@github.com:gavin09/Blog.git
-</code></pre>
-
-<h2>generate web page</h2>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<h2>reference</h2>
-
-<ul>
-<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
-<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
-<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/Blog/blog/page/3/">&larr; Older</a>
     
     <a href="/Blog/blog/archives">Blog Archives</a>
     
@@ -741,6 +704,10 @@ rake deploy
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/02/23/hide-unity/">Hide Ubuntu Unity</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/02/21/gnu-global-trace-code-tool/">GNU global trace code tool</a>
@@ -756,10 +723,6 @@ rake deploy
     
       <li class="post">
         <a href="/Blog/blog/2012/11/18/tc-rate-limit/">tc rate limit</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux buffer cache</a>
       </li>
     
   </ul>
