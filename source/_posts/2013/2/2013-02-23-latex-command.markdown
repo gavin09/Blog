@@ -7,16 +7,16 @@ categories: Linux, tool
 ---
 
 ## Installation  
-   
+
    $ sudo apt-get install texlive-full
 
 ## command 
-
-   latex name.tex  
-   bibtex name (generates name.bbl)  
-   latex name.tex  
-   pslatex name.tex  
-   dvipdf name.dvi  
+   
+   $ latex name.tex  
+   $ bibtex name (generates name.bbl)  
+   $ latex name.tex  
+   $ pslatex name.tex  
+   $ dvipdf name.dvi  
 
 Reference:  
-[1]: <http://judsonsnotes.com/notes/index.php?option=com_content&view=article&id=322:linux-commands-for-latex&catid=60:latex&Itemid=84>
+[1] <http://judsonsnotes.com/notes/index.php?option=com_content&view=article&id=322:linux-commands-for-latex&catid=60:latex&Itemid=84>
