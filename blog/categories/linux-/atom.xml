@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux, | Coder blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/linux-/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2013-02-23T22:22:55+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[using latex with command line]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/"/>
+    <updated>2013-02-23T22:05:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/02/23/latex-command</id>
+    <content type="html"><![CDATA[<h2>Installation</h2>
+
+<p>   $ sudo apt-get install texlive-full</p>
+
+<h2>command</h2>
+
+<p>   latex name.tex<br/>
+   bibtex name (generates name.bbl)<br/>
+   latex name.tex<br/>
+   pslatex name.tex<br/>
+   dvipdf name.dvi</p>
+
+<p>Reference:</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-02-23T20:50:28+08:00</updated>
+  <updated>2013-02-23T22:22:55+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[using latex with command line]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/"/>
+    <updated>2013-02-23T22:05:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/02/23/latex-command</id>
+    <content type="html"><![CDATA[<h2>Installation</h2>
+
+<p>   $ sudo apt-get install texlive-full</p>
+
+<h2>command</h2>
+
+<p>   latex name.tex<br/>
+   bibtex name (generates name.bbl)<br/>
+   latex name.tex<br/>
+   pslatex name.tex<br/>
+   dvipdf name.dvi</p>
+
+<p>Reference:</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
@@ -30,10 +51,10 @@
 <pre><code>$ccsm
 </code></pre>
 
-<p>enter &#8220;Ubuntu Unity plugin&#8221;<br/>
+<p>enter &#8220;Ubuntu Unity plugin&#8221;
 Hide Launcher: Never -> AutoHide</p>
 
-<p>Reference:<br/>
+<p>Reference:
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>
@@ -585,22 +606,6 @@ so, you need to remove pip</p>
 
 <p>reference<br/>
 [1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[markdown_syntax]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax/"/>
-    <updated>2012-09-21T20:11:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/21/markdown-syntax</id>
-    <content type="html"><![CDATA[<h2>Comment</h2>
-
-<pre><code>&lt;!---
-    comment
---&gt;
-</code></pre>
-
-<h2>categories: </h2>
 ]]></content>
   </entry>
   
