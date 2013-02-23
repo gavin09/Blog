@@ -16,9 +16,9 @@ Some note for hide Ubuntu Unity.
 
 	$ccsm
 
-enter "Ubuntu Unity plugin" 
+enter "Ubuntu Unity plugin"  
 Hide Launcher: Never -> AutoHide
 
 
-Reference: 
+Reference:  
 [1] <http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/>
