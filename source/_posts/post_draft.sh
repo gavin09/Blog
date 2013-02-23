@@ -1,8 +1,11 @@
 #!/bin/bash
 
+set -x 
+set -e
+
 if [ $# != 3 ]
 then
-   usage: <file name> <year> <month>
+   echo "usage: <file name> <year> <month>"
 fi
 
 if [ ! -d ./$2 ]
