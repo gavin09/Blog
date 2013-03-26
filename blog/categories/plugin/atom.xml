@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: plugin | Coder blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/plugin/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2013-03-26T15:08:17+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress plugin category]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/26/plugin-category/"/>
+    <updated>2013-03-26T15:02:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/26/plugin-category</id>
+    <content type="html"><![CDATA[<p>reference
+http://gibuloto.com/blog/octopress-categories-tag-cloud/</p>
+]]></content>
+  </entry>
+  
+</feed>

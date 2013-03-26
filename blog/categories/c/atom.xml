@@ -4,7 +4,7 @@
   <title><![CDATA[Category: C | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/c/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-26T15:00:16+08:00</updated>
+  <updated>2013-03-26T15:08:17+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why Static Function ? ]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/"/>
+    <updated>2012-11-30T22:56:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function</id>
+    <content type="html"><![CDATA[<p>最近在trace code 的時候會發現有的人會用static function.</p>
+
+<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
+
+<p>所以做了一系列的 google ，在這邊做了一些整理</p>
+
+<ol>
+<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
+做出一個對外使用的function，內部做translate unit
+事實上，static function 的scope 是local 的。</li>
+<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
+在這個討論串特別強調的是有無必要使用object
+若是沒有的話就用static，可以節省memory</li>
+</ol>
+
+
+<p>Reference</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[child-process-input]]></title>
