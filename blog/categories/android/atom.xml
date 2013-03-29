@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-29T14:27:43+08:00</updated>
+  <updated>2013-03-29T14:29:44+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -23,6 +23,7 @@
 <p>Android 有分類一些wake locks</p>
 
 <p>Flag                   |  CPU | Screen | Keyboard
+-----------------------+------+--------+---------
 Partial  wake lock     |  ON  | OFF    | OFF
 Screen Dim wake lock   |  ON  | OFF    | OFF
 Screen Brigh wake lock |  ON  | OFF    | OFF
