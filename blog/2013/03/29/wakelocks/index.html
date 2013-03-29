@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>using latex with command line - Coder blog</title>
+  <title>Wake Locks - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Installation $ sudo apt-get install texlive-full command $ latex name.tex $ bibtex name (generates name.bbl) $ latex name.tex $ pslatex name.tex $ &hellip;">
+  <meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Using Latex With Command Line</h1>
+      <h1 class="entry-title">Wake Locks</h1>
     
     
       <p class="meta">
@@ -83,27 +83,25 @@
   
 
 
-<time datetime="2013-02-23T22:05:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-03-29T14:11:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>Installation</h2>
+<div class="entry-content"><p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
 
-<p>   $ sudo apt-get install texlive-full</p>
+<p>Android 有分類一些wake locks</p>
 
-<h2>command</h2>
-
-<p>   $ latex name.tex<br/>
-   $ bibtex name (generates name.bbl)<br/>
-   $ latex name.tex<br/>
-   $ pslatex name.tex<br/>
-   $ dvipdf name.dvi</p>
+<p>Flag                   |  CPU | Screen | Keyboard
+Partial  wake lock     |  ON  | OFF    | OFF
+Screen Dim wake lock   |  ON  | OFF    | OFF
+Screen Brigh wake lock |  ON  | OFF    | OFF
+Full Wake lock         |  ON  | Bright | Bright</p>
 
 <p>Reference:<br/>
-[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
+1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
 </div>
 
 
@@ -126,12 +124,12 @@
   
 
 
-<time datetime="2013-02-23T22:05:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-03-29T14:11:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/linux-/'>Linux,</a>, <a class='category' href='/Blog/blog/categories/tool/'>tool</a>
+    <a class='category' href='/Blog/blog/categories/android/'>Android</a>, <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>
   
 </span>
 
@@ -140,7 +138,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/" >Tweet</a>
   
   
   
@@ -149,10 +147,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2013/02/23/hide-unity/" title="Previous Post: Hide Ubuntu Unity">&laquo; Hide Ubuntu Unity</a>
+        <a class="basic-alignment left" href="/Blog/blog/2013/03/29/android-and-ffos-debug/" title="Previous Post: Android And FFOS Debug function">&laquo; Android And FFOS Debug function</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2013/03/29/git-patch/" title="Next Post: Git patch">Git patch &raquo;</a>
       
     </p>
   </footer>

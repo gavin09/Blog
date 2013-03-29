@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-29T11:26:25+08:00</updated>
+  <updated>2013-03-29T14:27:43+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wake Locks]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/"/>
+    <updated>2013-03-29T14:11:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks</id>
+    <content type="html"><![CDATA[<p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
+
+<p>Android 有分類一些wake locks</p>
+
+<p>Flag                   |  CPU | Screen | Keyboard
+Partial  wake lock     |  ON  | OFF    | OFF
+Screen Dim wake lock   |  ON  | OFF    | OFF
+Screen Brigh wake lock |  ON  | OFF    | OFF
+Full Wake lock         |  ON  | Bright | Bright</p>
+
+<p>Reference:<br/>
+1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Android And FFOS Debug function]]></title>
@@ -520,63 +540,6 @@ This client is not linked to any account…</em></p>
 <h2>reference</h2>
 
 <p><a href="http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/">http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[git-note]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
-    <updated>2012-09-23T20:00:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/git-note</id>
-    <content type="html"><![CDATA[<p>在這邊記錄平常會使用到的git 指令。</p>
-
-<h2>安裝git</h2>
-
-<pre><code>sudo apt-get install git-core
-</code></pre>
-
-<h2>branch</h2>
-
-<h3>產生新的branch</h3>
-
-<pre><code>git branch [branch_name]
-</code></pre>
-
-<h3>查看目前有哪一些branch,在哪一個branch</h3>
-
-<pre><code>git branch
-</code></pre>
-
-<h2>git 切換</h2>
-
-<pre><code>git checkout [branch_name]
-</code></pre>
-
-<h2>git tree</h2>
-
-<pre><code>git log --graph --pretty=oneline --abbrev-commit
-</code></pre>
-
-<p>更多詳細的指令可以看reference[1]</p>
-
-<h2>git merge</h2>
-
-<p>把[branch_name] 的東西合併到現在的branch</p>
-
-<pre><code>git merge [branch_name]
-</code></pre>
-
-<p>merge其他branch的file則是</p>
-
-<pre><code>git checkout [branch_name] [file_path]
-</code></pre>
-
-<p>see reference [2]</p>
-
-<h2>reference##</h2>
-
-<p>[1] <a href="http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal">http://stackoverflow.com/questions/1064361/unable-to-show-a-git-tree-in-terminal</a><br/>
-[2] <a href="http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge">http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge</a></p>
 ]]></content>
   </entry>
   

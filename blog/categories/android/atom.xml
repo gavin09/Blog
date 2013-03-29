@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-29T11:26:25+08:00</updated>
+  <updated>2013-03-29T14:27:43+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wake Locks]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/"/>
+    <updated>2013-03-29T14:11:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks</id>
+    <content type="html"><![CDATA[<p>Android 會要求 application 和 services 需要CPU時要用"wake locks"的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
+
+<p>Android 有分類一些wake locks</p>
+
+<p>Flag                   |  CPU | Screen | Keyboard
+Partial  wake lock     |  ON  | OFF    | OFF
+Screen Dim wake lock   |  ON  | OFF    | OFF
+Screen Brigh wake lock |  ON  | OFF    | OFF
+Full Wake lock         |  ON  | Bright | Bright</p>
+
+<p>Reference:<br/>
+1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Android And FFOS Debug function]]></title>
