@@ -5,15 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Coder blog</title>
+  <title>Category: Android - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="第一次撰寫草稿 新增一個branch，名稱是drafts git branch drafts write drafts git checkout drafts
-write article....
-git add [article name]
-git commit -m 'message'
-git &hellip;">
+  <meta name="description" content="Category: Android">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +18,7 @@ git &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/page/3/">
+  <link rel="canonical" href="http://gavin09.github.com/Blogblog/categories/android/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -66,256 +62,40 @@ git &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-23T08:31:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Android</h1>
     
   </header>
-
-
-  <div class="entry-content"><h2>第一次撰寫草稿</h2>
-
-<p>新增一個branch，名稱是drafts</p>
-
-<pre><code>git branch drafts
-</code></pre>
-
-<h2>write drafts</h2>
-
-<pre><code>git checkout drafts
-write article....
-git add [article name]
-git commit -m 'message'
-git push
-</code></pre>
-
-<h2>post</h2>
-
-<pre><code>git checkout master
-git merge drafts
-rake generate
-rake deploy
-</code></pre>
-</div>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/pip-unknown-command-install/">pip-Unknown-command-install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
+  <div id="blog-archives" class="category">
 
 
 
   
+  <h2>2013</h2>
 
-
-<time datetime="2012-09-23T07:45:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When seeing this error, it may be that you have installed  <em>pip</em>
-so, you need to remove pip</p>
-
-<pre><code>sudo apt-get remove pip
-</code></pre>
-
-<p>Then, install <em>python-pip</em></p>
-
-<pre><code>sudo apt-get install python-pip
-</code></pre>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
-</div>
+<article>
   
-  
+<h1><a href="/Blog/blog/2013/03/29/android-and-ffos-debug/">Android And FFOS Debug function</a></h1>
+<time datetime="2013-03-29T11:22:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>29</span> <span class='year'>2013</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/android/'>Android</a>, <a class='category' href='/Blog/blog/categories/ffos/'>FFOS</a></span>
+</footer>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/21/markdown-syntax/">Markdown_syntax</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-21T20:11:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Comment</h2>
-
-<pre><code>&lt;!---
-    comment
---&gt;
-</code></pre>
-
-<h2>categories: </h2>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/21/install-octopress-github-blog/">Install-octopress-github-blog</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-21T19:58:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>requirement</h2>
-
-<pre><code>sudo apt-get install curl zlib1g-dev
-</code></pre>
-
-<h2>create a github repository</h2>
-
-<h2>install RVM</h2>
-
-<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
-</code></pre>
-
-<h2>install Ruby</h2>
-
-<pre><code>source ~/.rvm/scripts/rvm
-rvm pkg install openssl
-rvm install 1.9.2
-rvm use 1.9.2
-rvm rubygems latest
-</code></pre>
-
-<h2>install octopress</h2>
-
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
-ruby --version  # Should report Ruby 1.9.2
-gem install bundler
-bundle install
-rake install
-</code></pre>
-
-<h2>setup repository link</h2>
-
-<p>take my repository as an example</p>
-
-<pre><code>git@github.com:gavin09/Blog.git
-</code></pre>
-
-<h2>generate web page</h2>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<h2>reference</h2>
-
-<ul>
-<li><a href="http://octopress.org/docs/setup/rvm/">http://octopress.org/docs/setup/rvm/</a></li>
-<li><a href="http://lyhdev.com/note:octopress">http://lyhdev.com/note:octopress</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.com/blog/2012/01/19/octopress-github-pages/</a></li>
-<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/</a></li>
-<li><a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
-</ul>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
   
-  <div class="pagination">
-    
-    <a href="/Blog/blog/archives">Blog Archives</a>
-    
-    <a class="next" href="/Blog/blog/page/2/">Newer &rarr;</a>
-    
-  </div>
+</article>
+
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -356,6 +136,7 @@ rake deploy
 
   
 </aside>
+
 
     </div>
   </div>

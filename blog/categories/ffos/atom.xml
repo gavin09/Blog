@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: FFOS | Coder blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/ffos/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2013-03-29T11:26:25+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Android And FFOS Debug function]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug/"/>
+    <updated>2013-03-29T11:22:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug</id>
+    <content type="html"><![CDATA[<p>   adb logcat</p>
+]]></content>
+  </entry>
+  
+</feed>
