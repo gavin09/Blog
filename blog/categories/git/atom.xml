@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-29T11:04:34+08:00</updated>
+  <updated>2013-03-29T11:07:50+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git patch]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/git-patch/"/>
+    <updated>2013-03-29T10:49:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/29/git-patch</id>
+    <content type="html"><![CDATA[<p>   git apply <patch name> --reject
+   git status
+   git am <patch name> --resolved</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge]]></title>

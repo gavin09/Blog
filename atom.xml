@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-29T11:04:34+08:00</updated>
+  <updated>2013-03-29T11:07:50+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git patch]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/git-patch/"/>
+    <updated>2013-03-29T10:49:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/29/git-patch</id>
+    <content type="html"><![CDATA[<p>   git apply <patch name> &#8211;reject
+   git status
+   git am <patch name> &#8211;resolved</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[using latex with command line]]></title>
@@ -586,27 +597,6 @@ git merge drafts
 rake generate
 rake deploy
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[pip-Unknown-command-install]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/"/>
-    <updated>2012-09-23T07:45:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install</id>
-    <content type="html"><![CDATA[<p>When seeing this error, it may be that you have installed  <em>pip</em>
-so, you need to remove pip</p>
-
-<pre><code>sudo apt-get remove pip
-</code></pre>
-
-<p>Then, install <em>python-pip</em></p>
-
-<pre><code>sudo apt-get install python-pip
-</code></pre>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,8 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Installation $ sudo apt-get install texlive-full command $ latex name.tex $ bibtex name (generates name.bbl) $ latex name.tex $ pslatex name.tex $ &hellip;">
+  <meta name="description" content=" git apply &#8211;reject git status git am &#8211;resolved
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +65,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/03/29/git-patch/">Git Patch</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-29T10:49:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>   git apply <patch name> &#8211;reject
+   git status
+   git am <patch name> &#8211;resolved</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -527,64 +566,6 @@ echo 3 > /proc/sys/vm/drop_caches</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/10/22/dropbox-auto-run/">Dropbox-auto-run</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-22T00:16:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><pre><code>mkdir $HOME/.config/autostart
-</code></pre>
-
-<p>vi Dropbox.desktop</p>
-
-<pre><code>[Desktop Entry]
-Encoding=UTF-8
-Name=Dropbox
-Comment=RunDropbox
-Icon=/usr/share/icons/elementary/panel/22/dropboxstatus-logo.svg
-Exec=bash /home/*user*/.dropbox-dist/dropboxd
-Terminal=false
-Type=Application
-</code></pre>
-
-<p>Note:</p>
-
-<pre><code>Icon need to be checked  
-</code></pre>
-
-<h3>Reference</h3>
-
-<p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -597,11 +578,15 @@ Type=Application
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/git'>git (4)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (1)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (1)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/03/29/git-patch/">Git patch</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/02/23/latex-command/">using latex with command line</a>
@@ -617,10 +602,6 @@ Type=Application
     
       <li class="post">
         <a href="/Blog/blog/2012/12/22/mac-homebrew-install/">Mac Mountain Lion Homebrew Install</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/">lvalue rvalue</a>
       </li>
     
   </ul>
