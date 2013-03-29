@@ -10,11 +10,12 @@ Android 會要求 application 和 services 需要CPU時要用"wake locks"的方�
 
 Android 有分類一些wake locks
 
-Flag                   |  CPU | Screen | Keyboard
-Partial  wake lock     |  ON  | OFF    | OFF
-Screen Dim wake lock   |  ON  | OFF    | OFF
-Screen Brigh wake lock |  ON  | OFF    | OFF
-Full Wake lock         |  ON  | Bright | Bright
+|Flag                   |  CPU | Screen | Keyboard|
+|-----------------------+------+--------+---------|
+|Partial  wake lock     |  ON  | OFF    | OFF     |
+|Screen Dim wake lock   |  ON  | OFF    | OFF     |
+|Screen Brigh wake lock |  ON  | OFF    | OFF     | 
+|Full Wake lock         |  ON  | Bright | Bright  | 
 
 
 
