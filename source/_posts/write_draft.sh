@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# != 1] 
+then 
+   echo "usage: <filename>"
+fi
+
 dir=`pwd`
 filename="`date +%Y-%m-%d-$1.markdown`"
 
