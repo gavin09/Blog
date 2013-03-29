@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "android-and-ffos-debug"
+title: "Android And FFOS Debug function"
 date: 2013-03-29 11:22
 comments: true
-categories: 
+categories: FFOS,Android
 ---
+
+   adb logcat
