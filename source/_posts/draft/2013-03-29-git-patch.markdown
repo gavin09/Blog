@@ -1,7 +1,13 @@
 ---
 layout: post
-title: "git-patch"
+title: "Git patch"
 date: 2013-03-29 10:49
 comments: true
-categories: 
+categories: git
 ---
+
+
+   git apply <patch name> --reject
+   git status 
+   git am <patch name> --resolved
+
