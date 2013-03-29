@@ -28,7 +28,7 @@ git push
 
 git checkout master
 
-git checkout draft $dir/$year/$month/$1
+git checkout drafts $dir/$year/$month/$1
 
 git add $dir/$year/$month/$1
 git commit -m 'post $1'
