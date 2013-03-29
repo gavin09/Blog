@@ -6,8 +6,5 @@ comments: true
 categories: git
 ---
 
-
-   git apply <patch name> --reject
-   git status 
-   git am <patch name> --resolved
+{% gist 5268510 %}
 
