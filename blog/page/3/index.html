@@ -9,8 +9,11 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="When seeing this error, it may be that you have installed pip
-so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo apt- &hellip;">
+  <meta name="description" content="第一次撰寫草稿 新增一個branch，名稱是drafts git branch drafts write drafts git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +68,64 @@ so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-23T08:31:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>第一次撰寫草稿</h2>
+
+<p>新增一個branch，名稱是drafts</p>
+
+<pre><code>git branch drafts
+</code></pre>
+
+<h2>write drafts</h2>
+
+<pre><code>git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git push
+</code></pre>
+
+<h2>post</h2>
+
+<pre><code>git checkout master
+git merge drafts
+rake generate
+rake deploy
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -259,11 +320,15 @@ rake deploy
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (1)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos-android'>FFOS,Android (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (1)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/03/29/android-and-ffos-debug/">Android And FFOS Debug function</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/29/git-patch/">Git patch</a>
@@ -279,10 +344,6 @@ rake deploy
     
       <li class="post">
         <a href="/Blog/blog/2013/02/21/gnu-global-trace-code-tool/">GNU global trace code tool</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2012/12/22/mac-homebrew-install/">Mac Mountain Lion Homebrew Install</a>
       </li>
     
   </ul>
