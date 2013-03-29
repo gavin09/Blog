@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux, | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux-/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-26T15:21:27+08:00</updated>
+  <updated>2013-03-29T11:04:34+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -24,13 +24,14 @@
 
 <h2>command</h2>
 
-<p>   latex name.tex<br/>
-   bibtex name (generates name.bbl)<br/>
-   latex name.tex<br/>
-   pslatex name.tex<br/>
-   dvipdf name.dvi</p>
+<p>   $ latex name.tex<br/>
+   $ bibtex name (generates name.bbl)<br/>
+   $ latex name.tex<br/>
+   $ pslatex name.tex<br/>
+   $ dvipdf name.dvi</p>
 
-<p>Reference:</p>
+<p>Reference:<br/>
+[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
 ]]></content>
   </entry>
   

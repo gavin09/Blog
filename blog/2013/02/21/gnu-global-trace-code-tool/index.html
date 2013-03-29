@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SPEC CPU2006 note - Coder blog</title>
+  <title>GNU global trace code tool - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Recently, I&#8217;m trying to install SPEC CPU2006 for some experiment. I found setting up a SPEC CPU2006 environment is not easy to me. However, &hellip;">
+  <meta name="description" content="Before using this tool, I use vim and grep for tracing code. I found this tool is so wonderful and easy to use. official website GNU Global for &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">SPEC CPU2006 Note</h1>
+      <h1 class="entry-title">GNU Global Trace Code Tool</h1>
     
     
       <p class="meta">
@@ -83,35 +83,31 @@
   
 
 
-<time datetime="2013-02-19T18:06:00+08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2013</time>
+<time datetime="2013-02-21T23:56:00+08:00" pubdate data-updated="true">Feb 21<span>st</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Recently, I&#8217;m trying to install SPEC CPU2006 for some experiment.</p>
+<div class="entry-content"><p>Before using this tool, I use vim and grep for tracing code.</p>
 
-<p>I found setting up a SPEC CPU2006 environment is not easy to me.</p>
+<p>I found this tool is so wonderful and easy to use.</p>
 
-<p>However, there is little information for my questions.</p>
+<p>official website <a href="http://www.gnu.org/software/global/">GNU Global</a> for downloading source code.</p>
 
-<p>So, I log some steps and some problems I encounter here.</p>
+<h2>Installation</h2>
 
-<p>pre:</p>
+<p>   ./configure  <br/>
+   make      <br/>
+   make install</p>
 
-<p>  $sudo apt-get install build-essential libdeal.ii-dev</p>
+<h2>usage</h2>
 
-<p>$ sudo mount <iso file> /mnt
-$ cp -r SPECCPU2006 ~
-$ chmod -R 755 result config benchspec</p>
+<p>   cd &lt;root src code > <br/>
+   htags -G -F -f</p>
 
-<p>./install.sh
-. ./shrc</p>
-
-<p>some argument:</p>
-
-<p>about config file:</p>
+<p>Then, open HTML/index.html</p>
 </div>
 
 
@@ -134,12 +130,12 @@ $ chmod -R 755 result config benchspec</p>
   
 
 
-<time datetime="2013-02-19T18:06:00+08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2013</time>
+<time datetime="2013-02-21T23:56:00+08:00" pubdate data-updated="true">Feb 21<span>st</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/tool/'>Tool</a>
+    <a class='category' href='/Blog/blog/categories/tool/'>tool</a>
   
 </span>
 
@@ -148,7 +144,7 @@ $ chmod -R 755 result config benchspec</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/02/19/speccpu2006/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/" >Tweet</a>
   
   
   
@@ -160,7 +156,7 @@ $ chmod -R 755 result config benchspec</p>
         <a class="basic-alignment left" href="/Blog/blog/2012/12/22/mac-homebrew-install/" title="Previous Post: Mac Mountain Lion Homebrew Install">&laquo; Mac Mountain Lion Homebrew Install</a>
       
       
-        <a class="basic-alignment right" href="/Blog/blog/2013/02/19/script-record/" title="Next Post: multiple terminal session record">multiple terminal session record &raquo;</a>
+        <a class="basic-alignment right" href="/Blog/blog/2013/02/23/hide-unity/" title="Next Post: Hide Ubuntu Unity">Hide Ubuntu Unity &raquo;</a>
       
     </p>
   </footer>
@@ -172,15 +168,11 @@ $ chmod -R 755 result config benchspec</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/git'>git (4)</a></li><li><a href='blog/categories/linux'>linux (3)</a></li><li><a href='blog/categories/linux'>Linux (1)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/os'>OS (1)</a></li><li><a href='blog/categories/plugin'>plugin (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (1)</a></li><li><a href='blog/categories/tool'>Tool (1)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/git'>git (4)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (1)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/03/26/plugin-category/">Octopress plugin category</a>
-      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/02/23/latex-command/">using latex with command line</a>
@@ -191,11 +183,15 @@ $ chmod -R 755 result config benchspec</p>
       </li>
     
       <li class="post">
-        <a href="/Blog/blog/2013/02/20/reverse-ssh/">reverse-ssh</a>
+        <a href="/Blog/blog/2013/02/21/gnu-global-trace-code-tool/">GNU global trace code tool</a>
       </li>
     
       <li class="post">
-        <a href="/Blog/blog/2013/02/19/script-record/">multiple terminal session record</a>
+        <a href="/Blog/blog/2012/12/22/mac-homebrew-install/">Mac Mountain Lion Homebrew Install</a>
+      </li>
+    
+      <li class="post">
+        <a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/">lvalue rvalue</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tool | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/tool/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-26T15:21:27+08:00</updated>
+  <updated>2013-03-29T11:04:34+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -24,13 +24,40 @@
 
 <h2>command</h2>
 
-<p>   latex name.tex<br/>
-   bibtex name (generates name.bbl)<br/>
-   latex name.tex<br/>
-   pslatex name.tex<br/>
-   dvipdf name.dvi</p>
+<p>   $ latex name.tex<br/>
+   $ bibtex name (generates name.bbl)<br/>
+   $ latex name.tex<br/>
+   $ pslatex name.tex<br/>
+   $ dvipdf name.dvi</p>
 
-<p>Reference:</p>
+<p>Reference:<br/>
+[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GNU global trace code tool]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/"/>
+    <updated>2013-02-21T23:56:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool</id>
+    <content type="html"><![CDATA[<p>Before using this tool, I use vim and grep for tracing code.</p>
+
+<p>I found this tool is so wonderful and easy to use.</p>
+
+<p>official website <a href="http://www.gnu.org/software/global/">GNU Global</a> for downloading source code.</p>
+
+<h2>Installation</h2>
+
+<p>   ./configure  <br/>
+   make      <br/>
+   make install</p>
+
+<h2>usage</h2>
+
+<p>   cd &lt;root src code > <br/>
+   htags -G -F -f</p>
+
+<p>Then, open HTML/index.html</p>
 ]]></content>
   </entry>
   
