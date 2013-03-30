@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-31T00:52:14+08:00</updated>
+  <updated>2013-03-31T00:55:28+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -20,7 +20,7 @@
     <id>http://gavin09.github.com/Blog/blog/2013/03/31/octopress-table</id>
     <content type="html"><![CDATA[<p>因為官方的table 支援的不好，所以上網搜尋了一下。</p>
 
-<p>網路上很多人都是reference這一篇的方法<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">這一篇的方法</a></p>
+<p>網路上很多人都是reference<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">這一篇的方法</a></p>
 
 <p>不過因為我懶得在每一篇還要加上styles: [data-table]</p>
 
