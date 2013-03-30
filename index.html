@@ -9,7 +9,8 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks &hellip;">
+  <meta name="description" content="因為官方的table 支援的不好，所以上網搜尋了一下。 網路上很多人都是reference這一篇的方法1 不過因為我懶得在每一篇還要加上styles: [data-table] 所以我直接改在sass/custom/_styles.css Reference:
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +65,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/03/31/octopress-table/">修改octopress Table</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-31T00:41:00+08:00" pubdate data-updated="true">Mar 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>因為官方的table 支援的不好，所以上網搜尋了一下。</p>
+
+<p>網路上很多人都是reference這一篇的方法<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">1</a></p>
+
+<p>不過因為我懶得在每一篇還要加上styles: [data-table]</p>
+
+<p>所以我直接改在sass/custom/_styles.css</p>
+
+<p>Reference:</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -513,88 +558,6 @@ rvalue 就是程式等號的右邊</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux Buffer Cache</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-18T14:24:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在測試網卡throughput的時候使用了tcpreplay</p>
-
-<p>發現在Xen DomU 做測試時</p>
-
-<p>第二次以後的結果都快的驚人</p>
-
-<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
-
-<p>（網路線拔掉，使用udp 傳輸）</p>
-
-<p>後來在 [1] 的地方找到了如何清理buffer</p>
-
-<p>在此做紀錄</p>
-
-<p>ps. 使用了方法1之後，確實throughput 就恢復正常了</p>
-
-<ol>
-<li><p>Empty the linux buffer cache</p>
-
-<p> sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</p></li>
-<li><p>Release memory used by the Linux kernel on caches</p>
-
-<p> free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</p></li>
-<li><p>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</p></li>
-</ol>
-
-
-<p>run sync first to flush useful things out to disk!!!<br/>
-To free pagecache:<br/>
-echo 1 > /proc/sys/vm/drop_caches<br/>
-To free dentries and inodes:<br/>
-echo 2 > /proc/sys/vm/drop_caches<br/>
-To free pagecache, dentries and inodes:<br/>
-echo 3 > /proc/sys/vm/drop_caches</p>
-
-<pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
-</code></pre>
-
-<ol>
-<li><p>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p>
-
-<p> clean up memory on linux</p></li>
-</ol>
-
-
-<p>Reference<br/>
-[1] <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache">http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -607,11 +570,15 @@ echo 3 > /proc/sys/vm/drop_caches</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (1)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/03/31/octopress-table/">修改octopress table</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/29/wakelocks/">Wake Locks</a>
@@ -627,10 +594,6 @@ echo 3 > /proc/sys/vm/drop_caches</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/02/23/latex-command/">using latex with command line</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/02/23/hide-unity/">Hide Ubuntu Unity</a>
       </li>
     
   </ul>

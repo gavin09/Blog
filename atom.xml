@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-31T00:39:59+08:00</updated>
+  <updated>2013-03-31T00:47:37+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[修改octopress table]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/03/31/octopress-table/"/>
+    <updated>2013-03-31T00:41:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/03/31/octopress-table</id>
+    <content type="html"><![CDATA[<p>因為官方的table 支援的不好，所以上網搜尋了一下。</p>
+
+<p>網路上很多人都是reference這一篇的方法<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">1</a></p>
+
+<p>不過因為我懶得在每一篇還要加上styles: [data-table]</p>
+
+<p>所以我直接改在sass/custom/_styles.css</p>
+
+<p>Reference:</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Wake Locks]]></title>
@@ -533,45 +550,6 @@ comments: true</p>
 
 <p><a href="https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu">https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu</a><br/>
 <a href="http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html">http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[在linux command line 環境下安裝dropbox]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line/"/>
-    <updated>2012-09-23T22:32:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line</id>
-    <content type="html"><![CDATA[<h2>下載dropbox</h2>
-
-<pre><code>wget http://www.getdropbox.com/download?plat=lnx.x86_64
-mv download?plat=lnx.x86_64 dropbox.tar.gz
-tar zxvf dropgox.tar.gz
-cd .dropbox-dist
-</code></pre>
-
-<h2>執行dropbox</h2>
-
-<pre><code>./dropboxd
-</code></pre>
-
-<p>此時將會出現底下的message</p>
-
-<p><em>Please visit https://www.dropbox.com/cli_link?host_id= to link this machine.
-This client is not linked to any account…</em></p>
-
-<p>將此連結複製到有gui環境的電腦作授權，若授權成功將會出現successful的訊息<br/>
-此時按Ctrl + c 結束</p>
-
-<h2>執行dropbox</h2>
-
-<pre><code>./dropboxd &amp;
-</code></pre>
-
-<p>&amp;  的目的是為了讓dropbox在背景執行，此時dropbox 便開始同步</p>
-
-<h2>reference</h2>
-
-<p><a href="http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/">http://matrix.csie.org/blogs/dongogo/2010/05/22/dropbox-ubuntu-%E5%95%9F%E5%8B%95-dropbox-%E8%A8%AD%E5%AE%9A%E9%96%8B%E6%A9%9F%E8%87%AA%E5%8B%95%E5%95%9F%E5%8B%95/</a></p>
 ]]></content>
   </entry>
   
