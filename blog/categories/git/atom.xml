@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-31T00:30:24+08:00</updated>
+  <updated>2013-03-31T00:39:59+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -18,7 +18,7 @@
     <link href="http://gavin09.github.com/Blog/blog/2013/03/29/git-patch/"/>
     <updated>2013-03-29T10:49:00+08:00</updated>
     <id>http://gavin09.github.com/Blog/blog/2013/03/29/git-patch</id>
-    <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/5268510.js?file='></script>
+    <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/5268510.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 </p>
 ]]></content>
