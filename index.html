@@ -9,7 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks | &hellip;">
+  <meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -98,12 +98,48 @@
 
 <p>Android 有分類一些wake locks</p>
 
-<p>|Flag                   |  CPU | Screen | Keyboard|
-|&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;+&#8212;&#8212;+&#8212;&#8212;&#8211;+&#8212;&#8212;&#8212;|
-|Partial  wake lock     |  ON  | OFF    | OFF     |
-|Screen Dim wake lock   |  ON  | OFF    | OFF     |
-|Screen Brigh wake lock |  ON  | OFF    | OFF     |
-|Full Wake lock         |  ON  | Bright | Bright  |</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="left">Flag                   </th>
+<th align="center">  CPU </th>
+<th align="center"> Screen </th>
+<th align="center"> Keyboard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="left">Partial  wake lock     </td>
+<td align="center">  ON  </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     |</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">Screen Dim wake lock   </td>
+<td align="center">  ON  </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     |</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">Screen Brigh wake lock </td>
+<td align="center">  ON  </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     | </td>
+</tr>
+<tr>
+<td></td>
+<td align="left">Full Wake lock         </td>
+<td align="center">  ON  </td>
+<td align="center"> Bright </td>
+<td align="center"> Bright  | </td>
+</tr>
+</tbody>
+</table>
+
 
 <p>Reference:<br/>
 1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
