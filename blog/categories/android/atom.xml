@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-03-31T00:21:15+08:00</updated>
+  <updated>2013-03-31T00:23:49+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -25,7 +25,6 @@
 <table>
 <thead>
 <tr>
-<th></th>
 <th align="left">Flag                          </th>
 <th align="center">  CPU       </th>
 <th align="center"> Screen </th>
@@ -34,32 +33,28 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
 <td align="left">Partial  wake lock            </td>
 <td align="center">  ON        </td>
 <td align="center"> OFF    </td>
-<td align="center"> OFF     |</td>
+<td align="center"> OFF     </td>
 </tr>
 <tr>
-<td></td>
 <td align="left">Screen Dim wake lock          </td>
 <td align="center">  ON        </td>
 <td align="center"> OFF    </td>
-<td align="center"> OFF     |</td>
+<td align="center"> OFF     </td>
 </tr>
 <tr>
-<td></td>
 <td align="left">Screen Brigh wake lock        </td>
 <td align="center">  ON        </td>
 <td align="center"> OFF    </td>
-<td align="center"> OFF     | </td>
+<td align="center"> OFF      </td>
 </tr>
 <tr>
-<td></td>
 <td align="left">Full Wake lock                </td>
 <td align="center">  ON        </td>
 <td align="center"> Bright </td>
-<td align="center"> Bright  | </td>
+<td align="center"> Bright   </td>
 </tr>
 </tbody>
 </table>
