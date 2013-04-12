@@ -9,7 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="在這邊記錄平常會使用到的git 指令。 安裝git sudo apt-get install git-core branch 產生新的branch git branch [branch_name] 查看目前有哪一些branch,在哪一個branch git branch git 切換 git &hellip;">
+  <meta name="description" content="在這邊記錄平常會使用到的git 指令。 安裝git sudo apt-get install git-core branch 產生新的branch git branch [branch_name] 查看目前有哪一些branch,在哪一個branch git branch git 切換 branch &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -109,15 +109,22 @@
 <pre><code>git branch
 </code></pre>
 
-<h2>git 切換</h2>
+<h2>git 切換 branch</h2>
 
 <pre><code>git checkout [branch_name]
 </code></pre>
 
-<h2>git tree</h2>
+<h2>git log</h2>
 
 <pre><code>git log --graph --pretty=oneline --abbrev-commit
 </code></pre>
+
+<p>用tree的形式顯示log</p>
+
+<pre><code>     git log ./ 
+</code></pre>
+
+<p>顯示與此資料夾有關的git commit</p>
 
 <p>更多詳細的指令可以看reference[1]</p>
 
@@ -134,6 +141,8 @@
 </code></pre>
 
 <p>see reference [2]</p>
+
+<h2>git log</h2>
 
 <h2>reference##</h2>
 
