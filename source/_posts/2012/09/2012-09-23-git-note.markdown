@@ -36,6 +36,9 @@ categories: git
 
 顯示與此資料夾有關的git commit 
 
+    git log <filename>
+
+顯示與此檔案有關的git commit
 
 更多詳細的指令可以看reference[1]
 
