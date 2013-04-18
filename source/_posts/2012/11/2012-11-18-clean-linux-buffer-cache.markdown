@@ -23,29 +23,33 @@ categories: [linux,tcpreplay]
 ps. 使用了方法1之後，確實throughput 就恢復正常了
 
 
-1. Empty the linux buffer cache
+1. Empty the linux buffer cache  
 
-	sync && echo 3 > /proc/sys/vm/drop_caches
+    sync && echo 3 > /proc/sys/vm/drop_caches  
 
-2. Release memory used by the Linux kernel on caches
+2. Release memory used by the Linux kernel on caches  
 
-	free && sync && echo 3 > /proc/sys/vm/drop_caches && free
+    free && sync && echo 3 > /proc/sys/vm/drop_caches && free
 
-3. clean up memory of unnecessary things (Kernerl 2.6.16 or newer)
+3. clean up memory of unnecessary things (Kernerl 2.6.16 or newer)  
 
 run sync first to flush useful things out to disk!!!  
 To free pagecache:  
-echo 1 > /proc/sys/vm/drop\_caches  
+
+    echo 1 > /proc/sys/vm/drop\_caches  
+
 To free dentries and inodes:  
-echo 2 > /proc/sys/vm/drop\_caches  
+
+    echo 2 > /proc/sys/vm/drop\_caches  
+
 To free pagecache, dentries and inodes:  
-echo 3 > /proc/sys/vm/drop\_caches  
 
-	sync && echo 1 > /proc/sys/vm/drop_caches
+    echo 3 > /proc/sys/vm/drop\_caches 
+    sync && echo 1 > /proc/sys/vm/drop_caches
 
-4. sync; echo 3 | sudo tee /proc/sys/vm/drop\_caches
+4. clean up memory on linux  
 
-	clean up memory on linux
+    sync; echo 3 | sudo tee /proc/sys/vm/drop\_caches
 
 Reference  
 [1] <http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache>
