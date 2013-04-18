@@ -165,14 +165,20 @@
 
 
 <p>run sync first to flush useful things out to disk!!!<br/>
-To free pagecache:<br/>
-echo 1 > /proc/sys/vm/drop_caches<br/>
-To free dentries and inodes:<br/>
-echo 2 > /proc/sys/vm/drop_caches<br/>
-To free pagecache, dentries and inodes:<br/>
-echo 3 > /proc/sys/vm/drop_caches</p>
+To free pagecache:</p>
 
-<pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
+<pre><code>echo 1 &gt; /proc/sys/vm/drop\_caches  
+</code></pre>
+
+<p>To free dentries and inodes:</p>
+
+<pre><code>echo 2 &gt; /proc/sys/vm/drop\_caches  
+</code></pre>
+
+<p>To free pagecache, dentries and inodes:</p>
+
+<pre><code>echo 3 &gt; /proc/sys/vm/drop\_caches 
+sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
 </code></pre>
 
 <ol>

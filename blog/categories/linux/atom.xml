@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-18T17:19:18+08:00</updated>
+  <updated>2013-04-18T17:25:48+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -63,14 +63,20 @@
 
 
 <p>run sync first to flush useful things out to disk!!!<br/>
-To free pagecache:<br/>
-echo 1 > /proc/sys/vm/drop_caches<br/>
-To free dentries and inodes:<br/>
-echo 2 > /proc/sys/vm/drop_caches<br/>
-To free pagecache, dentries and inodes:<br/>
-echo 3 > /proc/sys/vm/drop_caches</p>
+To free pagecache:</p>
 
-<pre><code>sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
+<pre><code>echo 1 &gt; /proc/sys/vm/drop\_caches  
+</code></pre>
+
+<p>To free dentries and inodes:</p>
+
+<pre><code>echo 2 &gt; /proc/sys/vm/drop\_caches  
+</code></pre>
+
+<p>To free pagecache, dentries and inodes:</p>
+
+<pre><code>echo 3 &gt; /proc/sys/vm/drop\_caches 
+sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
 </code></pre>
 
 <ol>
