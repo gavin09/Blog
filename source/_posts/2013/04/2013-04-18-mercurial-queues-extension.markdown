@@ -29,6 +29,17 @@ mq 在管理多個檔案的patch時相當方便
 
 所有的的改變都會加入patch
 
+    hg qqueue [option] [queue]
+
+    -l --list   list all available queues
+       --active print name of active queue
+    -c --create create new queue
+       --rename rename active queue
+       --delete delete reference to queue
+       --purge  delete queue, and remove patch dir
+
+對queue的管理
+
     hg qdiff
 
 列出所有改變的地方
