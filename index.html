@@ -9,8 +9,9 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="因為官方的table 支援的不好，所以上網搜尋了一下。 網路上很多人都是reference這一篇的方法1 不過因為我懶得在每一篇還要加上styles: [data-table] 所以我直接改在sass/custom/_styles.css Reference:
-">
+  <meta name="description" content="Introduction mq 在管理多個檔案的patch時相當方便 Enable mq extentions 在 .hg/hgrc 當中新增 [extensions]
+mq = Command hg qnew &lt;patch name&gt; 開啟patch hg qrefresh
+hg &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +66,91 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-18T15:27:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Introduction</h2>
+
+<p>mq 在管理多個檔案的patch時相當方便</p>
+
+<h2>Enable mq extentions</h2>
+
+<p>在 .hg/hgrc 當中新增</p>
+
+<pre><code>[extensions]
+mq =
+</code></pre>
+
+<h2>Command</h2>
+
+<pre><code>hg qnew &lt;patch name&gt;
+</code></pre>
+
+<p>開啟patch</p>
+
+<pre><code>hg qrefresh
+hg qrefresh -m 'one line message'
+hg qrefresh -e  // multi-line message
+</code></pre>
+
+<p>所有的的改變都會加入patch</p>
+
+<pre><code>hg qdiff
+</code></pre>
+
+<p>列出所有改變的地方</p>
+
+<pre><code>hg qseries
+</code></pre>
+
+<p>列出所有在queue的patch</p>
+
+<pre><code>hg qapplied 
+</code></pre>
+
+<p>列出所有applied的patch</p>
+
+<pre><code>hg qpop
+</code></pre>
+
+<p>移除the top patch</p>
+
+<pre><code>hg qpush
+</code></pre>
+
+<p>加入patch</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -514,50 +600,6 @@ rvalue 就是程式等號的右邊</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/11/18/tc-rate-limit/">Tc Rate Limit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-18T15:10:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tc 可以限制網路卡的速度</p>
-
-<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
-
-<p>限制速度400 kbit, latency 50ms, burst 4096</p>
-
-<p>若不要使用則是</p>
-
-<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -570,11 +612,15 @@ rvalue 就是程式等號的右邊</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (1)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/31/octopress-table/">修改octopress table</a>
@@ -590,10 +636,6 @@ rvalue 就是程式等號的右邊</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/29/git-patch/">Git patch</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/02/23/latex-command/">using latex with command line</a>
       </li>
     
   </ul>

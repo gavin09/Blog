@@ -9,7 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="在測試網卡throughput的時候使用了tcpreplay 發現在Xen DomU 做測試時 第二次以後的結果都快的驚人 仔細思考之後認為是buffer裡面已經有傳送的封包 （網路線拔掉，使用udp 傳輸） 後來在 [1] 的地方找到了如何清理buffer 在此做紀錄 ps. 使用了方法1之後， &hellip;">
+  <meta name="description" content="tc 可以限制網路卡的速度 tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096 限制速度400 kbit, latency 50ms, burst 4096 若不要使用則是 tc qdisk del dev eth0 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/11/18/tc-rate-limit/">Tc Rate Limit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-18T15:10:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>tc 可以限制網路卡的速度</p>
+
+<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+
+<p>限制速度400 kbit, latency 50ms, burst 4096</p>
+
+<p>若不要使用則是</p>
+
+<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -580,79 +624,6 @@ pthread_join(t1, NULL);</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/24/vim-python-code-complete/">Vim Python Code Complete</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-24T00:00:00+08:00" pubdate data-updated="true">Sep 24<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><hr />
-
-<p>layout: post
-title: &#8220;vim python-code-complete&#8221;
-date: 2012-09-24 16:45
-comments: true</p>
-
-<h1>categories: [vim,python]</h1>
-
-<h2>Download pydiction</h2>
-
-<pre><code>    git clone https://github.com/vim-scripts/Pydiction.git
-</code></pre>
-
-<h2>Install</h2>
-
-<pre><code>    mkdir $HOME/.vim/after/ftplugin/
-</code></pre>
-
-<p>資料夾名稱一定要使用上述名稱。系統預設，可以下指令</p>
-
-<pre><code>    :set runtimepath
-</code></pre>
-
-<p>查看系統預設路徑</p>
-
-<h2>Vim Setting</h2>
-
-<pre><code>    vim $HOME/.vimrc
-
-            filetype plugin on 
-            let g:pydiction_location = '~/.vim/after/ftplugin/complete-dict'
-</code></pre>
-
-<h2>reference</h2>
-
-<p><a href="https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu">https://sites.google.com/site/fajoydelinuxbiji/pkg_all/pydiction-an-zhuang-zaivim-depython-wai-gua-ke-yi-antab-xian-shipython-han-shu</a><br/>
-<a href="http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html">http://blog.copyninja.info/2010/02/python-auto-complete-for-vim.html</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/3/">&larr; Older</a>
@@ -667,11 +638,15 @@ comments: true</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (1)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (1)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/31/octopress-table/">修改octopress table</a>
@@ -687,10 +662,6 @@ comments: true</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/29/git-patch/">Git patch</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/02/23/latex-command/">using latex with command line</a>
       </li>
     
   </ul>

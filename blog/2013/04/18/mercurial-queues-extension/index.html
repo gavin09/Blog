@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>pip-Unknown-command-install - Coder blog</title>
+  <title>Mercurial Queues Extension - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="When seeing this error, it may be that you have installed pip
-so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo apt- &hellip;">
+  <meta name="description" content="Introduction mq 在管理多個檔案的patch時相當方便 Enable mq extentions 在 .hg/hgrc 當中新增 [extensions]
+mq = Command hg qnew &lt;patch name&gt; 開啟patch hg qrefresh
+hg &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@ so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +69,7 @@ so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo
   
   <header>
     
-      <h1 class="entry-title">pip-Unknown-command-install</h1>
+      <h1 class="entry-title">Mercurial Queues Extension</h1>
     
     
       <p class="meta">
@@ -84,26 +85,63 @@ so, you need to remove pip sudo apt-get remove pip Then, install python-pip sudo
   
 
 
-<time datetime="2012-09-23T07:45:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+<time datetime="2013-04-18T15:27:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>When seeing this error, it may be that you have installed  <em>pip</em>
-so, you need to remove pip</p>
+<div class="entry-content"><h2>Introduction</h2>
 
-<pre><code>sudo apt-get remove pip
+<p>mq 在管理多個檔案的patch時相當方便</p>
+
+<h2>Enable mq extentions</h2>
+
+<p>在 .hg/hgrc 當中新增</p>
+
+<pre><code>[extensions]
+mq =
 </code></pre>
 
-<p>Then, install <em>python-pip</em></p>
+<h2>Command</h2>
 
-<pre><code>sudo apt-get install python-pip
+<pre><code>hg qnew &lt;patch name&gt;
 </code></pre>
 
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
+<p>開啟patch</p>
+
+<pre><code>hg qrefresh
+hg qrefresh -m 'one line message'
+hg qrefresh -e  // multi-line message
+</code></pre>
+
+<p>所有的的改變都會加入patch</p>
+
+<pre><code>hg qdiff
+</code></pre>
+
+<p>列出所有改變的地方</p>
+
+<pre><code>hg qseries
+</code></pre>
+
+<p>列出所有在queue的patch</p>
+
+<pre><code>hg qapplied 
+</code></pre>
+
+<p>列出所有applied的patch</p>
+
+<pre><code>hg qpop
+</code></pre>
+
+<p>移除the top patch</p>
+
+<pre><code>hg qpush
+</code></pre>
+
+<p>加入patch</p>
 </div>
 
 
@@ -126,12 +164,12 @@ so, you need to remove pip</p>
   
 
 
-<time datetime="2012-09-23T07:45:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+<time datetime="2013-04-18T15:27:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/python/'>python</a>
+    <a class='category' href='/Blog/blog/categories/hg/'>hg</a>
   
 </span>
 
@@ -140,7 +178,7 @@ so, you need to remove pip</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/09/23/pip-unknown-command-install/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension/" >Tweet</a>
   
   
   
@@ -149,10 +187,8 @@ so, you need to remove pip</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2012/09/21/markdown-syntax/" title="Previous Post: markdown_syntax">&laquo; markdown_syntax</a>
+        <a class="basic-alignment left" href="/Blog/blog/2013/03/31/octopress-table/" title="Previous Post: 修改octopress table">&laquo; 修改octopress table</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2012/09/23/octopress-drafts/" title="Next Post: 使用octopress和github撰寫草稿">使用octopress和github撰寫草稿 &raquo;</a>
       
     </p>
   </footer>

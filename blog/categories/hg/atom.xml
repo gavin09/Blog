@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hg | Coder blog]]></title>
+  <link href="http://gavin09.github.com/Blog/blog/categories/hg/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.com/Blog/"/>
+  <updated>2013-04-18T15:47:14+08:00</updated>
+  <id>http://gavin09.github.com/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mercurial Queues Extension]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension/"/>
+    <updated>2013-04-18T15:27:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension</id>
+    <content type="html"><![CDATA[<h2>Introduction</h2>
+
+<p>mq 在管理多個檔案的patch時相當方便</p>
+
+<h2>Enable mq extentions</h2>
+
+<p>在 .hg/hgrc 當中新增</p>
+
+<pre><code>[extensions]
+mq =
+</code></pre>
+
+<h2>Command</h2>
+
+<pre><code>hg qnew &lt;patch name&gt;
+</code></pre>
+
+<p>開啟patch</p>
+
+<pre><code>hg qrefresh
+hg qrefresh -m 'one line message'
+hg qrefresh -e  // multi-line message
+</code></pre>
+
+<p>所有的的改變都會加入patch</p>
+
+<pre><code>hg qdiff
+</code></pre>
+
+<p>列出所有改變的地方</p>
+
+<pre><code>hg qseries
+</code></pre>
+
+<p>列出所有在queue的patch</p>
+
+<pre><code>hg qapplied 
+</code></pre>
+
+<p>列出所有applied的patch</p>
+
+<pre><code>hg qpop
+</code></pre>
+
+<p>移除the top patch</p>
+
+<pre><code>hg qpush
+</code></pre>
+
+<p>加入patch</p>
+]]></content>
+  </entry>
+  
+</feed>
