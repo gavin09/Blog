@@ -60,4 +60,6 @@ mq 在管理多個檔案的patch時相當方便
 
 加入patch
 
-
+Reference  
+1. <http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/#versioned-patch-queues>  
+2. <https://developer.mozilla.org/en-US/docs/Mercurial_Queues>  
