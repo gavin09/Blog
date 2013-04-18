@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-18T17:17:17+08:00</updated>
+  <updated>2013-04-18T17:19:18+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -80,6 +80,10 @@ hg qrefresh -e  // multi-line message
 </code></pre>
 
 <p>加入patch</p>
+
+<p>Reference<br/>
+1. http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/#versioned-patch-queues<br/>
+2. https://developer.mozilla.org/en-US/docs/Mercurial_Queues</p>
 ]]></content>
   </entry>
   
