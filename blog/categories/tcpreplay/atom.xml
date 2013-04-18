@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tcpreplay | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/tcpreplay/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-18T17:26:31+08:00</updated>
+  <updated>2013-04-18T17:28:30+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -63,9 +63,9 @@ sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
 </code></pre>
 
 <ol>
-<li><p>sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p>
+<li><p>clean up memory on linux</p>
 
-<p> clean up memory on linux</p></li>
+<p> sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p></li>
 </ol>
 
 
