@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-18T17:30:48+08:00</updated>
+  <updated>2013-04-18T17:33:51+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -212,13 +212,13 @@ hg qrefresh -e  // multi-line message
 
 <h2>command</h2>
 
-<pre><code>$ccsm
+<pre><code>ccsm
 </code></pre>
 
 <p>enter &#8220;Ubuntu Unity plugin&#8221;
 Hide Launcher: Never -> AutoHide</p>
 
-<p>Reference:
+<p>Reference:<br/>
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>
