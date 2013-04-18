@@ -10,15 +10,15 @@ Some note for hide Ubuntu Unity.
 
 ##Install
 
-	sudo apt-get install compizconfig-settings-manager
+    sudo apt-get install compizconfig-settings-manager
 
 ##command
 
-	$ccsm
+    ccsm
 
 enter "Ubuntu Unity plugin" 
 Hide Launcher: Never -> AutoHide
 
 
-Reference: 
+Reference:  
 [1] <http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/>
