@@ -25,7 +25,8 @@ mq 在管理多個檔案的patch時相當方便
 
     hg qrefresh
     hg qrefresh -m 'one line message'
-    hg qrefresh -e  // multi-line message
+    hg qrefresh -e # multi-line message
+    hg qrefresh -I <filename1> -I <filename2> #只把filename1 filename2 的改變加入patch
 
 所有的的改變都會加入patch
 
@@ -44,9 +45,10 @@ mq 在管理多個檔案的patch時相當方便
 
 列出所有改變的地方
 
-    hg qseries
+    hg qseries  
+    hg qseries -v -s 
 
-列出所有在queue的patch
+列出所有在queue的patch, 參數 -v -s 會列出詳細的資訊
 
     hg qapplied 
 
@@ -59,6 +61,10 @@ mq 在管理多個檔案的patch時相當方便
     hg qpush
 
 加入patch
+
+    hg export qtip > /Export/FILE/Location/<filename.patch>  
+
+匯出patch 
 
 Reference  
 1. <http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/#versioned-patch-queues>  
