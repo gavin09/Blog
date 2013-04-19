@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-18T17:33:51+08:00</updated>
+  <updated>2013-04-19T17:33:50+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -39,7 +39,8 @@ mq =
 
 <pre><code>hg qrefresh
 hg qrefresh -m 'one line message'
-hg qrefresh -e  // multi-line message
+hg qrefresh -e # multi-line message
+hg qrefresh -I &lt;filename1&gt; -I &lt;filename2&gt; #只把filename1 filename2 的改變加入patch
 </code></pre>
 
 <p>所有的的改變都會加入patch</p>
@@ -61,10 +62,11 @@ hg qrefresh -e  // multi-line message
 
 <p>列出所有改變的地方</p>
 
-<pre><code>hg qseries
+<pre><code>hg qseries  
+hg qseries -v -s 
 </code></pre>
 
-<p>列出所有在queue的patch</p>
+<p>列出所有在queue的patch, 參數 -v -s 會列出詳細的資訊</p>
 
 <pre><code>hg qapplied 
 </code></pre>
@@ -80,6 +82,11 @@ hg qrefresh -e  // multi-line message
 </code></pre>
 
 <p>加入patch</p>
+
+<pre><code>hg export qtip &gt; /Export/FILE/Location/&lt;filename.patch&gt;  
+</code></pre>
+
+<p>匯出patch</p>
 
 <p>Reference<br/>
 1. <a href="http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/#versioned-patch-queues">http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/#versioned-patch-queues</a><br/>
