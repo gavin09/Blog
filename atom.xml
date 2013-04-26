@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-19T17:33:50+08:00</updated>
+  <updated>2013-04-26T15:44:08+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -279,6 +279,31 @@ Hide Launcher: Never -> AutoHide</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Why Static Function ? ]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/"/>
+    <updated>2012-11-30T22:56:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function</id>
+    <content type="html"><![CDATA[<p>最近在trace code 的時候會發現有的人會用static function.</p>
+
+<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
+
+<p>所以做了一系列的 google ，在這邊做了一些整理</p>
+
+<ol>
+<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
+做出一個對外使用的function，內部做translate unit
+事實上，static function 的scope 是local 的。</li>
+<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
+在這個討論串特別強調的是有無必要使用object
+若是沒有的話就用static，可以節省memory</li>
+</ol>
+
+
+<p>Reference</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[lvalue rvalue]]></title>
     <link href="http://gavin09.github.com/Blog/blog/2012/11/28/lvalue-and-rvalue/"/>
     <updated>2012-11-28T16:49:00+08:00</updated>
@@ -519,76 +544,6 @@ git reset --hard origin/master
 
 <p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
 <a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[child-process-input]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input/"/>
-    <updated>2012-09-25T14:51:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/25/child-process-input</id>
-    <content type="html"><![CDATA[<p>今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。</p>
-
-<pre><code>#include&lt;stdio.h&gt;
-
-#define num_child 2
-int main(){
-
-        int i;
-        int cpid[num_child];
-        int input;
-        for(i=0; i &lt; num_child;i++){
-                cpid[i] = fork();
-                if(cpid[i] == 0){
-                        //i=10;
-                        scanf("%d",&amp;input);
-                        printf("im child:%d : %d\n",getpid(),input);
-
-                        break;
-                }
-        }
-
-
-        return 0;
-}
-</code></pre>
-
-<p>覺得這個結果很奇怪，如果stdin跑掉的話，應該也看不到stdout 的結果，後來發現，因為parent process 因為已經先離開了，所以child process 不知道該把stdin 導至何方，而因為程式執行的很快，所以一開始的stdout 才可以導出來，底下才是正確的版本。</p>
-
-<pre><code>#include&lt;stdio.h&gt;
-
-#define num_child 2
-int main(){
-
-        int i;
-        int cpid[num_child];
-        int input;
-        for(i=0; i &lt; num_child;i++){
-                cpid[i] = fork();
-                if(cpid[i] == 0){
-                        //i=10;
-                        scanf("%d",&amp;input);
-                        printf("im child:%d : %d\n",getpid(),input);
-
-                        break;
-                }
-                else{
-                        wait(NULL);
-
-                }
-        }
-
-
-        return 0;
-}
-</code></pre>
-
-<p>2012-9-8 update
-thread 也有同樣的情形，要用pthread_join 等 thread return value (等thread結束)
-pthread_join(t1, NULL);</p>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/1510922/waiting-for-all-child-processes-before-parent-resumes-execution-unix">http://stackoverflow.com/questions/1510922/waiting-for-all-child-processes-before-parent-resumes-execution-unix</a></p>
 ]]></content>
   </entry>
   

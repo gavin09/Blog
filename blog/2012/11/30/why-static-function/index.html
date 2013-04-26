@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Wake Locks - Coder blog</title>
+  <title>Why Static Function ?  - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks &hellip;">
+  <meta name="description" content="最近在trace code 的時候會發現有的人會用static function. 冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合? 所以做了一系列的 google ，在這邊做了一些整理 unvisible StackOverflow &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Wake Locks</h1>
+      <h1 class="entry-title">Why Static Function ?</h1>
     
     
       <p class="meta">
@@ -83,57 +83,30 @@
   
 
 
-<time datetime="2013-03-29T14:11:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+<time datetime="2012-11-30T22:56:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
+<div class="entry-content"><p>最近在trace code 的時候會發現有的人會用static function.</p>
 
-<p>Android 有分類一些wake locks</p>
+<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
 
-<table>
-<thead>
-<tr>
-<th align="left">Flag                          </th>
-<th align="center">  CPU       </th>
-<th align="center"> Screen </th>
-<th align="center"> Keyboard</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Partial  wake lock            </td>
-<td align="center">  ON        </td>
-<td align="center"> OFF    </td>
-<td align="center"> OFF     </td>
-</tr>
-<tr>
-<td align="left">Screen Dim wake lock          </td>
-<td align="center">  ON        </td>
-<td align="center"> OFF    </td>
-<td align="center"> OFF     </td>
-</tr>
-<tr>
-<td align="left">Screen Brigh wake lock        </td>
-<td align="center">  ON        </td>
-<td align="center"> OFF    </td>
-<td align="center"> OFF      </td>
-</tr>
-<tr>
-<td align="left">Full Wake lock                </td>
-<td align="center">  ON        </td>
-<td align="center"> Bright </td>
-<td align="center"> Bright   </td>
-</tr>
-</tbody>
-</table>
+<p>所以做了一系列的 google ，在這邊做了一些整理</p>
+
+<ol>
+<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
+做出一個對外使用的function，內部做translate unit
+事實上，static function 的scope 是local 的。</li>
+<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
+在這個討論串特別強調的是有無必要使用object
+若是沒有的話就用static，可以節省memory</li>
+</ol>
 
 
-<p>Reference:<br/>
-1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
+<p>Reference</p>
 </div>
 
 
@@ -156,12 +129,12 @@
   
 
 
-<time datetime="2013-03-29T14:11:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+<time datetime="2012-11-30T22:56:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/android/'>Android</a>, <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>
+    <a class='category' href='/Blog/blog/categories/c/'>C</a>
   
 </span>
 
@@ -170,7 +143,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/" >Tweet</a>
   
   
   
@@ -179,10 +152,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2013/03/29/android-and-ffos-debug/" title="Previous Post: Android And FFOS Debug function">&laquo; Android And FFOS Debug function</a>
+        <a class="basic-alignment left" href="/Blog/blog/2012/11/28/lvalue-and-rvalue/" title="Previous Post: lvalue rvalue">&laquo; lvalue rvalue</a>
       
       
-        <a class="basic-alignment right" href="/Blog/blog/2013/03/31/octopress-table/" title="Next Post: 修改octopress table">修改octopress table &raquo;</a>
+        <a class="basic-alignment right" href="/Blog/blog/2012/12/22/mac-homebrew-install/" title="Next Post: Mac Mountain Lion Homebrew Install">Mac Mountain Lion Homebrew Install &raquo;</a>
       
     </p>
   </footer>
