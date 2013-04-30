@@ -32,7 +32,7 @@ hg pull 從網路上的repo端做local端的更新，push則是將自己做的�
     hg diff -r rev1 -r rev2
     hg diff -c rev
 
--c 可以看這一次rev所做的改變
+-c 可以看這一次rev所做的改變  
 -r 則是看兩個rev之間，所做的改變
 
     hg log
