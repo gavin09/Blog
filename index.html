@@ -9,9 +9,8 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Introduction mq 在管理多個檔案的patch時相當方便 Enable mq extentions 在 .hg/hgrc 當中新增 [extensions]
-mq = Command hg qnew &lt;patch name&gt; 開啟patch hg qrefresh
-hg &hellip;">
+  <meta name="description" content="hg用途 指令 hg clone &lt;repo&gt; 將repo上的專案複製到local端 hg status 查看有repo裡面的檔案更動情形 hg add &lt;filename&gt;
+hg commit -m 'single line message' 將更動的檔案加入， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +65,78 @@ hg &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-30T16:09:00+08:00" pubdate data-updated="true">Apr 30<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>hg用途</h2>
+
+<h2>指令</h2>
+
+<pre><code>hg clone &lt;repo&gt;
+</code></pre>
+
+<p>將repo上的專案複製到local端</p>
+
+<pre><code>hg status
+</code></pre>
+
+<p>查看有repo裡面的檔案更動情形</p>
+
+<pre><code>hg add &lt;filename&gt;
+hg commit -m 'single line message'
+</code></pre>
+
+<p>將更動的檔案加入，並用一行訊息記錄成一個commit</p>
+
+<pre><code>hg pull
+hg push
+</code></pre>
+
+<p>hg pull 從網路上的repo端做local端的更新，push則是將自己做的更新上傳到網路上的repo</p>
+
+<pre><code>hg diff -r rev1 -r rev2
+hg diff -c rev
+</code></pre>
+
+<p>-c 可以看這一次rev所做的改變
+-r 則是看兩個rev之間，所做的改變</p>
+
+<pre><code>hg log
+</code></pre>
+
+<p>查看所有更動記錄</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -575,58 +646,6 @@ Hide Launcher: Never -> AutoHide</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/11/30/why-static-function/">Why Static Function ?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-30T22:56:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近在trace code 的時候會發現有的人會用static function.</p>
-
-<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
-
-<p>所以做了一系列的 google ，在這邊做了一些整理</p>
-
-<ol>
-<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
-做出一個對外使用的function，內部做translate unit
-事實上，static function 的scope 是local 的。</li>
-<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
-在這個討論串特別強調的是有無必要使用object
-若是沒有的話就用static，可以節省memory</li>
-</ol>
-
-
-<p>Reference</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -639,11 +658,15 @@ Hide Launcher: Never -> AutoHide</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (1)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a>
@@ -659,10 +682,6 @@ Hide Launcher: Never -> AutoHide</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/03/29/android-and-ffos-debug/">Android And FFOS Debug function</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/03/29/git-patch/">Git patch</a>
       </li>
     
   </ul>

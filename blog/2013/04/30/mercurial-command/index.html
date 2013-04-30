@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Android And FFOS Debug function - Coder blog</title>
+  <title>Mercurial 常用指令 - Coder blog</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content=" adb logcat
-">
+  <meta name="description" content="hg用途 指令 hg clone &lt;repo&gt; 將repo上的專案複製到local端 hg status 查看有repo裡面的檔案更動情形 hg add &lt;filename&gt;
+hg commit -m 'single line message' 將更動的檔案加入， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug/">
+  <link rel="canonical" href="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Android and FFOS Debug Function</h1>
+      <h1 class="entry-title">Mercurial 常用指令</h1>
     
     
       <p class="meta">
@@ -84,14 +84,50 @@
   
 
 
-<time datetime="2013-03-29T11:22:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+<time datetime="2013-04-30T16:09:00+08:00" pubdate data-updated="true">Apr 30<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>   adb logcat</p>
+<div class="entry-content"><h2>hg用途</h2>
+
+<h2>指令</h2>
+
+<pre><code>hg clone &lt;repo&gt;
+</code></pre>
+
+<p>將repo上的專案複製到local端</p>
+
+<pre><code>hg status
+</code></pre>
+
+<p>查看有repo裡面的檔案更動情形</p>
+
+<pre><code>hg add &lt;filename&gt;
+hg commit -m 'single line message'
+</code></pre>
+
+<p>將更動的檔案加入，並用一行訊息記錄成一個commit</p>
+
+<pre><code>hg pull
+hg push
+</code></pre>
+
+<p>hg pull 從網路上的repo端做local端的更新，push則是將自己做的更新上傳到網路上的repo</p>
+
+<pre><code>hg diff -r rev1 -r rev2
+hg diff -c rev
+</code></pre>
+
+<p>-c 可以看這一次rev所做的改變
+-r 則是看兩個rev之間，所做的改變</p>
+
+<pre><code>hg log
+</code></pre>
+
+<p>查看所有更動記錄</p>
 </div>
 
 
@@ -114,12 +150,12 @@
   
 
 
-<time datetime="2013-03-29T11:22:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+<time datetime="2013-04-30T16:09:00+08:00" pubdate data-updated="true">Apr 30<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/android/'>Android</a>, <a class='category' href='/Blog/blog/categories/ffos/'>FFOS</a>
+    <a class='category' href='/Blog/blog/categories/hg/'>hg</a>
   
 </span>
 
@@ -128,7 +164,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/" data-via="" data-counturl="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/" >Tweet</a>
   
   
   
@@ -137,10 +173,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2013/03/29/git-patch/" title="Previous Post: Git patch">&laquo; Git patch</a>
+        <a class="basic-alignment left" href="/Blog/blog/2013/04/18/mercurial-queues-extension/" title="Previous Post: Mercurial Queues Extension">&laquo; Mercurial Queues Extension</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2013/03/29/wakelocks/" title="Next Post: Wake Locks">Wake Locks &raquo;</a>
       
     </p>
   </footer>

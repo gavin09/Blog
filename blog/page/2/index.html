@@ -9,10 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="今天面試的時候被問到什麼是lvalue 和 rvalue 當下完全不知道阿!! lvalue 是程式等號的左邊
-rvalue 就是程式等號的右邊 右邊的永遠是值，左邊的永遠是變數。右邊的值要給左邊
-也就是說右邊的是讀取位址裡面的值，讀取出來後塞入左邊的位址裡面
-">
+  <meta name="description" content="最近在trace code 的時候會發現有的人會用static function. 冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合? 所以做了一系列的 google ，在這邊做了一些整理 unvisible StackOverflow &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +64,58 @@ rvalue 就是程式等號的右邊 右邊的永遠是值，左邊的永遠是變
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/11/30/why-static-function/">Why Static Function ?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-30T22:56:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在trace code 的時候會發現有的人會用static function.</p>
+
+<p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
+
+<p>所以做了一系列的 google ，在這邊做了一些整理</p>
+
+<ol>
+<li>unvisible <a href="http://stackoverflow.com/questions/5319361/static-function-in-c">StackOverflow</a>
+做出一個對外使用的function，內部做translate unit
+事實上，static function 的scope 是local 的。</li>
+<li>save memory in class method <a href="http://stackoverflow.com/questions/4779950/is-static-method-faster-than-non-static">StackOverflow</a>
+在這個討論串特別強調的是有無必要使用object
+若是沒有的話就用static，可以節省memory</li>
+</ol>
+
+
+<p>Reference</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -530,58 +579,6 @@ Type=Application
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/10/02/git-version-control-clean/">Git : Error: Untracked Working Tree File ‘XXXX’ Would Be Overwritten by Merge</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-02T10:58:00+08:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Warning message</h1>
-
-<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
-</code></pre>
-
-<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
-
-<h1>solution</h1>
-
-<pre><code>git fetch --all
-git reset --hard origin/master
-</code></pre>
-
-<h1>reference</h1>
-
-<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
-<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/3/">&larr; Older</a>
@@ -596,11 +593,15 @@ git reset --hard origin/master
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (1)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (1)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/linux'>linux (2)</a></li><li><a href='blog/categories/linux'>Linux (2)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/linux-dropbox'>linux,dropbox (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (1)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vi'>vi (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a>
@@ -616,10 +617,6 @@ git reset --hard origin/master
     
       <li class="post">
         <a href="/Blog/blog/2013/03/29/android-and-ffos-debug/">Android And FFOS Debug function</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/03/29/git-patch/">Git patch</a>
       </li>
     
   </ul>

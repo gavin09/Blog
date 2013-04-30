@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hg | Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/blog/categories/hg/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-26T15:44:08+08:00</updated>
+  <updated>2013-04-30T16:22:30+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mercurial 常用指令]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/"/>
+    <updated>2013-04-30T16:09:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command</id>
+    <content type="html"><![CDATA[<h2>hg用途</h2>
+
+<h2>指令</h2>
+
+<pre><code>hg clone &lt;repo&gt;
+</code></pre>
+
+<p>將repo上的專案複製到local端</p>
+
+<pre><code>hg status
+</code></pre>
+
+<p>查看有repo裡面的檔案更動情形</p>
+
+<pre><code>hg add &lt;filename&gt;
+hg commit -m 'single line message'
+</code></pre>
+
+<p>將更動的檔案加入，並用一行訊息記錄成一個commit</p>
+
+<pre><code>hg pull
+hg push
+</code></pre>
+
+<p>hg pull 從網路上的repo端做local端的更新，push則是將自己做的更新上傳到網路上的repo</p>
+
+<pre><code>hg diff -r rev1 -r rev2
+hg diff -c rev
+</code></pre>
+
+<p>-c 可以看這一次rev所做的改變
+-r 則是看兩個rev之間，所做的改變</p>
+
+<pre><code>hg log
+</code></pre>
+
+<p>查看所有更動記錄</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mercurial Queues Extension]]></title>

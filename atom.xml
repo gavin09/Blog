@@ -4,7 +4,7 @@
   <title><![CDATA[Coder blog]]></title>
   <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-04-26T15:44:08+08:00</updated>
+  <updated>2013-04-30T16:22:30+08:00</updated>
   <id>http://gavin09.github.com/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mercurial 常用指令]]></title>
+    <link href="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/"/>
+    <updated>2013-04-30T16:09:00+08:00</updated>
+    <id>http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command</id>
+    <content type="html"><![CDATA[<h2>hg用途</h2>
+
+<h2>指令</h2>
+
+<pre><code>hg clone &lt;repo&gt;
+</code></pre>
+
+<p>將repo上的專案複製到local端</p>
+
+<pre><code>hg status
+</code></pre>
+
+<p>查看有repo裡面的檔案更動情形</p>
+
+<pre><code>hg add &lt;filename&gt;
+hg commit -m 'single line message'
+</code></pre>
+
+<p>將更動的檔案加入，並用一行訊息記錄成一個commit</p>
+
+<pre><code>hg pull
+hg push
+</code></pre>
+
+<p>hg pull 從網路上的repo端做local端的更新，push則是將自己做的更新上傳到網路上的repo</p>
+
+<pre><code>hg diff -r rev1 -r rev2
+hg diff -c rev
+</code></pre>
+
+<p>-c 可以看這一次rev所做的改變
+-r 則是看兩個rev之間，所做的改變</p>
+
+<pre><code>hg log
+</code></pre>
+
+<p>查看所有更動記錄</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mercurial Queues Extension]]></title>
@@ -519,31 +564,6 @@ Type=Application
 &#8211;Translation
 |
   character set 改為 UTF-8</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/"/>
-    <updated>2012-10-02T10:58:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean</id>
-    <content type="html"><![CDATA[<h1>Warning message</h1>
-
-<pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
-</code></pre>
-
-<p>原因來自於 git rm file 之後，切換branch 的緣故</p>
-
-<h1>solution</h1>
-
-<pre><code>git fetch --all
-git reset --hard origin/master
-</code></pre>
-
-<h1>reference</h1>
-
-<p><a href="http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/">http://blog.wu-boy.com/2011/05/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6-version-control-git-clean-%E4%BD%BF%E7%94%A8%E6%99%82%E6%A9%9F/</a>
-<a href="http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull">http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull</a></p>
 ]]></content>
   </entry>
   
