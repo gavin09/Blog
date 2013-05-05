@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tcpreplay | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/tcpreplay/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/tcpreplay/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Clear Linux buffer cache]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
     <updated>2012-11-18T14:24:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
     <content type="html"><![CDATA[<p>在測試網卡throughput的時候使用了tcpreplay</p>
 
 <p>發現在Xen DomU 做測試時</p>

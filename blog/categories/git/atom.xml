@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: git | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/git/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Git patch]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/git-patch/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/29/git-patch/"/>
     <updated>2013-03-29T10:49:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/03/29/git-patch</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/29/git-patch</id>
     <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/5268510.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 </p>
@@ -26,9 +26,9 @@
   
   <entry>
     <title type="html"><![CDATA[git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/02/git-version-control-clean/"/>
     <updated>2012-10-02T10:58:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/02/git-version-control-clean</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/02/git-version-control-clean</id>
     <content type="html"><![CDATA[<h1>Warning message</h1>
 
 <pre><code>error: Untracked working tree file ‘XXXX’ would be overwritten by merge.
@@ -51,9 +51,9 @@ git reset --hard origin/master
   
   <entry>
     <title type="html"><![CDATA[git-note]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/git-note/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/09/23/git-note/"/>
     <updated>2012-09-23T20:00:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/git-note</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/09/23/git-note</id>
     <content type="html"><![CDATA[<p>在這邊記錄平常會使用到的git 指令。</p>
 
 <h2>安裝git</h2>
@@ -122,9 +122,9 @@ git reset --hard origin/master
   
   <entry>
     <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/09/23/octopress-drafts/"/>
     <updated>2012-09-23T08:31:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/octopress-drafts</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/09/23/octopress-drafts</id>
     <content type="html"><![CDATA[<h2>第一次撰寫草稿</h2>
 
 <p>新增一個branch，名稱是drafts</p>
@@ -153,9 +153,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/09/21/install-octopress-github-blog/"/>
     <updated>2012-09-21T19:58:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/21/install-octopress-github-blog</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/09/21/install-octopress-github-blog</id>
     <content type="html"><![CDATA[<h2>requirement</h2>
 
 <pre><code>sudo apt-get install curl zlib1g-dev

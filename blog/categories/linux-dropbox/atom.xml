@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: linux,dropbox | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/linux-dropbox/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/linux-dropbox/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[在linux command line 環境下安裝dropbox]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/09/23/dropbox-command-line/"/>
     <updated>2012-09-23T22:32:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/09/23/dropbox-command-line</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/09/23/dropbox-command-line</id>
     <content type="html"><![CDATA[<h2>下載dropbox</h2>
 
 <pre><code>wget http://www.getdropbox.com/download?plat=lnx.x86_64

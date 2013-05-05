@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ubuntu | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/ubuntu/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/hide-unity/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
     <updated>2013-02-23T20:37:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/23/hide-unity</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity</id>
     <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
 
 <h2>Install</h2>

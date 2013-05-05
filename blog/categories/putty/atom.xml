@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: putty | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/putty/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/putty/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[putty-type-chinese]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese/"/>
     <updated>2012-10-02T15:31:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese</id>
     <content type="html"><![CDATA[<ol>
 <li><p>Open Putty</p></li>
 <li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>

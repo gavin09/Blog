@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dropbox | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/dropbox/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/dropbox/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[dropbox-auto-run]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/22/dropbox-auto-run/"/>
     <updated>2012-10-22T00:16:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/22/dropbox-auto-run</id>
     <content type="html"><![CDATA[<pre><code>mkdir $HOME/.config/autostart
 </code></pre>
 

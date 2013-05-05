@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: compiler | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/compiler/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/compiler/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[lvalue rvalue]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/28/lvalue-and-rvalue/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/28/lvalue-and-rvalue/"/>
     <updated>2012-11-28T16:49:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/28/lvalue-and-rvalue</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/28/lvalue-and-rvalue</id>
     <content type="html"><![CDATA[<p>今天面試的時候被問到什麼是lvalue 和 rvalue</p>
 
 <p>當下完全不知道阿!!</p>

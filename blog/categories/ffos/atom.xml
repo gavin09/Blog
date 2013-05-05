@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: FFOS | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/ffos/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/ffos/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android And FFOS Debug function]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/29/android-and-ffos-debug/"/>
     <updated>2013-03-29T11:22:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/29/android-and-ffos-debug</id>
     <content type="html"><![CDATA[<p>   adb logcat</p>
 ]]></content>
   </entry>

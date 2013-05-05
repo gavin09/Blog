@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tool | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/tool/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/tool/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[using latex with command line]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/latex-command/"/>
     <updated>2013-02-23T22:05:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/23/latex-command</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/latex-command</id>
     <content type="html"><![CDATA[<h2>Installation</h2>
 
 <p>   $ sudo apt-get install texlive-full</p>
@@ -37,9 +37,9 @@
   
   <entry>
     <title type="html"><![CDATA[GNU global trace code tool]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/21/gnu-global-trace-code-tool/"/>
     <updated>2013-02-21T23:56:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/21/gnu-global-trace-code-tool</id>
     <content type="html"><![CDATA[<p>Before using this tool, I use vim and grep for tracing code.</p>
 
 <p>I found this tool is so wonderful and easy to use.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mercurial 常用指令]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/04/30/mercurial-command/"/>
     <updated>2013-04-30T16:09:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/04/30/mercurial-command</id>
     <content type="html"><![CDATA[<h2>hg用途</h2>
 
 <h2>指令</h2>
@@ -60,9 +60,9 @@ hg diff -c rev
   
   <entry>
     <title type="html"><![CDATA[Mercurial Queues Extension]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/04/18/mercurial-queues-extension/"/>
     <updated>2013-04-18T15:27:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/04/18/mercurial-queues-extension</id>
     <content type="html"><![CDATA[<h2>Introduction</h2>
 
 <p>mq 在管理多個檔案的patch時相當方便</p>
@@ -141,9 +141,9 @@ hg qseries -v -s
   
   <entry>
     <title type="html"><![CDATA[修改octopress table]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/03/31/octopress-table/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/31/octopress-table/"/>
     <updated>2013-03-31T00:41:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/03/31/octopress-table</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/31/octopress-table</id>
     <content type="html"><![CDATA[<p>因為官方的table 支援的不好，所以上網搜尋了一下。</p>
 
 <p>網路上很多人都是reference這一篇的<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">方法</a></p>
@@ -156,9 +156,9 @@ hg qseries -v -s
   
   <entry>
     <title type="html"><![CDATA[Wake Locks]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks/"/>
     <updated>2013-03-29T14:11:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/03/29/wakelocks</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks</id>
     <content type="html"><![CDATA[<p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
 
 <p>Android 有分類一些wake locks</p>
@@ -208,18 +208,18 @@ hg qseries -v -s
   
   <entry>
     <title type="html"><![CDATA[Android And FFOS Debug function]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/29/android-and-ffos-debug/"/>
     <updated>2013-03-29T11:22:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/03/29/android-and-ffos-debug</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/29/android-and-ffos-debug</id>
     <content type="html"><![CDATA[<p>   adb logcat</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Git patch]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/03/29/git-patch/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/29/git-patch/"/>
     <updated>2013-03-29T10:49:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/03/29/git-patch</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/29/git-patch</id>
     <content type="html"><![CDATA[<div><script src='https://gist.github.com/5268510.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 
@@ -230,9 +230,9 @@ hg qseries -v -s
   
   <entry>
     <title type="html"><![CDATA[using latex with command line]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/latex-command/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/latex-command/"/>
     <updated>2013-02-23T22:05:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/23/latex-command</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/latex-command</id>
     <content type="html"><![CDATA[<h2>Installation</h2>
 
 <p>   $ sudo apt-get install texlive-full</p>
@@ -252,9 +252,9 @@ hg qseries -v -s
   
   <entry>
     <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/23/hide-unity/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
     <updated>2013-02-23T20:37:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/23/hide-unity</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity</id>
     <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
 
 <h2>Install</h2>
@@ -277,9 +277,9 @@ Hide Launcher: Never -> AutoHide</p>
   
   <entry>
     <title type="html"><![CDATA[GNU global trace code tool]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/21/gnu-global-trace-code-tool/"/>
     <updated>2013-02-21T23:56:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/02/21/gnu-global-trace-code-tool</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/21/gnu-global-trace-code-tool</id>
     <content type="html"><![CDATA[<p>Before using this tool, I use vim and grep for tracing code.</p>
 
 <p>I found this tool is so wonderful and easy to use.</p>
@@ -303,9 +303,9 @@ Hide Launcher: Never -> AutoHide</p>
   
   <entry>
     <title type="html"><![CDATA[Mac Mountain Lion Homebrew Install]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/12/22/mac-homebrew-install/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/12/22/mac-homebrew-install/"/>
     <updated>2012-12-22T19:33:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/12/22/mac-homebrew-install</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/12/22/mac-homebrew-install</id>
     <content type="html"><![CDATA[<p>Install Homebrew</p>
 
 <pre><code>ruby &lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go)
@@ -325,9 +325,9 @@ Hide Launcher: Never -> AutoHide</p>
   
   <entry>
     <title type="html"><![CDATA[Why Static Function ? ]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/30/why-static-function/"/>
     <updated>2012-11-30T22:56:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/30/why-static-function</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/30/why-static-function</id>
     <content type="html"><![CDATA[<p>最近在trace code 的時候會發現有的人會用static function.</p>
 
 <p>冒出了一個疑問，為何要加上一個static ? 有什麼好處? 用在什麼時候適合?</p>
@@ -350,9 +350,9 @@ Hide Launcher: Never -> AutoHide</p>
   
   <entry>
     <title type="html"><![CDATA[lvalue rvalue]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/28/lvalue-and-rvalue/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/28/lvalue-and-rvalue/"/>
     <updated>2012-11-28T16:49:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/28/lvalue-and-rvalue</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/28/lvalue-and-rvalue</id>
     <content type="html"><![CDATA[<p>今天面試的時候被問到什麼是lvalue 和 rvalue</p>
 
 <p>當下完全不知道阿!!</p>
@@ -369,9 +369,9 @@ rvalue 就是程式等號的右邊</p>
   
   <entry>
     <title type="html"><![CDATA[tc rate limit]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/18/tc-rate-limit/"/>
     <updated>2012-11-18T15:10:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/18/tc-rate-limit</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/18/tc-rate-limit</id>
     <content type="html"><![CDATA[<p>tc 可以限制網路卡的速度</p>
 
 <p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
@@ -386,9 +386,9 @@ rvalue 就是程式等號的右邊</p>
   
   <entry>
     <title type="html"><![CDATA[Clear Linux buffer cache]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
     <updated>2012-11-18T14:24:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
     <content type="html"><![CDATA[<p>在測試網卡throughput的時候使用了tcpreplay</p>
 
 <p>發現在Xen DomU 做測試時</p>
@@ -447,18 +447,18 @@ sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
   
   <entry>
     <title type="html"><![CDATA[kernel-space-and-user-space]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/05/kernel-space-and-user-space/"/>
     <updated>2012-11-05T15:23:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/05/kernel-space-and-user-space</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/05/kernel-space-and-user-space</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[vim內建技巧]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/11/05/vim-skill/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/"/>
     <updated>2012-11-05T14:59:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/11/05/vim-skill</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill</id>
     <content type="html"><![CDATA[<p>記錄一些使用vi的技巧
 無論是在coding或者是在trace code的時候都會有很多的幫助</p>
 
@@ -480,9 +480,9 @@ sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
   
   <entry>
     <title type="html"><![CDATA[dropbox-auto-run]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/22/dropbox-auto-run/"/>
     <updated>2012-10-22T00:16:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/22/dropbox-auto-run</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/22/dropbox-auto-run</id>
     <content type="html"><![CDATA[<pre><code>mkdir $HOME/.config/autostart
 </code></pre>
 
@@ -511,19 +511,19 @@ Type=Application
   
   <entry>
     <title type="html"><![CDATA[Using less with colors]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/08/less-with-color/"/>
     <updated>2012-10-08T17:57:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/08/less-with-color</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/08/less-with-color</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Terminator介紹]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/04/intro-terminator/"/>
     <updated>2012-10-04T20:37:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator</id>
-    <content type="html"><![CDATA[<p><img src="http://gavin09.github.com/Blog/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/04/intro-terminator</id>
+    <content type="html"><![CDATA[<p><img src="http://gavin09.github.io/Blog/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
 
 <p>Terminator 可以切割出多個terminal，相當方便。對於要對照兩個視窗的文件是特別的好用。</p>
 
@@ -550,9 +550,9 @@ Type=Application
   
   <entry>
     <title type="html"><![CDATA[putty-type-chinese]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese/"/>
     <updated>2012-10-02T15:31:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/02/putty-type-chinese</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese</id>
     <content type="html"><![CDATA[<ol>
 <li><p>Open Putty</p></li>
 <li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>

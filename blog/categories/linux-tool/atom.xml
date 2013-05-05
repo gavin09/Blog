@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Linux Tool | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/linux-tool/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/linux-tool/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Terminator介紹]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/04/intro-terminator/"/>
     <updated>2012-10-04T20:37:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2012/10/04/intro-terminator</id>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/04/intro-terminator</id>
     <content type="html"><![CDATA[<p><img src="/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
 
 <p>Terminator 可以切割出多個terminal，相當方便。對於要對照兩個視窗的文件是特別的好用。</p>

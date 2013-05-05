@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hg | Fronter]]></title>
-  <link href="http://gavin09.github.com/Blog/blog/categories/hg/atom.xml" rel="self"/>
-  <link href="http://gavin09.github.com/Blog/"/>
-  <updated>2013-05-05T18:44:04+08:00</updated>
-  <id>http://gavin09.github.com/Blog/</id>
+  <link href="http://gavin09.github.io/Blog/blog/categories/hg/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-05T18:48:00+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mercurial 常用指令]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/04/30/mercurial-command/"/>
     <updated>2013-04-30T16:09:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/04/30/mercurial-command</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/04/30/mercurial-command</id>
     <content type="html"><![CDATA[<h2>hg用途</h2>
 
 <h2>指令</h2>
@@ -60,9 +60,9 @@ hg diff -c rev
   
   <entry>
     <title type="html"><![CDATA[Mercurial Queues Extension]]></title>
-    <link href="http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension/"/>
+    <link href="http://gavin09.github.io/Blog/blog/2013/04/18/mercurial-queues-extension/"/>
     <updated>2013-04-18T15:27:00+08:00</updated>
-    <id>http://gavin09.github.com/Blog/blog/2013/04/18/mercurial-queues-extension</id>
+    <id>http://gavin09.github.io/Blog/blog/2013/04/18/mercurial-queues-extension</id>
     <content type="html"><![CDATA[<h2>Introduction</h2>
 
 <p>mq 在管理多個檔案的patch時相當方便</p>
