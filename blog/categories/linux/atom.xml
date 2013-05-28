@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Linux, | Fronter]]></title>
+  <title><![CDATA[Category: Linux | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-05-28T23:29:51+08:00</updated>
+  <updated>2013-05-28T23:39:06+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wake Locks]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks/"/>
+    <updated>2013-03-29T14:11:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks</id>
+    <content type="html"><![CDATA[<p>Android 會要求 application 和 services 需要CPU時要用"wake locks"的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
+
+<p>Android 有分類一些wake locks</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Flag                          </th>
+<th align="center">  CPU       </th>
+<th align="center"> Screen </th>
+<th align="center"> Keyboard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Partial  wake lock            </td>
+<td align="center">  ON        </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     </td>
+</tr>
+<tr>
+<td align="left">Screen Dim wake lock          </td>
+<td align="center">  ON        </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     </td>
+</tr>
+<tr>
+<td align="left">Screen Brigh wake lock        </td>
+<td align="center">  ON        </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF      </td>
+</tr>
+<tr>
+<td align="left">Full Wake lock                </td>
+<td align="center">  ON        </td>
+<td align="center"> Bright </td>
+<td align="center"> Bright   </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Reference:<br/>
+1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[using latex with command line]]></title>
@@ -32,6 +84,25 @@
 
 <p>Reference:<br/>
 [1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[putty-type-chinese]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese/"/>
+    <updated>2012-10-02T15:31:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>Open Putty</p></li>
+<li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
+</ol>
+
+
+<p>-Windows
+|
+--Translation
+|
+  character set 改為 UTF-8</p>
 ]]></content>
   </entry>
   
