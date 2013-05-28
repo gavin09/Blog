@@ -2,9 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://gavin09.github.com/Blog
-title: Coder blog 
-subtitle: 學海無涯
+url: http://gavin09.github.io/Blog
+title: Fronter 
+subtitle: 讓思想飛越
 author: Gavin
 simple_search: http://google.com/search
 description:
@@ -85,8 +85,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: gavinlai
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
