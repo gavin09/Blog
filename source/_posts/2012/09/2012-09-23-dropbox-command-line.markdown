@@ -3,7 +3,7 @@ layout: post
 title: "在linux command line 環境下安裝dropbox"
 date: 2012-09-23 22:32
 comments: true
-categories: linux,dropbox
+categories: [linux, dropbox]
 ---
 
 ##下載dropbox##
