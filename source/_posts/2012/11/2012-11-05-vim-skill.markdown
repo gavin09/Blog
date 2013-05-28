@@ -3,7 +3,7 @@ layout: post
 title: "vim內建技巧"
 date: 2012-11-05 14:59
 comments: true
-categories: vi
+categories: vim
 ---
 
 記錄一些使用vi的技巧

@@ -3,7 +3,7 @@ layout: post
 title: "tc rate limit"
 date: 2012-11-18 15:10
 comments: true
-categories: [linux, tc, network]
+categories: [Linux, tc, network]
 ---
 
 tc 可以限制網路卡的速度
