@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: JacaScript | Fronter]]></title>
+  <link href="http://gavin09.github.io/Blog/blog/categories/jacascript/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-05-29T00:44:43+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[json-using-javascript]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/"/>
+    <updated>2013-05-28T23:49:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript</id>
+    <content type="html"><![CDATA[<p>最近正在使用JSON, 記錄一些用法</p>
+
+<p><div><script src='https://gist.github.com/5664057.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+
+<p>checkExist(phonebook, "alice")                                                <br/>
+-> exist                                                                      <br/>
+checkExist(phonebook, "Hello")                                                <br/>
+-> not exist</p>
+
+<p>phonebook.alice                                                               <br/>
+-> ({number:-333, id:1})</p>
+]]></content>
+  </entry>
+  
+</feed>

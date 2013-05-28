@@ -5,15 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>vim內建技巧 - Fronter</title>
+  <title>json-using-javascript - Fronter</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="記錄一些使用vi的技巧
-無論是在coding或者是在trace code的時候都會有很多的幫助 在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。
-% 可以從左括號跳到右括號。反之亦然。
-dd : delete 該行
-也可以安裝ctag，顯示function list Reference &hellip;">
+  <meta name="description" content="最近正在使用JSON, 記錄一些用法 checkExist(phonebook, &#8220;alice&#8221;) -> exist checkExist(phonebook, &#8220;Hello&#8221;) -> not exist phonebook.alice -> ({ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +18,7 @@ dd : delete 該行
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/">
+  <link rel="canonical" href="http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/Blog/javascripts/modernizr-2.0.js"></script>
@@ -71,7 +67,7 @@ dd : delete 該行
   
   <header>
     
-      <h1 class="entry-title">Vim內建技巧</h1>
+      <h1 class="entry-title">Json-using-javascript</h1>
     
     
       <p class="meta">
@@ -87,7 +83,7 @@ dd : delete 該行
   
 
 
-<time datetime="2012-11-05T14:59:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+<time datetime="2013-05-28T23:49:00+08:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -96,22 +92,19 @@ dd : delete 該行
   </header>
 
 
-<div class="entry-content"><p>記錄一些使用vi的技巧
-無論是在coding或者是在trace code的時候都會有很多的幫助</p>
+<div class="entry-content"><p>最近正在使用JSON, 記錄一些用法</p>
 
-<ul>
-<li>在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。</li>
-<li>% 可以從左括號跳到右括號。反之亦然。</li>
-<li>dd : delete 該行</li>
-<li>也可以安裝ctag，顯示function list</li>
-</ul>
+<div><script src='https://gist.github.com/5664057.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
 
 
-<hr />
+<p>checkExist(phonebook, &#8220;alice&#8221;)                                                <br/>
+-> exist                                                                      <br/>
+checkExist(phonebook, &#8220;Hello&#8221;)                                                <br/>
+-> not exist</p>
 
-<p>Reference<br/>
-[1] <a href="http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-">http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-</a><br/>
-[2] <a href="http://flyingwie.blogspot.tw/2011/03/trace-code.html">http://flyingwie.blogspot.tw/2011/03/trace-code.html</a></p>
+<p>phonebook.alice                                                               <br/>
+-> ({number:-333, id:1})</p>
 </div>
 
 
@@ -134,12 +127,12 @@ dd : delete 該行
   
 
 
-<time datetime="2012-11-05T14:59:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+<time datetime="2013-05-28T23:49:00+08:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/Blog/blog/categories/vim/'>vim</a>
+    <a class='category' href='/Blog/blog/categories/jacascript/'>JacaScript</a>
   
 </span>
 
@@ -148,7 +141,7 @@ dd : delete 該行
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/" data-via="" data-counturl="http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/" data-via="" data-counturl="http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/" >Tweet</a>
   
   
   
@@ -157,10 +150,8 @@ dd : delete 該行
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/Blog/blog/2012/10/22/dropbox-auto-run/" title="Previous Post: dropbox-auto-run">&laquo; dropbox-auto-run</a>
+        <a class="basic-alignment left" href="/Blog/blog/2013/04/30/mercurial-command/" title="Previous Post: Mercurial 常用指令">&laquo; Mercurial 常用指令</a>
       
-      
-        <a class="basic-alignment right" href="/Blog/blog/2012/11/05/kernel-space-and-user-space/" title="Next Post: kernel-space-and-user-space">kernel-space-and-user-space &raquo;</a>
       
     </p>
   </footer>
@@ -231,8 +222,8 @@ dd : delete 該行
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/';
-        var disqus_url = 'http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/';
+        var disqus_identifier = 'http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/';
+        var disqus_url = 'http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/';
         var disqus_script = 'embed.js';
       
     (function () {

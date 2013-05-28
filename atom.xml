@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-05-29T00:36:46+08:00</updated>
+  <updated>2013-05-29T00:44:43+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[json-using-javascript]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/"/>
+    <updated>2013-05-28T23:49:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript</id>
+    <content type="html"><![CDATA[<p>最近正在使用JSON, 記錄一些用法</p>
+
+<div><script src='https://gist.github.com/5664057.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<p>checkExist(phonebook, &#8220;alice&#8221;)                                                <br/>
+-> exist                                                                      <br/>
+checkExist(phonebook, &#8220;Hello&#8221;)                                                <br/>
+-> not exist</p>
+
+<p>phonebook.alice                                                               <br/>
+-> ({number:-333, id:1})</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mercurial 常用指令]]></title>
@@ -545,25 +566,6 @@ Type=Application
 <p>Ctrl + Shift + w : 關閉terminal</p>
 
 <p>Ctrl + Shift + t : 開啟一個新的分頁(tab)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[putty-type-chinese]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese/"/>
-    <updated>2012-10-02T15:31:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/10/02/putty-type-chinese</id>
-    <content type="html"><![CDATA[<ol>
-<li><p>Open Putty</p></li>
-<li><p>Windows -> Translation -> character set 改為 UTF-8</p></li>
-</ol>
-
-
-<p>-Windows
-|
-&#8211;Translation
-|
-  character set 改為 UTF-8</p>
 ]]></content>
   </entry>
   
