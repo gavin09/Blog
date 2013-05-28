@@ -3,5 +3,17 @@ layout: post
 title: "json-using-javascript"
 date: 2013-05-28 23:49
 comments: true
-categories: 
+categories: [JacaScript]
 ---
+
+最近正在使用JSON, 記錄一些用法
+
+{% gist 5664057 %}
+
+checkExist(phonebook, "alice")                                                  
+-> exist                                                                        
+checkExist(phonebook, "Hello")                                                  
+-> not exist                                                                    
+                                                                                
+phonebook.alice                                                                 
+-> ({number:-333, id:1})
