@@ -7,3 +7,16 @@ categories: [FFOS,Android]
 ---
 
    adb logcat
+
+若要顯示log的話
+
+### JS
+dump(Message)
+
+### CPP
+
+LOGE - Error  
+LOGW - Warning  
+LOGD - Debug  
+LOGI - info  
+LOGD - verbose  
