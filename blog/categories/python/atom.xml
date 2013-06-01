@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-01T21:27:27+08:00</updated>
+  <updated>2013-06-01T21:31:50+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[python-ubuntu-install]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/06/01/python-ubuntu-install/"/>
+    <updated>2013-06-01T21:16:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/06/01/python-ubuntu-install</id>
+    <content type="html"><![CDATA[<h1>Install Easyinstall</h1>
+
+<pre><code>sudo apt-get install build-essential python-setuptools python-dev  
+</code></pre>
+
+<h1>Install pip</h1>
+
+<pre><code>sudo easy_install pip
+</code></pre>
+
+<h1>Install python package</h1>
+
+<pre><code>sudo easy_install &lt;package&gt;  
+</code></pre>
+
+<p>or</p>
+
+<pre><code>sudo pip &lt;package&gt;
+</code></pre>
+
+<h1>Reference:</h1>
+
+<p>[1] http://www.openfoundry.org/tw/tech-column/8536-introduction-of-python-extension-management-tools</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[pip-Unknown-command-install]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-01T21:27:27+08:00</updated>
+  <updated>2013-06-01T21:31:50+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[python-ubuntu-install]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/06/01/python-ubuntu-install/"/>
+    <updated>2013-06-01T21:16:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/06/01/python-ubuntu-install</id>
+    <content type="html"><![CDATA[<h1>Install Easyinstall</h1>
+
+<pre><code>sudo apt-get install build-essential python-setuptools python-dev  
+</code></pre>
+
+<h1>Install pip</h1>
+
+<pre><code>sudo easy_install pip
+</code></pre>
+
+<h1>Install python package</h1>
+
+<pre><code>sudo easy_install &lt;package&gt;  
+</code></pre>
+
+<p>or</p>
+
+<pre><code>sudo pip &lt;package&gt;
+</code></pre>
+
+<h1>Reference:</h1>
+
+<p>[1] http://www.openfoundry.org/tw/tech-column/8536-introduction-of-python-extension-management-tools</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[JSON using JavaScript]]></title>
@@ -550,36 +581,6 @@ Type=Application
     <updated>2012-10-08T17:57:00+08:00</updated>
     <id>http://gavin09.github.io/Blog/blog/2012/10/08/less-with-color</id>
     <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Terminator介紹]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/10/04/intro-terminator/"/>
-    <updated>2012-10-04T20:37:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/10/04/intro-terminator</id>
-    <content type="html"><![CDATA[<p><img src="http://gavin09.github.io/Blog/images/2012-10-04-intro-terminator.png" title="Terminator" ></p>
-
-<p>Terminator 可以切割出多個terminal，相當方便。對於要對照兩個視窗的文件是特別的好用。</p>
-
-<h1>安裝</h1>
-
-<pre><code>sudo apt-get install terminator
-</code></pre>
-
-<h1>常用快捷鍵</h1>
-
-<p>Ctrl + Shift + O : 開啟水平的terminal</p>
-
-<p>Ctrl + Shift + E : 開啟垂直的terminal</p>
-
-<p>Ctrl + Shift + + : 字體變大</p>
-
-<p>Ctrl +  -        : 字體變小</p>
-
-<p>Ctrl + Shift + w : 關閉terminal</p>
-
-<p>Ctrl + Shift + t : 開啟一個新的分頁(tab)</p>
 ]]></content>
   </entry>
   
