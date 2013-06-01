@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-01T21:33:03+08:00</updated>
+  <updated>2013-06-01T21:40:24+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python Recommended Package]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/06/01/python-package/"/>
+    <updated>2013-06-01T21:35:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/06/01/python-package</id>
+    <content type="html"><![CDATA[<h1>yolk</h1>
+
+<p>yolk 可以列出所有已安裝的python package。</p>
+
+<pre><code>sudo easy_install yolk
+</code></pre>
+
+<p>常用指令</p>
+
+<pre><code>yolk -l  
+</code></pre>
+
+<p>列出package，並且列出其狀態</p>
+
+<pre><code>yolk -a  
+</code></pre>
+
+<p>列出active的package</p>
+
+<pre><code>yolk -U  
+</code></pre>
+
+<p>列出可以升級的package</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[python-ubuntu-install]]></title>
@@ -572,15 +603,6 @@ Type=Application
 <h3>Reference</h3>
 
 <p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using less with colors]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/10/08/less-with-color/"/>
-    <updated>2012-10-08T17:57:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/10/08/less-with-color</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
