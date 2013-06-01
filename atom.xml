@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-02T01:06:15+08:00</updated>
+  <updated>2013-06-02T01:07:54+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -34,7 +34,7 @@
 
 <h1>Solution</h1>
 
-<pre><code>ssh -L 8888:127.0.0.1:8000 \&lt;user\&gt;@\&lt;remoteip\&gt;
+<pre><code>ssh -L 8888:127.0.0.1:8000 &lt;user&gt;@&lt;remoteip&gt;
 </code></pre>
 
 <p>這樣就可以在自己的瀏覽器裡面打http://localhost:8888 看到畫面了！</p>
