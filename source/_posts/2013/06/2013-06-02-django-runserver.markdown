@@ -21,7 +21,7 @@ categories: [python, django]
 
 # Solution
 
-ssh -L 8888:127.0.0.1:8000 <user>@<remoteip>
+    ssh -L 8888:127.0.0.1:8000 <user>@<remoteip>
 
 這樣就可以在自己的瀏覽器裡面打http://localhost:8888 看到畫面了！
 
