@@ -13,7 +13,7 @@ year="`date +%Y`"
 month="`date +%m`"
 
 git add $dir/draft/$1
-git commit -m 'post $1'
+git commit -m "post $1"
 
 if [ ! -d $dir/$year ]
 then 
@@ -26,7 +26,7 @@ then
 fi
 
 git mv $dir/draft/$1 $dir/$year/$month
-git commit -m 'mv draft to $year/$month'
+git commit -m "mv draft to $year/$month"
 git push
 
 git checkout master
@@ -34,7 +34,7 @@ git checkout master
 git checkout drafts $dir/$year/$month/$1
 
 git add $dir/$year/$month/$1
-git commit -m 'post $1'
+git commit -m "post $1""
 git push
 
 rake generate 
