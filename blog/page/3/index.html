@@ -9,8 +9,11 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="mkdir $HOME/.config/autostart vi Dropbox.desktop [Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +68,66 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2012/10/22/dropbox-auto-run/">Dropbox-auto-run</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-22T00:16:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2012</time>
+        
+         | <a href="/Blog/blog/2012/10/22/dropbox-auto-run/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>mkdir $HOME/.config/autostart
+</code></pre>
+
+<p>vi Dropbox.desktop</p>
+
+<pre><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Dropbox
+Comment=RunDropbox
+Icon=/usr/share/icons/elementary/panel/22/dropboxstatus-logo.svg
+Exec=bash /home/*user*/.dropbox-dist/dropboxd
+Terminal=false
+Type=Application
+</code></pre>
+
+<p>Note:</p>
+
+<pre><code>Icon need to be checked  
+</code></pre>
+
+<h3>Reference</h3>
+
+<p>[1] <a href="http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8">http://ubuntuforums.org/showpost.php?p=11108807&amp;postcount=8</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -667,56 +730,6 @@ rake deploy
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/09/23/pip-unknown-command-install/">pip-Unknown-command-install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-23T07:45:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-        
-         | <a href="/Blog/blog/2012/09/23/pip-unknown-command-install/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When seeing this error, it may be that you have installed  <em>pip</em>
-so, you need to remove pip</p>
-
-<pre><code>sudo apt-get remove pip
-</code></pre>
-
-<p>Then, install <em>python-pip</em></p>
-
-<pre><code>sudo apt-get install python-pip
-</code></pre>
-
-<p>reference<br/>
-[1] <a href="http://stackoverflow.com/questions/8013581/pip-not-working">http://stackoverflow.com/questions/8013581/pip-not-working</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/4/">&larr; Older</a>
@@ -731,11 +744,15 @@ so, you need to remove pip</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (3)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/06/01/python-package/">Python Recommended Package</a>
@@ -751,10 +768,6 @@ so, you need to remove pip</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a>
       </li>
     
   </ul>

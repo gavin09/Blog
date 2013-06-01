@@ -9,8 +9,8 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="yolk yolk 可以列出所有已安裝的python package。 sudo easy_install yolk 常用指令 yolk -l 列出package，並且列出其狀態 yolk -a 列出active的package yolk -U 列出可以升級的package
-">
+  <meta name="description" content="前言 在django的框架裡面，如果我們要測試我們寫的web就執行 python manage.py runserver 通程預設的port會是8000，那麼就只要打開自己的瀏覽器輸入http://localhost:8000
+就可以看到自己的網站。 但是如果是租用VPS (virtual &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,62 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/06/02/django-runserver/">Django Runserver</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-02T00:56:00+08:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2013</time>
+        
+         | <a href="/Blog/blog/2013/06/02/django-runserver/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>前言</h1>
+
+<p>在django的框架裡面，如果我們要測試我們寫的web就執行</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p>通程預設的port會是8000，那麼就只要打開自己的瀏覽器輸入http://localhost:8000
+就可以看到自己的網站。</p>
+
+<p>但是如果是租用VPS (virtual private server)的主機的話，因為是remote server。
+所以localhost:8000是沒有東西的。若又只能使用界面，就不能遠端桌面
+（遠端相對吃掉很多頻寬阿&#8230;.</p>
+
+<h1>Solution</h1>
+
+<p>ssh -L 8888:127.0.0.1:8000 <user>@<remoteip></p>
+
+<p>這樣就可以在自己的瀏覽器裡面打http://localhost:8888 看到畫面了！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -639,57 +695,6 @@ LOGD - verbose</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2013/02/23/latex-command/">Using Latex With Command Line</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-23T22:05:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
-        
-         | <a href="/Blog/blog/2013/02/23/latex-command/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Installation</h2>
-
-<p>   $ sudo apt-get install texlive-full</p>
-
-<h2>command</h2>
-
-<p>   $ latex name.tex<br/>
-   $ bibtex name (generates name.bbl)<br/>
-   $ latex name.tex<br/>
-   $ pslatex name.tex<br/>
-   $ dvipdf name.dvi</p>
-
-<p>Reference:<br/>
-[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -702,11 +707,15 @@ LOGD - verbose</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (3)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (2)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/06/01/python-package/">Python Recommended Package</a>
@@ -722,10 +731,6 @@ LOGD - verbose</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/04/18/mercurial-queues-extension/">Mercurial Queues Extension</a>
       </li>
     
   </ul>

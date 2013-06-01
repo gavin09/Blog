@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: django | Fronter]]></title>
+  <link href="http://gavin09.github.io/Blog/blog/categories/django/atom.xml" rel="self"/>
+  <link href="http://gavin09.github.io/Blog/"/>
+  <updated>2013-06-02T01:03:48+08:00</updated>
+  <id>http://gavin09.github.io/Blog/</id>
+  <author>
+    <name><![CDATA[Gavin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[django runserver]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/06/02/django-runserver/"/>
+    <updated>2013-06-02T00:56:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/06/02/django-runserver</id>
+    <content type="html"><![CDATA[<h1>前言</h1>
+
+<p>在django的框架裡面，如果我們要測試我們寫的web就執行</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p>通程預設的port會是8000，那麼就只要打開自己的瀏覽器輸入http://localhost:8000
+就可以看到自己的網站。</p>
+
+<p>但是如果是租用VPS (virtual private server)的主機的話，因為是remote server。
+所以localhost:8000是沒有東西的。若又只能使用界面，就不能遠端桌面
+（遠端相對吃掉很多頻寬阿....</p>
+
+<h1>Solution</h1>
+
+<p>ssh -L 8888:127.0.0.1:8000 <user>@<remoteip></p>
+
+<p>這樣就可以在自己的瀏覽器裡面打http://localhost:8888 看到畫面了！</p>
+]]></content>
+  </entry>
+  
+</feed>
