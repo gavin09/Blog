@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e 
+set -x
+
 if [ $# != 1 ]
 then
    echo "usage: <file name>"
