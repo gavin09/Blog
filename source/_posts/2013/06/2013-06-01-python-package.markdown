@@ -24,3 +24,19 @@ yolk 可以列出所有已安裝的python package。
     yolk -U  
 
 列出可以升級的package
+
+# virtualenv
+
+## Install
+
+    sudo pip install virtualenv  
+
+## usage
+    
+    virtualenv <dirname>  
+
+開啟資料夾，並將執行環境記錄在資料夾內
+
+    . <dirname>/bin/activate
+
+開啟執行環境
