@@ -34,45 +34,29 @@
 
 <body>
     <div id="wrapper">
-    <header id="header" class="inner"><!-- for more effects see _animate.scss -->
-<h1 class="animated bounceInDown">
-    <div id="headerbg">
-        Gavin
-    </div>
-</h1>
-<br>
-
-<ul id="social-links" style="text-align:center">
+    <header id="header" class="inner"><div id="header">
+  <h1><a href="/Blog/">Fronter</a></h1>
   
+    <p>讓思想飛越</p>
   
+</div>
+<ul id="social-links">
   
-  
-  
+    <li><a class="feed" href="/Blog/atom.xml" title="RSS">RSS</a></li>
   
   
   
 </ul>
-
-
-<!-- use full url including 'index.html' for navigation bar if you are using ajax -->
+<div class="clear"></div>
 <ul id="nav">
-	<li id="ajax"><a href="/Blog/index.html">Home</a></li>
-	<li id="ajax"><a href="/Blog/blog/archives/index.html">Archives</a></li>
-    <li><a href="/Blog/atom.xml">RSS</a></li>
-    
-    <li>
-    <div id="dark">
-        <form method="get" action="/Blog/search.html" id="search">
-            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
-        </form>
-    </div>
-    </li>
-        
+  
+    <li> <a href="/Blog/">blog</a> </li>
+  
+
+  
+    <li><a href="/Blog/blog/archives">archives</a></li>
+  
 </ul>
-
-
-
-
 </header>
 
 <div id="toload">
@@ -97,14 +81,52 @@
 
     </div>
     <footer id="footer">
-    <div style="display:inline">
-    Copyright &copy; 2013
+    <div id="footer">
+  <div class="panels">
+    <div class="license">
+      <h2>License</h2>
+      <p>如非特别声明，本 Blog 的文章由 Gavin 创作，采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">知识共享署名-非商业性使用-相同方式共享 3.0 Unported 许可协议</a>进行许可。</p>
+    </div>
 
-    Gavin
-. Powered by <a href="http://octopress.org">Octopress</a> | 
-    Theme <a href="http://github.com/panks/fabric">fabric</a> by <a href="http://panks.me">Pankaj Kumar</a>
+    <div class="posts">
+      <h2>Recent Posts</h2>
+      <ul>
+        
+          <li>
+            <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
+          </li>
+        
+          <li>
+            <a href="/Blog/blog/2013/06/01/python-package/">Python Recommended Package</a>
+          </li>
+        
+          <li>
+            <a href="/Blog/blog/2013/06/01/python-ubuntu-install/">python Ubuntu install package tool</a>
+          </li>
+        
+          <li>
+            <a href="/Blog/blog/2013/05/28/json-using-javascript/">JSON using JavaScript</a>
+          </li>
+        
+          <li>
+            <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="douban">
+      <h2>Reading</h2>
+      
+        <p>Please set your Douban ID in _config.yml</p>
+      
+    </div>
+  </div>
+
+  <p class="powered">
+    Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/iwinux/compbits">Compbits</a>
+  </p>
 </div>
-
 
     </footer>
     <script src="/Blog/javascripts/fabric.js"></script>
