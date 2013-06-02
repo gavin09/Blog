@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-02T23:50:12+08:00</updated>
+  <updated>2013-06-02T23:52:39+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -72,7 +72,17 @@
 
 <h1>virtualenv</h1>
 
-<p>sudo pip install virtualenv</p>
+<h2>Install</h2>
+
+<pre><code>sudo pip install virtualenv  
+</code></pre>
+
+<h2>usage</h2>
+
+<pre><code>virtualenv &lt;dirname&gt;  
+</code></pre>
+
+<p>開啟資料夾，並將執行環境記錄在資料夾內</p>
 ]]></content>
   </entry>
   
