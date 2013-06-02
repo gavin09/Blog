@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-02T16:41:45+08:00</updated>
+  <updated>2013-06-02T23:50:12+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -69,6 +69,10 @@
 </code></pre>
 
 <p>列出可以升級的package</p>
+
+<h1>virtualenv</h1>
+
+<p>sudo pip install virtualenv</p>
 ]]></content>
   </entry>
   
