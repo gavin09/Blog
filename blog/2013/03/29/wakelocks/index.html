@@ -1,68 +1,86 @@
 
 <!DOCTYPE HTML>
-<html lang="zh-cn">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Fronter</title>
+	<meta charset="utf-8">
+	<title>Wake Locks - Fronter</title>
+    <meta name="author" content="Gavin">
+    
+	<meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="author" content="Gavin">
-  
-  <meta name="description" content="Wake Locks Mar 29th, 2013 Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 &hellip;">
-  
-  
+	<link href="/Blog/atom.xml" rel="alternate" title="Fronter" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/Blog/favicon.ico" rel="shortcut icon">
+    <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-  <link rel="canonical" href="http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks">
-  <link href="/Blog/favicon.png" rel="icon">
-  <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/Blog/atom.xml" rel="alternate" title="Fronter" type="application/atom+xml">
+    <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script type="text/javascript" src="/Blog/javascripts/jquery-tapir.js"></script>
+
+    <!-- remove or comment it to disable ajaxification -->   
+    <script src="/javascripts/ajaxify.js"></script>
+   
+    
+    
+
 </head>
+
+
+<body>
+    <div id="wrapper">
+    <header id="header" class="inner"><!-- for more effects see _animate.scss -->
+<h1 class="animated bounceInDown">
+    <div id="headerbg">
+        Gavin
+    </div>
+</h1>
+<br>
+
+<ul id="social-links" style="text-align:center">
   
-<body class="default">
-  <div id="wrapper">
-    <div id="header">
-  <h1><a href="/Blog/">Fronter</a></h1>
   
-    <p>讓思想飛越</p>
   
-</div>
-<ul id="social-links">
   
-    <li><a class="feed" href="/Blog/atom.xml" title="RSS">RSS</a></li>
+  
   
   
   
 </ul>
-<div class="clear"></div>
+
+
+<!-- use full url including 'index.html' for navigation bar if you are using ajax -->
 <ul id="nav">
-  
-    <li> <a href="/Blog/">blog</a> </li>
-  
-
-  
-    <li><a href="/Blog/blog/archives">archives</a></li>
-  
+	<li id="ajax"><a href="/Blog/index.html">Home</a></li>
+	<li id="ajax"><a href="/Blog/blog/archives/index.html">Archives</a></li>
+    <li><a href="/Blog/atom.xml">RSS</a></li>
+    
+    <li>
+    <div id="dark">
+        <form method="get" action="/Blog/search.html" id="search">
+            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
+        </form>
+    </div>
+    </li>
+        
 </ul>
 
-    <div id="main"> <div class="post-header">
-  
-    <h1 class="post-title">Wake Locks</h1>
-  
-  
 
 
 
+</header>
 
-
-
-
-
-  
-
-
-<time datetime="2013-03-29T14:11:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
-</div>
-
-<div class="post-content"><p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
+<div id="toload">
+<!-- begin toload --> 
+    <div id="content" class="inner">
+        <article class="post">
+	<h2 class="title">Wake Locks</h2>
+	<div class="entry-content"><p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
 
 <p>Android 有分類一些wake locks</p>
 
@@ -108,92 +126,53 @@
 1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
 </div>
 
+<div class="meta">
+	
+		<span class="comments"><a href="/Blog/blog/2013/03/29/wakelocks/#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
 
-<div class="post-single">
-  <div class="post-meta">
-    
-
-<span class="categories">
-  Categories:
-  
-    <a class='category' href='/Blog/blog/categories/android/'>Android</a>, <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>
-  
-</span>
-
-
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks/" data-via="" data-counturl="http://gavin09.github.io/Blog/blog/2013/03/29/wakelocks/" >Tweet</a>
-  
-  
-  
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
 
-    
-  </div>
-  <div class="clear"></div>
 
-  
-    <div id="comments">
-      <h2>Comments</h1>
-      <div id="disqus_thread" aria-live="polite"></div>
-    </div>
-  
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
- </div>
-    <div id="footer">
-  <div class="panels">
-    <div class="license">
-      <h2>License</h2>
-      <p>如非特别声明，本 Blog 的文章由 Gavin 创作，采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">知识共享署名-非商业性使用-相同方式共享 3.0 Unported 许可协议</a>进行许可。</p>
-    </div>
+</section>
 
-    <div class="posts">
-      <h2>Recent Posts</h2>
-      <ul>
-        
-          <li>
-            <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/blog/2013/06/01/python-package/">Python Recommended Package</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/blog/2013/06/01/python-ubuntu-install/">python Ubuntu install package tool</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/blog/2013/05/28/json-using-javascript/">JSON using JavaScript</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
-          </li>
-        
-      </ul>
     </div>
+    <footer id="footer">
+    <div style="display:inline">
+    Copyright &copy; 2013
 
-    <div class="douban">
-      <h2>Reading</h2>
-      
-        <p>Please set your Douban ID in _config.yml</p>
-      
-    </div>
-  </div>
-
-  <p class="powered">
-    Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/iwinux/compbits">Compbits</a>
-  </p>
+    Gavin
+. Powered by <a href="http://octopress.org">Octopress</a> | 
+    Theme <a href="http://github.com/panks/fabric">fabric</a> by <a href="http://panks.me">Pankaj Kumar</a>
 </div>
 
-  </div> <!-- #wrapper end -->
 
-  
+    </footer>
+    <script src="/Blog/javascripts/fabric.js"></script>
+<script src="/Blog/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
 
-  
 
 <script type="text/javascript">
       var disqus_shortname = 'gavinlai';
@@ -212,21 +191,17 @@
 </script>
 
 
-  
-
-  
-
-  
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
+
+<!-- end toload --> 
+</div>
+</div>
+<script src="/javascripts/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery); 
+/*]]>*/
+</script><!-- remove it to remove the scroll to top button -->
 </body>
 </html>
