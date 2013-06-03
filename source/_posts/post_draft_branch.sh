@@ -34,7 +34,7 @@ git checkout master
 git checkout drafts $dir/$year/$month/$1
 
 git add $dir/$year/$month/$1
-git commit -m "post $1""
+git commit -m "post $1"
 git push
 
 rake generate 
