@@ -7,11 +7,11 @@
 
   <meta name="author" content="Gavin">
   
-  <meta name="description" content="Dropbox-auto-run Oct 22nd, 2012 mkdir $HOME/.config/autostart vi Dropbox.desktop [Desktop Entry]
-Encoding=UTF-8
-Name=Dropbox
-Comment=RunDropbox
-Icon &hellip;">
+  <meta name="description" content="Vim內建技巧 Nov 5th, 2012 記錄一些使用vi的技巧
+無論是在coding或者是在trace code的時候都會有很多的幫助 在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。
+% 可以從左括號跳到右括號。反之亦然。
+dd : delete 該行
+也可以安裝ctag， &hellip;">
   
   
 
@@ -48,6 +48,47 @@ Icon &hellip;">
 </ul>
 
     <div id="main"> 
+
+  
+  <div class="post"> <div class="post-header">
+  
+    <h1 class="post-title">
+      <a href="/Blog/blog/2012/11/05/vim-skill/">Vim內建技巧</a>
+    </h1>
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T14:59:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+</div>
+
+<div class="post-content"><p>記錄一些使用vi的技巧
+無論是在coding或者是在trace code的時候都會有很多的幫助</p>
+
+<ul>
+<li>在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。</li>
+<li>% 可以從左括號跳到右括號。反之亦然。</li>
+<li>dd : delete 該行</li>
+<li>也可以安裝ctag，顯示function list</li>
+</ul>
+
+
+<hr />
+
+<p>Reference<br/>
+[1] <a href="http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-">http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-</a><br/>
+[2] <a href="http://flyingwie.blogspot.tw/2011/03/trace-code.html">http://flyingwie.blogspot.tw/2011/03/trace-code.html</a></p>
+</div>
+ </div>
 
   
   <div class="post"> <div class="post-header">
@@ -542,54 +583,6 @@ This client is not linked to any account…</em></p>
 </div>
  </div>
 
-  
-  <div class="post"> <div class="post-header">
-  
-    <h1 class="post-title">
-      <a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a>
-    </h1>
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-23T08:31:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-</div>
-
-<div class="post-content"><h2>第一次撰寫草稿</h2>
-
-<p>新增一個branch，名稱是drafts</p>
-
-<pre><code>git branch drafts
-</code></pre>
-
-<h2>write drafts</h2>
-
-<pre><code>git checkout drafts
-write article....
-git add [article name]
-git commit -m 'message'
-git push
-</code></pre>
-
-<h2>post</h2>
-
-<pre><code>git checkout master
-git merge drafts
-rake generate
-rake deploy
-</code></pre>
-</div>
- </div>
-
 
 <div id="pagination">
   
@@ -612,6 +605,10 @@ rake deploy
       <ul>
         
           <li>
+            <a href="/Blog/blog/2013/06/04/http-status/">HTTP Status</a>
+          </li>
+        
+          <li>
             <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
           </li>
         
@@ -625,10 +622,6 @@ rake deploy
         
           <li>
             <a href="/Blog/blog/2013/05/28/json-using-javascript/">JSON using JavaScript</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
           </li>
         
       </ul>

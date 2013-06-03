@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-03T00:11:28+08:00</updated>
+  <updated>2013-06-04T00:55:57+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[HTTP Status]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/06/04/http-status/"/>
+    <updated>2013-06-04T00:42:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/06/04/http-status</id>
+    <content type="html"><![CDATA[<h1>前言</h1>
+
+<p>上網的時候如果網頁找不到時都會顯示404，而404代表的就是HTTP的狀態。
+在這邊列出HTTP/1.1 常見的狀態</p>
+
+<h1>Status</h1>
+
+<p>1xx: informational
+2xx: successful</p>
+
+<ul>
+<li>200: OK</li>
+<li>202: Accepted</li>
+<li>204: No content</li>
+</ul>
+
+
+<p>4xx: client error</p>
+
+<ul>
+<li>403: forbidden</li>
+<li>404: Not found</li>
+<li>406: Not acceptable</li>
+<li>408: request timeout</li>
+</ul>
+
+
+<p>5xx: server error</p>
+
+<ul>
+<li>500: internal server error</li>
+<li>501: not implemented</li>
+<li>503: service unavailable</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[django runserver]]></title>
@@ -595,30 +638,6 @@ sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
     <updated>2012-11-05T15:23:00+08:00</updated>
     <id>http://gavin09.github.io/Blog/blog/2012/11/05/kernel-space-and-user-space</id>
     <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[vim內建技巧]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill/"/>
-    <updated>2012-11-05T14:59:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/11/05/vim-skill</id>
-    <content type="html"><![CDATA[<p>記錄一些使用vi的技巧
-無論是在coding或者是在trace code的時候都會有很多的幫助</p>
-
-<ul>
-<li>在想要搜尋的變數上面壓* ，就會往有使用到該變數的地方跳。</li>
-<li>% 可以從左括號跳到右括號。反之亦然。</li>
-<li>dd : delete 該行</li>
-<li>也可以安裝ctag，顯示function list</li>
-</ul>
-
-
-<hr />
-
-<p>Reference<br/>
-[1] <a href="http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-">http://zwai.pixnet.net/blog/post/26308977-vim-%E5%B0%8F%E6%8A%80%E5%B7%A7-(3)%EF%BC%9A-trace-code-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A-*-%E8%88%87-</a><br/>
-[2] <a href="http://flyingwie.blogspot.tw/2011/03/trace-code.html">http://flyingwie.blogspot.tw/2011/03/trace-code.html</a></p>
 ]]></content>
   </entry>
   

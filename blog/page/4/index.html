@@ -7,8 +7,9 @@
 
   <meta name="author" content="Gavin">
   
-  <meta name="description" content="pip-Unknown-command-install Sep 23rd, 2012 When seeing this error, it may be that you have installed pip
-so, you need to remove pip sudo apt-get &hellip;">
+  <meta name="description" content="使用octopress和github撰寫草稿 Sep 23rd, 2012 第一次撰寫草稿 新增一個branch，名稱是drafts git branch drafts write drafts git checkout drafts
+write article....
+git add [ &hellip;">
   
   
 
@@ -45,6 +46,54 @@ so, you need to remove pip sudo apt-get &hellip;">
 </ul>
 
     <div id="main"> 
+
+  
+  <div class="post"> <div class="post-header">
+  
+    <h1 class="post-title">
+      <a href="/Blog/blog/2012/09/23/octopress-drafts/">使用octopress和github撰寫草稿</a>
+    </h1>
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-23T08:31:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+</div>
+
+<div class="post-content"><h2>第一次撰寫草稿</h2>
+
+<p>新增一個branch，名稱是drafts</p>
+
+<pre><code>git branch drafts
+</code></pre>
+
+<h2>write drafts</h2>
+
+<pre><code>git checkout drafts
+write article....
+git add [article name]
+git commit -m 'message'
+git push
+</code></pre>
+
+<h2>post</h2>
+
+<pre><code>git checkout master
+git merge drafts
+rake generate
+rake deploy
+</code></pre>
+</div>
+ </div>
 
   
   <div class="post"> <div class="post-header">
@@ -217,6 +266,10 @@ rake deploy
       <ul>
         
           <li>
+            <a href="/Blog/blog/2013/06/04/http-status/">HTTP Status</a>
+          </li>
+        
+          <li>
             <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
           </li>
         
@@ -230,10 +283,6 @@ rake deploy
         
           <li>
             <a href="/Blog/blog/2013/05/28/json-using-javascript/">JSON using JavaScript</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
           </li>
         
       </ul>
