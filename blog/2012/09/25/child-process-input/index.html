@@ -1,80 +1,98 @@
 
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<title>child-process-input - Fronter</title>
-	<meta name="author" content="Gavin">
+  <meta charset="utf-8">
+  <title>child-process-input - Fronter</title>
+  <meta name="author" content="Gavin">
 
-	
-	<meta name="description" content="今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。 #include&lt;stdio.h&gt; #define num_child 2
+  
+  <meta name="description" content="今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。 #include&lt;stdio.h&gt; #define num_child 2
 int main(){ int i; int cpid[ &hellip;">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
 
-	<link href="/Blog/atom.xml" rel="alternate" title="Fronter" type="application/atom+xml">
-	<link rel="canonical" href="">
-	<link href="/Blog/favicon.png" rel="shortcut icon">
-	<link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://gavin09.github.io/Blog/blog/2012/09/25/child-process-input/">
+  <link href="/Blog/favicon.png" rel="icon">
+  <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+   <link href="/Blog/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="/Blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/Blog/javascripts/ender.js"></script>
+  <script src="/Blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/Blog/atom.xml" rel="alternate" title="Fronter" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+
 </head>
 
-<body>
-	<header id="header" class="inner"><h1><a href="/Blog/">Fronter</a></h1>
-<nav id="main-nav"><ul class="main">
-	<li><a href="/Blog/">Blog</a></li>
-	<li><a href="/Blog/blog/archives">Archives</a></li>
-</ul>
-</nav>
-<nav id="mobile-nav">
-	<div class="alignleft menu">
-		<a class="button">Menu</a>
-		<div class="container"><ul class="main">
-	<li><a href="/Blog/">Blog</a></li>
-	<li><a href="/Blog/blog/archives">Archives</a></li>
-</ul>
-</div>
-	</div>
-	<div class="alignright search">
-		<a class="button"></a>
-		<div class="container">
-			<form action="http://google.com/search" method="get">
-				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:gavin09.github.io/Blog">
-			</form>
-		</div>
-	</div>
-</nav>
-<nav id="sub-nav" class="alignright">
-	<div class="social">
-		
-		
-		
-		
-    
-		
-		
-		
-		
-		
-		<a class="rss" href="/Blog/atom.xml" title="RSS">RSS</a>
-		
-	</div>
-	<form class="search" action="http://google.com/search" method="get">
-		<input class="alignright" type="text" name="q" results="0">
-		<input type="hidden" name="q" value="site:gavin09.github.io/Blog">
-	</form>
-</nav>
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
 
 </header>
-	
-		
-	
-	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Child-process-input</h2>
-	<div class="entry-content"><p>今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。</p>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/Blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:gavin09.github.io/Blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/Blog/">Blog</a></li>
+  <li><a href="/Blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Child-process-input</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>今天在測試child process 在使用鍵盤輸入是否會正常的時候，發現child process 跳過了scanf 的階段直接print 出結果。</p>
 
 <pre><code>#include&lt;stdio.h&gt;
 
@@ -139,8 +157,14 @@ pthread_join(t1, NULL);</p>
 </div>
 
 
-<div class="meta">
-	<div class="date">
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Gavin</span></span>
+
+      
 
 
 
@@ -152,52 +176,97 @@ pthread_join(t1, NULL);</p>
   
 
 
-<time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time></div>
-	<div class="tags">
+<time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/Blog/blog/categories/c/'>C</a>
+  
+</span>
 
 
-	<a class='category' href='/Blog/blog/categories/c/'>C</a>
-
-
-</div>
-	
-		<div class="comments"><a href="/Blog/blog/2012/09/25/child-process-input/#disqus_thread">Comments</a></div>
-	
-</div></article>
-
-	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-	
-	
-	<a class="addthis_button_tweet"></a>
-	
-	
-	<a class="addthis_counter addthis_pill_style"></a>
-	</div>
-  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.io/Blog/blog/2012/09/25/child-process-input/" data-via="" data-counturl="http://gavin09.github.io/Blog/blog/2012/09/25/child-process-input/" >Tweet</a>
+  
+  
+  
 </div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/Blog/blog/2012/09/24/vim-python-code-complete/" title="Previous Post: Vim Python Code Complete">&laquo; Vim Python Code Complete</a>
+      
+      
+        <a class="basic-alignment right" href="/Blog/blog/2012/10/02/git-version-control-clean/" title="Next Post: git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge">git : error: Untracked working tree file ‘XXXX’ would be overwritten by merge &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-
-<section id="comment">
-    <h2 class="title">Comments</h2>
+  <section>
+    <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-</section>
-</div>
-	<footer id="footer" class="inner">Copyright &copy; 2013
+  </section>
 
-    Gavin
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>Network (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (3)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/06/04/http-status/">HTTP Status</a>
+      </li>
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
+      </li>
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/06/01/python-package/">Python Recommended Package</a>
+      </li>
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/06/01/python-ubuntu-install/">python-ubuntu-install</a>
+      </li>
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/05/28/json-using-javascript/">json-using-javascript</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Gavin -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
 
 </footer>
-	<script src="/Blog/javascripts/slash.js"></script>
-<script src="/Blog/javascripts/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-	$('.fancybox').fancybox();
-})(jQuery);
-</script> <!-- Delete or comment this line to disable Fancybox -->
-
+  
 
 <script type="text/javascript">
       var disqus_shortname = 'gavinlai';
@@ -214,6 +283,22 @@ pthread_join(t1, NULL);</p>
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
 
 
 
