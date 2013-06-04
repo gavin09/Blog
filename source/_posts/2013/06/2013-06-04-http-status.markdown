@@ -12,7 +12,7 @@ categories: Network
 
 # Status
 
-1xx: informational
+1xx: informational  
 2xx: successful
 
 *   200: OK
