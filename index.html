@@ -303,7 +303,7 @@
 		
 		<a href="/Blog/blog/2013/06/01/python-ubuntu-install/">
 		
-			Python Ubuntu Install Package Tool</a>
+			Python-ubuntu-install</a>
 	</h2>
 	<div class="entry-content">
 		<h1>Install Easyinstall</h1>
@@ -367,7 +367,7 @@
 		
 		<a href="/Blog/blog/2013/05/28/json-using-javascript/">
 		
-			JSON Using JavaScript</a>
+			Json-using-javascript</a>
 	</h2>
 	<div class="entry-content">
 		<p>最近正在使用JSON, 記錄一些用法</p>
@@ -541,16 +541,10 @@ hg qrefresh -I &lt;filename1&gt; -I &lt;filename2&gt; #只把filename1 filename2
 
 <p>對queue的管理</p>
 
-<pre><code>hg qdiff
+<pre><code>hg qseries
 </code></pre>
 
-<p>列出所有改變的地方</p>
-
-<pre><code>hg qseries  
-hg qseries -v -s 
-</code></pre>
-
-<p>列出所有在queue的patch, 參數 -v -s 會列出詳細的資訊</p>
+<p>列出所有在queue的patch</p>
 
 <pre><code>hg qapplied 
 </code></pre>
@@ -618,11 +612,13 @@ hg qseries -v -s
 	<div class="entry-content">
 		<p>因為官方的table 支援的不好，所以上網搜尋了一下。</p>
 
-<p>網路上很多人都是reference這一篇的<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">方法</a></p>
+<p>網路上很多人都是reference這一篇的方法<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">1</a></p>
 
 <p>不過因為我懶得在每一篇還要加上styles: [data-table]</p>
 
 <p>所以我直接改在sass/custom/_styles.css</p>
+
+<p>Reference:</p>
 
 		
 		
@@ -700,7 +696,7 @@ hg qseries -v -s
 <td align="left">Full Wake lock                </td>
 <td align="center">  ON        </td>
 <td align="center"> Bright </td>
-<td align="center"> Bright   </td>
+<td align="center"> Bright</td>
 </tr>
 </tbody>
 </table>
@@ -762,8 +758,7 @@ hg qseries -v -s
 <p>LOGE - Error<br/>
 LOGW - Warning<br/>
 LOGD - Debug<br/>
-LOGI - info<br/>
-LOGD - verbose</p>
+LOGI - info</p>
 
 		
 		

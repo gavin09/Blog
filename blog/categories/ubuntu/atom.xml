@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ubuntu | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T01:02:53+08:00</updated>
+  <updated>2013-06-04T20:55:55+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -34,6 +34,31 @@
 Hide Launcher: Never -> AutoHide</p>
 
 <p>Reference:<br/>
+[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
+    <updated>2013-02-23T20:37:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity</id>
+    <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
+
+<h2>Install</h2>
+
+<pre><code>sudo apt-get install compizconfig-settings-manager
+</code></pre>
+
+<h2>command</h2>
+
+<pre><code>$ccsm
+</code></pre>
+
+<p>enter "Ubuntu Unity plugin"
+Hide Launcher: Never -> AutoHide</p>
+
+<p>Reference:
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>

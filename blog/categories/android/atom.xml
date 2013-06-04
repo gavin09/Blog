@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T01:02:53+08:00</updated>
+  <updated>2013-06-04T20:55:55+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -54,7 +54,7 @@
 <td align="left">Full Wake lock                </td>
 <td align="center">  ON        </td>
 <td align="center"> Bright </td>
-<td align="center"> Bright   </td>
+<td align="center"> Bright</td>
 </tr>
 </tbody>
 </table>
@@ -83,8 +83,7 @@
 <p>LOGE - Error<br/>
 LOGW - Warning<br/>
 LOGD - Debug<br/>
-LOGI - info<br/>
-LOGD - verbose</p>
+LOGI - info</p>
 ]]></content>
   </entry>
   

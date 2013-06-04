@@ -7,7 +7,7 @@
 	<meta name="author" content="Gavin">
 
 	
-	<meta name="description" content=" Mar 29th, 2013 git Comments ">
+	<meta name="description" content=" git apply &#8211;reject git status git am &#8211;resolved Mar 29th, 2013 git Comments ">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -86,7 +86,9 @@
 <noscript><pre><code></code></pre></noscript></div>
 
 
-
+<p>   git apply <patch name> &#8211;reject
+   git status
+   git am <patch name> &#8211;resolved</p>
 
 		
 		
@@ -178,6 +180,60 @@
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/Blog/blog/2013/02/23/latex-command/">
+		
+			Using Latex With Command Line</a>
+	</h2>
+	<div class="entry-content">
+		<h2>Installation</h2>
+
+<p>   $ sudo apt-get install texlive-full</p>
+
+<h2>command</h2>
+
+<p>   latex name.tex<br/>
+   bibtex name (generates name.bbl)<br/>
+   latex name.tex<br/>
+   pslatex name.tex<br/>
+   dvipdf name.dvi</p>
+
+<p>Reference:</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T22:05:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/Blog/blog/categories/linux/'>Linux,</a>, <a class='category' href='/Blog/blog/categories/tool/'>tool</a>
+
+
+</div>
+	
+		<div class="comments"><a href="/Blog/blog/2013/02/23/latex-command//blog/page/2/index.html#disqus_thread">Comments</a></div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/Blog/blog/2013/02/23/hide-unity/">
 		
 			Hide Ubuntu Unity</a>
@@ -199,6 +255,64 @@
 Hide Launcher: Never -> AutoHide</p>
 
 <p>Reference:<br/>
+[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T20:37:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/Blog/blog/categories/ubuntu/'>ubuntu</a>
+
+
+</div>
+	
+		<div class="comments"><a href="/Blog/blog/2013/02/23/hide-unity//blog/page/2/index.html#disqus_thread">Comments</a></div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/Blog/blog/2013/02/23/hide-unity/">
+		
+			Hide Ubuntu Unity</a>
+	</h2>
+	<div class="entry-content">
+		<p>Some note for hide Ubuntu Unity.</p>
+
+<h2>Install</h2>
+
+<pre><code>sudo apt-get install compizconfig-settings-manager
+</code></pre>
+
+<h2>command</h2>
+
+<pre><code>$ccsm
+</code></pre>
+
+<p>enter &#8220;Ubuntu Unity plugin&#8221;
+Hide Launcher: Never -> AutoHide</p>
+
+<p>Reference:
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 
 		
@@ -503,138 +617,6 @@ rvalue 就是程式等號的右邊</p>
 </div>
 	
 		<div class="comments"><a href="/Blog/blog/2012/11/18/tc-rate-limit//blog/page/2/index.html#disqus_thread">Comments</a></div>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">
-		
-			Clear Linux Buffer Cache</a>
-	</h2>
-	<div class="entry-content">
-		<p>在測試網卡throughput的時候使用了tcpreplay</p>
-
-<p>發現在Xen DomU 做測試時</p>
-
-<p>第二次以後的結果都快的驚人</p>
-
-<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
-
-<p>（網路線拔掉，使用udp 傳輸）</p>
-
-<p>後來在 [1] 的地方找到了如何清理buffer</p>
-
-<p>在此做紀錄</p>
-
-<p>ps. 使用了方法1之後，確實throughput 就恢復正常了</p>
-
-<ol>
-<li><p>Empty the linux buffer cache</p>
-
-<p> sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</p></li>
-<li><p>Release memory used by the Linux kernel on caches</p>
-
-<p> free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</p></li>
-<li><p>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</p></li>
-</ol>
-
-
-<p>run sync first to flush useful things out to disk!!!<br/>
-To free pagecache:</p>
-
-<pre><code>echo 1 &gt; /proc/sys/vm/drop\_caches  
-</code></pre>
-
-<p>To free dentries and inodes:</p>
-
-<pre><code>echo 2 &gt; /proc/sys/vm/drop\_caches  
-</code></pre>
-
-<p>To free pagecache, dentries and inodes:</p>
-
-<pre><code>echo 3 &gt; /proc/sys/vm/drop\_caches 
-sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
-</code></pre>
-
-<ol>
-<li><p>clean up memory on linux</p>
-
-<p> sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p></li>
-</ol>
-
-
-<p>Reference<br/>
-[1] <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache">http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache</a></p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-18T14:24:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/Blog/blog/categories/linux/'>Linux</a>, <a class='category' href='/Blog/blog/categories/tcpreplay/'>tcpreplay</a>
-
-
-</div>
-	
-		<div class="comments"><a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache//blog/page/2/index.html#disqus_thread">Comments</a></div>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/Blog/blog/2012/11/05/kernel-space-and-user-space/">
-		
-			Kernel-space-and-user-space</a>
-	</h2>
-	<div class="entry-content">
-		
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-05T15:23:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time></div>
-	<div class="tags">
-
-</div>
-	
-		<div class="comments"><a href="/Blog/blog/2012/11/05/kernel-space-and-user-space//blog/page/2/index.html#disqus_thread">Comments</a></div>
 	
 </div></article>
 

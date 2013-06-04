@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T01:02:53+08:00</updated>
+  <updated>2013-06-04T20:55:55+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -135,7 +135,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[python Ubuntu install package tool]]></title>
+    <title type="html"><![CDATA[python-ubuntu-install]]></title>
     <link href="http://gavin09.github.io/Blog/blog/2013/06/01/python-ubuntu-install/"/>
     <updated>2013-06-01T21:16:00+08:00</updated>
     <id>http://gavin09.github.io/Blog/blog/2013/06/01/python-ubuntu-install</id>
@@ -166,7 +166,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[JSON using JavaScript]]></title>
+    <title type="html"><![CDATA[json-using-javascript]]></title>
     <link href="http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript/"/>
     <updated>2013-05-28T23:49:00+08:00</updated>
     <id>http://gavin09.github.io/Blog/blog/2013/05/28/json-using-javascript</id>
@@ -275,16 +275,10 @@ hg qrefresh -I &lt;filename1&gt; -I &lt;filename2&gt; #只把filename1 filename2
 
 <p>對queue的管理</p>
 
-<pre><code>hg qdiff
+<pre><code>hg qseries
 </code></pre>
 
-<p>列出所有改變的地方</p>
-
-<pre><code>hg qseries  
-hg qseries -v -s 
-</code></pre>
-
-<p>列出所有在queue的patch, 參數 -v -s 會列出詳細的資訊</p>
+<p>列出所有在queue的patch</p>
 
 <pre><code>hg qapplied 
 </code></pre>
@@ -319,11 +313,13 @@ hg qseries -v -s
     <id>http://gavin09.github.io/Blog/blog/2013/03/31/octopress-table</id>
     <content type="html"><![CDATA[<p>因為官方的table 支援的不好，所以上網搜尋了一下。</p>
 
-<p>網路上很多人都是reference這一篇的<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">方法</a></p>
+<p>網路上很多人都是reference這一篇的方法<a href="http://programus.github.com/blog/2012/03/07/add-table-data-css-for-octopress/">1</a></p>
 
 <p>不過因為我懶得在每一篇還要加上styles: [data-table]</p>
 
 <p>所以我直接改在sass/custom/_styles.css</p>
+
+<p>Reference:</p>
 ]]></content>
   </entry>
   
@@ -368,7 +364,7 @@ hg qseries -v -s
 <td align="left">Full Wake lock                </td>
 <td align="center">  ON        </td>
 <td align="center"> Bright </td>
-<td align="center"> Bright   </td>
+<td align="center"> Bright</td>
 </tr>
 </tbody>
 </table>
@@ -397,8 +393,7 @@ hg qseries -v -s
 <p>LOGE - Error<br/>
 LOGW - Warning<br/>
 LOGD - Debug<br/>
-LOGI - info<br/>
-LOGD - verbose</p>
+LOGI - info</p>
 ]]></content>
   </entry>
   
@@ -411,7 +406,9 @@ LOGD - verbose</p>
 <noscript><pre><code></code></pre></noscript></div>
 
 
-
+<p>   git apply <patch name> &#8211;reject
+   git status
+   git am <patch name> &#8211;resolved</p>
 ]]></content>
   </entry>
   
@@ -438,6 +435,27 @@ LOGD - verbose</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[using latex with command line]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/latex-command/"/>
+    <updated>2013-02-23T22:05:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/latex-command</id>
+    <content type="html"><![CDATA[<h2>Installation</h2>
+
+<p>   $ sudo apt-get install texlive-full</p>
+
+<h2>command</h2>
+
+<p>   latex name.tex<br/>
+   bibtex name (generates name.bbl)<br/>
+   latex name.tex<br/>
+   pslatex name.tex<br/>
+   dvipdf name.dvi</p>
+
+<p>Reference:</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
     <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
     <updated>2013-02-23T20:37:00+08:00</updated>
@@ -458,6 +476,31 @@ LOGD - verbose</p>
 Hide Launcher: Never -> AutoHide</p>
 
 <p>Reference:<br/>
+[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
+    <updated>2013-02-23T20:37:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity</id>
+    <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
+
+<h2>Install</h2>
+
+<pre><code>sudo apt-get install compizconfig-settings-manager
+</code></pre>
+
+<h2>command</h2>
+
+<pre><code>$ccsm
+</code></pre>
+
+<p>enter &#8220;Ubuntu Unity plugin&#8221;
+Hide Launcher: Never -> AutoHide</p>
+
+<p>Reference:
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>
@@ -568,76 +611,6 @@ rvalue 就是程式等號的右邊</p>
 <p>若不要使用則是</p>
 
 <p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Clear Linux buffer cache]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/11/18/clean-linux-buffer-cache/"/>
-    <updated>2012-11-18T14:24:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/11/18/clean-linux-buffer-cache</id>
-    <content type="html"><![CDATA[<p>在測試網卡throughput的時候使用了tcpreplay</p>
-
-<p>發現在Xen DomU 做測試時</p>
-
-<p>第二次以後的結果都快的驚人</p>
-
-<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
-
-<p>（網路線拔掉，使用udp 傳輸）</p>
-
-<p>後來在 [1] 的地方找到了如何清理buffer</p>
-
-<p>在此做紀錄</p>
-
-<p>ps. 使用了方法1之後，確實throughput 就恢復正常了</p>
-
-<ol>
-<li><p>Empty the linux buffer cache</p>
-
-<p> sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</p></li>
-<li><p>Release memory used by the Linux kernel on caches</p>
-
-<p> free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</p></li>
-<li><p>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</p></li>
-</ol>
-
-
-<p>run sync first to flush useful things out to disk!!!<br/>
-To free pagecache:</p>
-
-<pre><code>echo 1 &gt; /proc/sys/vm/drop\_caches  
-</code></pre>
-
-<p>To free dentries and inodes:</p>
-
-<pre><code>echo 2 &gt; /proc/sys/vm/drop\_caches  
-</code></pre>
-
-<p>To free pagecache, dentries and inodes:</p>
-
-<pre><code>echo 3 &gt; /proc/sys/vm/drop\_caches 
-sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
-</code></pre>
-
-<ol>
-<li><p>clean up memory on linux</p>
-
-<p> sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p></li>
-</ol>
-
-
-<p>Reference<br/>
-[1] <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache">http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[kernel-space-and-user-space]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/11/05/kernel-space-and-user-space/"/>
-    <updated>2012-11-05T15:23:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/11/05/kernel-space-and-user-space</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   

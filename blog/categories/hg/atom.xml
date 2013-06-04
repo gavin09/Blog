@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hg | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/hg/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T01:02:53+08:00</updated>
+  <updated>2013-06-04T20:55:55+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -102,16 +102,10 @@ hg qrefresh -I &lt;filename1&gt; -I &lt;filename2&gt; #只把filename1 filename2
 
 <p>對queue的管理</p>
 
-<pre><code>hg qdiff
+<pre><code>hg qseries
 </code></pre>
 
-<p>列出所有改變的地方</p>
-
-<pre><code>hg qseries  
-hg qseries -v -s 
-</code></pre>
-
-<p>列出所有在queue的patch, 參數 -v -s 會列出詳細的資訊</p>
+<p>列出所有在queue的patch</p>
 
 <pre><code>hg qapplied 
 </code></pre>

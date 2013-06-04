@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T01:02:53+08:00</updated>
+  <updated>2013-06-04T20:55:55+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -21,6 +21,10 @@
     <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/5268510.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 </p>
+
+<p>   git apply <patch name> --reject
+   git status
+   git am <patch name> --resolved</p>
 ]]></content>
   </entry>
   
