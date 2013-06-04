@@ -8,3 +8,7 @@ categories: git
 
 {% gist 5268510 %}
 
+   git apply <patch name> --reject
+   git status 
+   git am <patch name> --resolved
+

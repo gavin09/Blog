@@ -15,7 +15,7 @@ Flag                          |  CPU       | Screen | Keyboard
 Partial  wake lock            |  ON        | OFF    | OFF     
 Screen Dim wake lock          |  ON        | OFF    | OFF     
 Screen Brigh wake lock        |  ON        | OFF    | OFF      
-Full Wake lock                |  ON        | Bright | Bright   
+Full Wake lock                |  ON        | Bright | Bright
 
 
 

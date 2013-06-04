@@ -19,4 +19,3 @@ LOGE - Error
 LOGW - Warning  
 LOGD - Debug  
 LOGI - info  
-LOGD - verbose  

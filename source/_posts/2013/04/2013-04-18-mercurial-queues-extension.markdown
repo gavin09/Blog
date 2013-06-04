@@ -41,14 +41,9 @@ mq 在管理多個檔案的patch時相當方便
 
 對queue的管理
 
-    hg qdiff
+    hg qseries
 
-列出所有改變的地方
-
-    hg qseries  
-    hg qseries -v -s 
-
-列出所有在queue的patch, 參數 -v -s 會列出詳細的資訊
+列出所有在queue的patch
 
     hg qapplied 
 
@@ -69,3 +64,4 @@ mq 在管理多個檔案的patch時相當方便
 Reference  
 1. <http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/#versioned-patch-queues>  
 2. <https://developer.mozilla.org/en-US/docs/Mercurial_Queues>  
+
