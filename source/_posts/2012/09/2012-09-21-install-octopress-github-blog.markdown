@@ -3,7 +3,7 @@ layout: post
 title: "install-octopress-github-blog"
 date: 2012-09-21 19:58
 comments: true
-categories: [octopress,git,blog]
+categories: [octopress, git, blog]
 ---
 
 ##requirement##
