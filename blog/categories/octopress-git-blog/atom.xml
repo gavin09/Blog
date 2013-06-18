@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: blog | Fronter]]></title>
-  <link href="http://gavin09.github.io/Blog/blog/categories/blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress,git,blog | Fronter]]></title>
+  <link href="http://gavin09.github.io/Blog/blog/categories/octopress-git-blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T21:02:46+08:00</updated>
+  <updated>2013-06-18T15:48:54+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,37 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[使用octopress和github撰寫草稿]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/09/23/octopress-drafts/"/>
-    <updated>2012-09-23T08:31:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/09/23/octopress-drafts</id>
-    <content type="html"><![CDATA[<h2>第一次撰寫草稿</h2>
-
-<p>新增一個branch，名稱是drafts</p>
-
-<pre><code>git branch drafts
-</code></pre>
-
-<h2>write drafts</h2>
-
-<pre><code>git checkout drafts
-write article....
-git add [article name]
-git commit -m 'message'
-git push
-</code></pre>
-
-<h2>post</h2>
-
-<pre><code>git checkout master
-git merge drafts
-rake generate
-rake deploy
-</code></pre>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[install-octopress-github-blog]]></title>

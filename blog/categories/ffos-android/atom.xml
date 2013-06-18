@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: FFOS | Fronter]]></title>
-  <link href="http://gavin09.github.io/Blog/blog/categories/ffos/atom.xml" rel="self"/>
+  <title><![CDATA[Category: FFOS,Android | Fronter]]></title>
+  <link href="http://gavin09.github.io/Blog/blog/categories/ffos-android/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T21:02:46+08:00</updated>
+  <updated>2013-06-18T15:48:54+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>

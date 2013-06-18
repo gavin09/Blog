@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tool | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/tool/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T21:02:46+08:00</updated>
+  <updated>2013-06-18T15:48:54+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,27 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[using latex with command line]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/latex-command/"/>
-    <updated>2013-02-23T22:05:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2013/02/23/latex-command</id>
-    <content type="html"><![CDATA[<h2>Installation</h2>
-
-<p>   $ sudo apt-get install texlive-full</p>
-
-<h2>command</h2>
-
-<p>   latex name.tex<br/>
-   bibtex name (generates name.bbl)<br/>
-   latex name.tex<br/>
-   pslatex name.tex<br/>
-   dvipdf name.dvi</p>
-
-<p>Reference:</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[using latex with command line]]></title>
@@ -53,6 +32,27 @@
 
 <p>Reference:<br/>
 [1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[using latex with command line]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/latex-command/"/>
+    <updated>2013-02-23T22:05:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/latex-command</id>
+    <content type="html"><![CDATA[<h2>Installation</h2>
+
+<p>   $ sudo apt-get install texlive-full</p>
+
+<h2>command</h2>
+
+<p>   latex name.tex<br/>
+   bibtex name (generates name.bbl)<br/>
+   latex name.tex<br/>
+   pslatex name.tex<br/>
+   dvipdf name.dvi</p>
+
+<p>Reference:</p>
 ]]></content>
   </entry>
   

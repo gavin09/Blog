@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-04T21:02:46+08:00</updated>
+  <updated>2013-06-18T15:48:54+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -423,14 +423,13 @@ LOGI - info</p>
 
 <h2>command</h2>
 
-<p>   $ latex name.tex<br/>
-   $ bibtex name (generates name.bbl)<br/>
-   $ latex name.tex<br/>
-   $ pslatex name.tex<br/>
-   $ dvipdf name.dvi</p>
+<p>   latex name.tex<br/>
+   bibtex name (generates name.bbl)<br/>
+   latex name.tex<br/>
+   pslatex name.tex<br/>
+   dvipdf name.dvi</p>
 
-<p>Reference:<br/>
-[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
+<p>Reference:</p>
 ]]></content>
   </entry>
   
@@ -445,38 +444,14 @@ LOGI - info</p>
 
 <h2>command</h2>
 
-<p>   latex name.tex<br/>
-   bibtex name (generates name.bbl)<br/>
-   latex name.tex<br/>
-   pslatex name.tex<br/>
-   dvipdf name.dvi</p>
-
-<p>Reference:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
-    <updated>2013-02-23T20:37:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity</id>
-    <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
-
-<h2>Install</h2>
-
-<pre><code>sudo apt-get install compizconfig-settings-manager
-</code></pre>
-
-<h2>command</h2>
-
-<pre><code>ccsm
-</code></pre>
-
-<p>enter &#8220;Ubuntu Unity plugin&#8221;
-Hide Launcher: Never -> AutoHide</p>
+<p>   $ latex name.tex<br/>
+   $ bibtex name (generates name.bbl)<br/>
+   $ latex name.tex<br/>
+   $ pslatex name.tex<br/>
+   $ dvipdf name.dvi</p>
 
 <p>Reference:<br/>
-[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
 ]]></content>
   </entry>
   
@@ -501,6 +476,31 @@ Hide Launcher: Never -> AutoHide</p>
 Hide Launcher: Never -> AutoHide</p>
 
 <p>Reference:
+[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hide Ubuntu Unity]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity/"/>
+    <updated>2013-02-23T20:37:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/02/23/hide-unity</id>
+    <content type="html"><![CDATA[<p>Some note for hide Ubuntu Unity.</p>
+
+<h2>Install</h2>
+
+<pre><code>sudo apt-get install compizconfig-settings-manager
+</code></pre>
+
+<h2>command</h2>
+
+<pre><code>ccsm
+</code></pre>
+
+<p>enter &#8220;Ubuntu Unity plugin&#8221;
+Hide Launcher: Never -> AutoHide</p>
+
+<p>Reference:<br/>
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>
