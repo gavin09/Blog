@@ -3,7 +3,7 @@ layout: post
 title: "Clear Linux buffer cache"
 date: 2012-11-18 14:24
 comments: true
-categories: [Linux,tcpreplay]
+categories: [Linux, tcpreplay]
 ---
 
 在測試網卡throughput的時候使用了tcpreplay 
