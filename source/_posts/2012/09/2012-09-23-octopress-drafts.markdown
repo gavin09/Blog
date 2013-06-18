@@ -3,7 +3,7 @@ layout: post
 title: "使用octopress和github撰寫草稿"
 date: 2012-09-23 08:31
 comments: true
-categories: [git,blog]
+categories: [git, blog]
 ---
 
 ##第一次撰寫草稿##
