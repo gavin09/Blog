@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-19T22:42:48+08:00</updated>
+  <updated>2013-06-19T22:59:28+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -286,7 +286,8 @@ hg qrefresh -I &lt;filename1&gt; -I &lt;filename2&gt; #只把filename1 filename2
 
 <p>對queue的管理</p>
 
-<pre><code>hg qseries
+<pre><code>hg qseries  
+hg qseries -v -s  
 </code></pre>
 
 <p>列出所有在queue的patch</p>
