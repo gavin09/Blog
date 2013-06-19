@@ -153,7 +153,12 @@ hg qseries -v -s
 <pre><code>hg qpush
 </code></pre>
 
-<p>加入patch</p>
+<p>加入the top patch</p>
+
+<pre><code>hg qimport -e &lt;filename&gt;  
+</code></pre>
+
+<p>匯入patch到queue當中（記得要建立好queue)</p>
 
 <pre><code>hg export qtip &gt; /Export/FILE/Location/&lt;filename.patch&gt;  
 </code></pre>
