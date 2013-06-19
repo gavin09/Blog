@@ -114,11 +114,22 @@ hg commit -m 'single line message'
 
 <p>將更動的檔案加入，並用一行訊息記錄成一個commit</p>
 
-<pre><code>hg pull
-hg push
+<pre><code>hg pull  
+hg update  
 </code></pre>
 
-<p>hg pull 從網路上的repo端做local端的更新，push則是將自己做的更新上傳到網路上的repo</p>
+<p>hg pull 從remote repository下載到本地端的repo，但是此時尚未update 本地端的檔案<br/>
+hg update 才會實際更新到本地端檔案</p>
+
+<pre><code>hg update -C   
+</code></pre>
+
+<p>放棄local端尚未commit的更動</p>
+
+<pre><code>hg push
+</code></pre>
+
+<p>push則是將自己做的更新上傳到網路上的repo</p>
 
 <pre><code>hg diff -r rev1 -r rev2
 hg diff -c rev
