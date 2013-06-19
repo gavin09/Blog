@@ -56,7 +56,11 @@ mq 在管理多個檔案的patch時相當方便
 
     hg qpush
 
-加入patch
+加入the top patch  
+
+    hg qimport -e <filename>  
+
+匯入patch到queue當中（記得要建立好queue)  
 
     hg export qtip > /Export/FILE/Location/<filename.patch>  
 
