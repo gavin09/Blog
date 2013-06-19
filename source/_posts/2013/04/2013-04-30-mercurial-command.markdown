@@ -24,10 +24,19 @@ categories: [hg]
 
 將更動的檔案加入，並用一行訊息記錄成一個commit
 
-    hg pull
+    hg pull  
+    hg update  
+
+hg pull 從remote repository下載到本地端的repo，但是此時尚未update 本地端的檔案  
+hg update 才會實際更新到本地端檔案  
+
+    hg update -C   
+
+放棄local端尚未commit的更動  
+
     hg push
 
-hg pull 從網路上的repo端做local端的更新，push則是將自己做的更新上傳到網路上的repo
+push則是將自己做的更新上傳到網路上的repo
 
     hg diff -r rev1 -r rev2
     hg diff -c rev
