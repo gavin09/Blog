@@ -41,7 +41,8 @@ mq 在管理多個檔案的patch時相當方便
 
 對queue的管理
 
-    hg qseries
+    hg qseries  
+    hg qseries -v -s  
 
 列出所有在queue的patch
 
