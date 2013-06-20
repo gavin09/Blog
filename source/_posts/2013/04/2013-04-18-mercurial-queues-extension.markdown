@@ -58,7 +58,7 @@ mq 在管理多個檔案的patch時相當方便
 
 加入the top patch  
 
-    hg qimport -e <filename>  
+    hg qimport <filename>  
 
 匯入patch到queue當中（記得要建立好queue)  
 
