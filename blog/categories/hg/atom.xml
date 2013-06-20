@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hg | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/hg/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-19T23:15:43+08:00</updated>
+  <updated>2013-06-20T10:56:51+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -134,7 +134,7 @@ hg qseries -v -s
 
 <p>加入the top patch</p>
 
-<pre><code>hg qimport -e &lt;filename&gt;  
+<pre><code>hg qimport &lt;filename&gt;  
 </code></pre>
 
 <p>匯入patch到queue當中（記得要建立好queue)</p>

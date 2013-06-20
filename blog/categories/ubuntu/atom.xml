@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ubuntu | Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-06-19T23:15:43+08:00</updated>
+  <updated>2013-06-20T10:56:51+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -27,13 +27,13 @@
 
 <h2>command</h2>
 
-<pre><code>$ccsm
+<pre><code>ccsm
 </code></pre>
 
 <p>enter "Ubuntu Unity plugin"
 Hide Launcher: Never -> AutoHide</p>
 
-<p>Reference:
+<p>Reference:<br/>
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>
@@ -52,13 +52,13 @@ Hide Launcher: Never -> AutoHide</p>
 
 <h2>command</h2>
 
-<pre><code>ccsm
+<pre><code>$ccsm
 </code></pre>
 
 <p>enter "Ubuntu Unity plugin"
 Hide Launcher: Never -> AutoHide</p>
 
-<p>Reference:<br/>
+<p>Reference:
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 ]]></content>
   </entry>
