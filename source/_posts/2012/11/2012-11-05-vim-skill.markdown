@@ -9,12 +9,12 @@ categories: vim
 記錄一些使用vi的技巧
 無論是在coding或者是在trace code的時候都會有很多的幫助
 
-*	在想要搜尋的變數上面壓\* ，就會往有使用到該變數的地方跳。
-* 	% 可以從左括號跳到右括號。反之亦然。
-*	dd : delete 該行
-*	也可以安裝ctag，顯示function list 
-*       顯示所有trailing whitespace: /\s\+$ 
-*       顯示所有tab: /\t 
+1. 在想要搜尋的變數上面壓\* ，就會往有使用到該變數的地方跳。
+2. % 可以從左括號跳到右括號。反之亦然。
+3. dd : delete 該行
+4. 也可以安裝ctag，顯示function list 
+5. 顯示所有trailing whitespace: /\s\+$ 
+6. 顯示所有tab: /\t 
 -------
 
 Reference  
