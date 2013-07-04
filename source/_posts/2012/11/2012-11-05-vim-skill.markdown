@@ -13,8 +13,8 @@ categories: vim
 * 	% 可以從左括號跳到右括號。反之亦然。
 *	dd : delete 該行
 *	也可以安裝ctag，顯示function list 
-*       /\s\+$ : 顯示所有trailing whitespace  
-*       /\t    : 顯示所有tab  
+*       `/\s\+$` : 顯示所有trailing whitespace  
+*       `/\t`    : 顯示所有tab  
 -------
 
 Reference  
