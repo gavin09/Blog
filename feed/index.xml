@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-09-01T23:00:23+08:00</updated>
+  <updated>2013-09-01T23:05:23+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -18,7 +18,7 @@
     <link href="http://gavin09.github.io/Blog/blog/2013/09/01/mongodb/"/>
     <updated>2013-09-01T22:48:00+08:00</updated>
     <id>http://gavin09.github.io/Blog/blog/2013/09/01/mongodb</id>
-    <content type="html"><![CDATA[<h1>Install</h1>
+    <content type="html"><![CDATA[<h2>Install</h2>
 
 <p>For Ubuntu:</p>
 
@@ -39,19 +39,22 @@
 <p>  <code>db.test.save( { a: 1 } ) } )</code><br/>
   <code>db.test.find()</code> } )`</p>
 
-<h1>Command</h1>
+<h2>Command</h2>
 
 <p>show collections</p>
 
-<p>   顯示db底下的項次(項次為自己個人的理解)</p>
+<pre><code>顯示db底下的項次(項次為自己個人的理解)  
+</code></pre>
 
 <p>db.<collection>.drop()</p>
 
-<p>   刪除<collection></p>
+<pre><code>刪除&lt;collection&gt;  
+</code></pre>
 
 <p>db.<collection>.insert(JSON_object)</p>
 
-<p>   在collection裡面新增一筆資料</p>
+<pre><code>在collection裡面新增一筆資料  
+</code></pre>
 
 <p>db.<collection>.find()</p>
 
