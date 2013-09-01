@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: dropbox - Fronter</title>
+  <title>Mongo DB - Fronter</title>
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Category: dropbox">
+  <meta name="description" content="Install For Ubuntu: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo 'deb http://downloads-distro.mongodb.org/repo/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gavin09.github.io/Blogblog/categories/dropbox">
+  <link rel="canonical" href="http://gavin09.github.io/Blog/blog/2013/09/01/mongodb">
   <link href="/Blog/favicon.png" rel="icon">
   <link href="/Blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/Blog/atom.xml" rel="alternate" title="Fronter" type="application/atom+xml">
@@ -64,50 +65,142 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Dropbox</h1>
+    
+      <h1 class="entry-title">Mongo DB</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-01T22:48:00+08:00" pubdate data-updated="true">Sep 1<span>st</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h1>Install</h1>
 
-  
-  <h2>2012</h2>
+<p>For Ubuntu:</p>
 
-<article>
-  
-<h1><a href="/Blog/blog/2012/10/22/dropbox-auto-run/">dropbox-auto-run</a></h1>
-<time datetime="2012-10-22T00:16:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>22</span> <span class='year'>2012</span></time>
+<p><code>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</code><br/>
+<code>echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list</code><br/>
+<code>sudo apt-get update</code><br/>
+<code>sudo apt-get install mongodb-10gen</code></p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/dropbox/'>dropbox</a></span>
-</footer>
+<p>Start MongoDB:<br/>
+<code>sudo service mongodb start</code></p>
 
+<p>Stop MongoDB:<br/>
+<code>sudo service mongodb stop</code></p>
 
-</article>
+<p>Using MongoDB:<br/>
+<code>mongo</code></p>
 
+<p>  <code>db.test.save( { a: 1 } ) } )</code><br/>
+  <code>db.test.find()</code> } )`</p>
 
+<h1>Command</h1>
 
-<article>
-  
-<h1><a href="/Blog/blog/2012/09/23/dropbox-command-line/">在linux command line 環境下安裝dropbox</a></h1>
-<time datetime="2012-09-23T22:32:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>23</span> <span class='year'>2012</span></time>
+<p>show collections</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/Blog/blog/categories/linux/'>Linux</a>, <a class='category' href='/Blog/blog/categories/dropbox/'>dropbox</a></span>
-</footer>
+<p>   顯示db底下的項次(項次為自己個人的理解)</p>
 
+<p>db.<collection>.drop()</p>
 
-</article>
+<p>   刪除<collection></p>
 
+<p>db.<collection>.insert(JSON_object)</p>
+
+<p>   在collection裡面新增一筆資料</p>
+
+<p>db.<collection>.find()</p>
+
+<p>   顯示coleection裡面的所有資料</p>
+
+<p>db.<collection>.find(JSON_object)</p>
+
+<p>   尋找指定的資料</p>
+
+<p>db.<collection>.find_one(JSON_object)</p>
+
+<p>   單獨找一個指定資料</p>
+
+<p>db.<collection>.remove()</p>
+
+<p>   刪除collection裡面的所有資料，沒有刪除collection</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Gavin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-01T22:48:00+08:00" pubdate data-updated="true">Sep 1<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/Blog/blog/categories/mongodb/'>MongoDB</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gavin09.github.io/Blog/blog/2013/09/01/mongodb/" data-via="" data-counturl="http://gavin09.github.io/Blog/blog/2013/09/01/mongodb/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/Blog/blog/2013/06/02/django-runserver/" title="Previous Post: django runserver">&laquo; django runserver</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -167,7 +260,10 @@
       var disqus_shortname = 'gavinlai';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://gavin09.github.io/Blog/blog/2013/09/01/mongodb/';
+        var disqus_url = 'http://gavin09.github.io/Blog/blog/2013/09/01/mongodb/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

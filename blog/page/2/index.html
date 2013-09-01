@@ -9,7 +9,8 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="Installation $ sudo apt-get install texlive-full command $ latex name.tex $ bibtex name (generates name.bbl) $ latex name.tex $ pslatex name.tex $ &hellip;">
+  <meta name="description" content=" git apply &#8211;reject git status git am &#8211;resolved
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +72,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/Blog/blog/2013/02/23/latex-command/">Using Latex With Command Line</a></h1>
+      <h1 class="entry-title"><a href="/Blog/blog/2013/03/29/git-patch/">Git Patch</a></h1>
     
     
       <p class="meta">
@@ -87,29 +88,22 @@
   
 
 
-<time datetime="2013-02-23T22:05:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-03-29T10:49:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
         
-         | <a href="/Blog/blog/2013/02/23/latex-command/#disqus_thread">Comments</a>
+         | <a href="/Blog/blog/2013/03/29/git-patch/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h2>Installation</h2>
+  <div class="entry-content"><div><script src='https://gist.github.com/5268510.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
 
-<p>   $ sudo apt-get install texlive-full</p>
 
-<h2>command</h2>
-
-<p>   $ latex name.tex<br/>
-   $ bibtex name (generates name.bbl)<br/>
-   $ latex name.tex<br/>
-   $ pslatex name.tex<br/>
-   $ dvipdf name.dvi</p>
-
-<p>Reference:<br/>
-[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
+<p>   git apply <patch name> &#8211;reject
+   git status
+   git am <patch name> &#8211;resolved</p>
 </div>
   
   
@@ -172,7 +166,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/Blog/blog/2013/02/23/hide-unity/">Hide Ubuntu Unity</a></h1>
+      <h1 class="entry-title"><a href="/Blog/blog/2013/02/23/latex-command/">Using Latex With Command Line</a></h1>
     
     
       <p class="meta">
@@ -188,32 +182,29 @@
   
 
 
-<time datetime="2013-02-23T20:37:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-02-23T22:05:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
         
-         | <a href="/Blog/blog/2013/02/23/hide-unity/#disqus_thread">Comments</a>
+         | <a href="/Blog/blog/2013/02/23/latex-command/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Some note for hide Ubuntu Unity.</p>
+  <div class="entry-content"><h2>Installation</h2>
 
-<h2>Install</h2>
-
-<pre><code>sudo apt-get install compizconfig-settings-manager
-</code></pre>
+<p>   $ sudo apt-get install texlive-full</p>
 
 <h2>command</h2>
 
-<pre><code>ccsm
-</code></pre>
-
-<p>enter &#8220;Ubuntu Unity plugin&#8221;
-Hide Launcher: Never -> AutoHide</p>
+<p>   $ latex name.tex<br/>
+   $ bibtex name (generates name.bbl)<br/>
+   $ latex name.tex<br/>
+   $ pslatex name.tex<br/>
+   $ dvipdf name.dvi</p>
 
 <p>Reference:<br/>
-[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+[1] <a href="http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84">http://judsonsnotes.com/notes/index.php?option=com_content&amp;view=article&amp;id=322:linux-commands-for-latex&amp;catid=60:latex&amp;Itemid=84</a></p>
 </div>
   
   
@@ -267,6 +258,60 @@ Hide Launcher: Never -> AutoHide</p>
 Hide Launcher: Never -> AutoHide</p>
 
 <p>Reference:
+[1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/02/23/hide-unity/">Hide Ubuntu Unity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T20:37:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+        
+         | <a href="/Blog/blog/2013/02/23/hide-unity/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Some note for hide Ubuntu Unity.</p>
+
+<h2>Install</h2>
+
+<pre><code>sudo apt-get install compizconfig-settings-manager
+</code></pre>
+
+<h2>command</h2>
+
+<pre><code>ccsm
+</code></pre>
+
+<p>enter &#8220;Ubuntu Unity plugin&#8221;
+Hide Launcher: Never -> AutoHide</p>
+
+<p>Reference:<br/>
 [1] <a href="http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/">http://shuffleos.com/5151/hide-unity-launcher-panel-permanently-ubuntu-1110/</a></p>
 </div>
   
@@ -529,96 +574,6 @@ rvalue 就是程式等號的右邊</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/">Clear Linux Buffer Cache</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-18T14:24:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2012</time>
-        
-         | <a href="/Blog/blog/2012/11/18/clean-linux-buffer-cache/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在測試網卡throughput的時候使用了tcpreplay</p>
-
-<p>發現在Xen DomU 做測試時</p>
-
-<p>第二次以後的結果都快的驚人</p>
-
-<p>仔細思考之後認為是buffer裡面已經有傳送的封包</p>
-
-<p>（網路線拔掉，使用udp 傳輸）</p>
-
-<p>後來在 [1] 的地方找到了如何清理buffer</p>
-
-<p>在此做紀錄</p>
-
-<p>ps. 使用了方法1之後，確實throughput 就恢復正常了</p>
-
-<ol>
-<li><p>Empty the linux buffer cache</p>
-
-<p> sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches</p></li>
-<li><p>Release memory used by the Linux kernel on caches</p>
-
-<p> free &amp;&amp; sync &amp;&amp; echo 3 > /proc/sys/vm/drop_caches &amp;&amp; free</p></li>
-<li><p>clean up memory of unnecessary things (Kernerl 2.6.16 or newer)</p></li>
-</ol>
-
-
-<p>run sync first to flush useful things out to disk!!!<br/>
-To free pagecache:</p>
-
-<pre><code>echo 1 &gt; /proc/sys/vm/drop\_caches  
-</code></pre>
-
-<p>To free dentries and inodes:</p>
-
-<pre><code>echo 2 &gt; /proc/sys/vm/drop\_caches  
-</code></pre>
-
-<p>To free pagecache, dentries and inodes:</p>
-
-<pre><code>echo 3 &gt; /proc/sys/vm/drop\_caches 
-sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
-</code></pre>
-
-<ol>
-<li><p>clean up memory on linux</p>
-
-<p> sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</p></li>
-</ol>
-
-
-<p>Reference<br/>
-[1] <a href="http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache">http://www.commandlinefu.com/commands/view/1026/empty-the-linux-buffer-cache</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/3/">&larr; Older</a>
@@ -633,11 +588,15 @@ sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (3)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/mongodb'>MongoDB (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (3)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/09/01/mongodb/">Mongo DB</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
@@ -653,10 +612,6 @@ sync &amp;&amp; echo 1 &gt; /proc/sys/vm/drop_caches
     
       <li class="post">
         <a href="/Blog/blog/2013/05/28/json-using-javascript/">json-using-javascript</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
       </li>
     
   </ul>

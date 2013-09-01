@@ -9,8 +9,8 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content="前言 在django的框架裡面，如果我們要測試我們寫的web就執行 python manage.py runserver 通程預設的port會是8000，那麼就只要打開自己的瀏覽器輸入http://localhost:8000
-就可以看到自己的網站。 但是如果是租用VPS (virtual &hellip;">
+  <meta name="description" content="Install For Ubuntu: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo 'deb http://downloads-distro.mongodb.org/repo/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,93 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/09/01/mongodb/">Mongo DB</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-01T22:48:00+08:00" pubdate data-updated="true">Sep 1<span>st</span>, 2013</time>
+        
+         | <a href="/Blog/blog/2013/09/01/mongodb/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Install</h1>
+
+<p>For Ubuntu:</p>
+
+<p><code>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</code><br/>
+<code>echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list</code><br/>
+<code>sudo apt-get update</code><br/>
+<code>sudo apt-get install mongodb-10gen</code></p>
+
+<p>Start MongoDB:<br/>
+<code>sudo service mongodb start</code></p>
+
+<p>Stop MongoDB:<br/>
+<code>sudo service mongodb stop</code></p>
+
+<p>Using MongoDB:<br/>
+<code>mongo</code></p>
+
+<p>  <code>db.test.save( { a: 1 } ) } )</code><br/>
+  <code>db.test.find()</code> } )`</p>
+
+<h1>Command</h1>
+
+<p>show collections</p>
+
+<p>   顯示db底下的項次(項次為自己個人的理解)</p>
+
+<p>db.<collection>.drop()</p>
+
+<p>   刪除<collection></p>
+
+<p>db.<collection>.insert(JSON_object)</p>
+
+<p>   在collection裡面新增一筆資料</p>
+
+<p>db.<collection>.find()</p>
+
+<p>   顯示coleection裡面的所有資料</p>
+
+<p>db.<collection>.find(JSON_object)</p>
+
+<p>   尋找指定的資料</p>
+
+<p>db.<collection>.find_one(JSON_object)</p>
+
+<p>   單獨找一個指定資料</p>
+
+<p>db.<collection>.remove()</p>
+
+<p>   刪除collection裡面的所有資料，沒有刪除collection</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -686,50 +773,6 @@ LOGI - info</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2013/03/29/git-patch/">Git Patch</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-29T10:49:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
-        
-         | <a href="/Blog/blog/2013/03/29/git-patch/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div><script src='https://gist.github.com/5268510.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-
-
-<p>   git apply <patch name> &#8211;reject
-   git status
-   git am <patch name> &#8211;resolved</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/2/">&larr; Older</a>
@@ -742,11 +785,15 @@ LOGI - info</p>
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (3)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
+    <ul id="category-list"><li><a href='blog/categories/android'>Android (2)</a></li><li><a href='blog/categories/blog'>blog (2)</a></li><li><a href='blog/categories/c'>C (2)</a></li><li><a href='blog/categories/compiler'>compiler (1)</a></li><li><a href='blog/categories/django'>django (1)</a></li><li><a href='blog/categories/dropbox'>dropbox (2)</a></li><li><a href='blog/categories/ffos'>FFOS (1)</a></li><li><a href='blog/categories/git'>git (5)</a></li><li><a href='blog/categories/hg'>hg (2)</a></li><li><a href='blog/categories/jacascript'>JacaScript (1)</a></li><li><a href='blog/categories/linux'>Linux (6)</a></li><li><a href='blog/categories/linux-tool'>Linux Tool (1)</a></li><li><a href='blog/categories/linux-'>Linux, (1)</a></li><li><a href='blog/categories/mac'>Mac (1)</a></li><li><a href='blog/categories/markdown'>markdown (1)</a></li><li><a href='blog/categories/mongodb'>MongoDB (1)</a></li><li><a href='blog/categories/network'>network (1)</a></li><li><a href='blog/categories/octopress'>octopress (2)</a></li><li><a href='blog/categories/putty'>putty (1)</a></li><li><a href='blog/categories/python'>python (4)</a></li><li><a href='blog/categories/tc'>tc (1)</a></li><li><a href='blog/categories/tcpreplay'>tcpreplay (1)</a></li><li><a href='blog/categories/tool'>tool (3)</a></li><li><a href='blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='blog/categories/vim'>vim (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Blog/blog/2013/09/01/mongodb/">Mongo DB</a>
+      </li>
     
       <li class="post">
         <a href="/Blog/blog/2013/06/02/django-runserver/">django runserver</a>
@@ -762,10 +809,6 @@ LOGI - info</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/05/28/json-using-javascript/">json-using-javascript</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/04/30/mercurial-command/">Mercurial 常用指令</a>
       </li>
     
   </ul>
