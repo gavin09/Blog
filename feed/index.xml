@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-09-01T23:30:25+08:00</updated>
+  <updated>2013-09-01T23:31:03+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -46,12 +46,12 @@
 <pre><code>顯示db底下的項次(項次為自己個人的理解)  
 </code></pre>
 
-<p>db.<code>&lt;collection</code>>.drop()</p>
+<p>db.<collection>.drop()</p>
 
 <pre><code>刪除\&lt;collection\&gt;  
 </code></pre>
 
-<p>db.&lt;collection>.insert(JSON_object)</p>
+<p>db.<collection>.insert(JSON_object)</p>
 
 <pre><code>在collection裡面新增一筆資料  
 </code></pre>
