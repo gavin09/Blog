@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-11-13T22:17:50+08:00</updated>
+  <updated>2013-11-13T22:33:20+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -20,7 +20,7 @@
     <id>http://gavin09.github.io/Blog/blog/2013/11/13/vim-clear-unwanted-space</id>
     <content type="html"><![CDATA[<p>Highlighting with a search Edit
 For occasional use, you can simply search using a suitable pattern to highlight what you want.
-The following examples assume you use search highlighting (:set hlsearch %}).</p>
+The following examples assume you use search highlighting (:set hlsearch).</p>
 
 <p>Show all tabs:
 <code>/\t</code></p>
@@ -34,8 +34,9 @@ The following examples assume you use search highlighting (:set hlsearch %}).</p
 <p>Show spaces before a tab:
 <code>/ \+\ze\t</code></p>
 
-<p>Reference:
-http://vim.wikia.com/wiki/Highlight_unwanted_spaces</p>
+<h1>Reference:</h1>
+
+<p><a href="http://vim.wikia.com/wiki/Highlight_unwanted_spaces">http://vim.wikia.com/wiki/Highlight_unwanted_spaces</a></p>
 ]]></content>
   </entry>
   
