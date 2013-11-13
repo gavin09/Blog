@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/atom.xml" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-09-01T23:31:03+08:00</updated>
+  <updated>2013-11-13T22:17:50+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vim clear unwanted]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/11/13/vim-clear-unwanted-space/"/>
+    <updated>2013-11-13T21:53:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/11/13/vim-clear-unwanted-space</id>
+    <content type="html"><![CDATA[<p>Highlighting with a search Edit
+For occasional use, you can simply search using a suitable pattern to highlight what you want.
+The following examples assume you use search highlighting (:set hlsearch %}).</p>
+
+<p>Show all tabs:
+<code>/\t</code></p>
+
+<p>Show trailing whitespace:
+<code>/\s\+$</code></p>
+
+<p>Show trailing whitespace only after some text (ignores empty lines):
+<code>/\(\S\+\)\@&lt;=\s\+$</code></p>
+
+<p>Show spaces before a tab:
+<code>/ \+\ze\t</code></p>
+
+<p>Reference:
+http://vim.wikia.com/wiki/Highlight_unwanted_spaces</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mongo DB]]></title>
@@ -629,23 +655,6 @@ rvalue 就是程式等號的右邊</p>
 
 <p>右邊的永遠是值，左邊的永遠是變數。右邊的值要給左邊
 也就是說右邊的是讀取位址<em>裡面的值</em>，讀取出來後塞入左邊的位址裡面</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tc rate limit]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/11/18/tc-rate-limit/"/>
-    <updated>2012-11-18T15:10:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/11/18/tc-rate-limit</id>
-    <content type="html"><![CDATA[<p>tc 可以限制網路卡的速度</p>
-
-<p>tc qdisk add dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
-
-<p>限制速度400 kbit, latency 50ms, burst 4096</p>
-
-<p>若不要使用則是</p>
-
-<p>tc qdisk del dev eth0 root tbf 400kbit latency 50ms burst 4096</p>
 ]]></content>
   </entry>
   
