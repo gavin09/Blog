@@ -6,7 +6,7 @@ comments: true
 categories: [MongoDB]
 ---
 
-# Install
+## Install
 
 For Ubuntu:  
 
@@ -27,21 +27,21 @@ Using MongoDB:
   `db.test.save( { a: 1 } ) } )`  
   `db.test.find()` } )`  
 
-# Command
+## Command
 
 show collections  
 
-   顯示db底下的項次(項次為自己個人的理解)  
+    顯示db底下的項次(項次為自己個人的理解)  
 
 db.<collection>.drop()  
 
-   刪除<collection>  
+    刪除\<collection\>  
 
 db.<collection>.insert(JSON_object)  
 
-   在collection裡面新增一筆資料  
+    在collection裡面新增一筆資料  
 
-db.<collection>.find()  
+db.\<collection\>.find()  
 
    顯示coleection裡面的所有資料   
 
