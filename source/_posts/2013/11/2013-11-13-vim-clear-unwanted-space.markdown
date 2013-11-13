@@ -7,7 +7,7 @@ categories: vim
 ---
 Highlighting with a search Edit
 For occasional use, you can simply search using a suitable pattern to highlight what you want. 
-The following examples assume you use search highlighting (:set hlsearch %}).
+The following examples assume you use search highlighting (:set hlsearch).
 
 Show all tabs:
 `/\t`
