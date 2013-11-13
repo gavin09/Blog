@@ -21,5 +21,6 @@ Show trailing whitespace only after some text (ignores empty lines):
 Show spaces before a tab:
 `/ \+\ze\t`
 
-Reference:
-http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+
+# Reference:
+[http://vim.wikia.com/wiki/Highlight_unwanted_spaces](http://vim.wikia.com/wiki/Highlight_unwanted_spaces)
