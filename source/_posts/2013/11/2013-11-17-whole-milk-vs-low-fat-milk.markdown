@@ -3,7 +3,7 @@ layout: post
 title: '全脂牛奶 vs. 低脂牛奶'
 date: 2013-11-17 20:57
 comments: true
-categories: 
+categories: life
 ---
 一般來說，大家會選擇低脂牛奶的因素是因為希望可以減少攝取脂肪。
 但是搜尋了幾篇文章之後才發現，原來攝取低脂牛奶還有可能會變得更胖。
