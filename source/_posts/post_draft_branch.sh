@@ -31,6 +31,16 @@ git push
 
 git checkout master
 
+if [ ! -d $dir/$year ]
+then 
+   mkdir $dir/$year
+fi
+
+if [ ! -d $dir/$year/$month ]
+then
+   mkdir $dir/$year/$month
+fi
+
 git checkout drafts $dir/$year/$month/$1
 
 git add $dir/$year/$month/$1
