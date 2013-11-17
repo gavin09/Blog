@@ -4,7 +4,7 @@
   <title><![CDATA[Fronter]]></title>
   <link href="http://gavin09.github.io/Blog/feed" rel="self"/>
   <link href="http://gavin09.github.io/Blog/"/>
-  <updated>2013-11-13T22:33:20+08:00</updated>
+  <updated>2013-11-17T21:12:06+08:00</updated>
   <id>http://gavin09.github.io/Blog/</id>
   <author>
     <name><![CDATA[Gavin]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[全脂牛奶 vs. 低脂牛奶]]></title>
+    <link href="http://gavin09.github.io/Blog/blog/2013/11/17/whole-milk-vs-low-fat-milk/"/>
+    <updated>2013-11-17T20:57:00+08:00</updated>
+    <id>http://gavin09.github.io/Blog/blog/2013/11/17/whole-milk-vs-low-fat-milk</id>
+    <content type="html"><![CDATA[<p>一般來說，大家會選擇低脂牛奶的因素是因為希望可以減少攝取脂肪。
+但是搜尋了幾篇文章之後才發現，原來攝取低脂牛奶還有可能會變得更胖。</p>
+
+<p>甚至有可能會因為製造廠在把脂肪抽離出來的時候，一起把重要的營養（例如：維他命A、D、E和K以及鈣和磷）一起給抽取。
+如此一來，喝低脂牛奶的好處盡失阿！</p>
+
+<p>在天下雜誌的文章當中才知道原來有這樣的事實</p>
+
+<blockquote><p>牛奶對於骨骼發育的好處，也被過度誇大。2012年6月，一篇刊登於《兒童及青少年醫學檔案》（Archives of Pediatrics &amp; Adolescent Medicine）的報告指出，在追蹤6,712名女孩骨骼健康長達7年後發現，補充鈣質或喝牛奶並不會降低發生疲勞性骨折的風險。</p></blockquote>
+
+<p>看來要重新評估平常是否要喝牛奶啦。至少，如果要喝，必須喝全脂牛奶會比較好。</p>
+
+<p>Reference:
+<a href="http://www.cw.com.tw/article/article.action?id=5050249">天下雜誌：不知不覺讓你胖！低脂牛奶的３大迷思</a>
+<a href="http://www.uho.com.tw/hotnews.asp?aid=27573">uho: 喝低脂牛奶不發胖？恐比全脂牛奶更易招肥肉！</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[vim clear unwanted]]></title>
@@ -637,25 +660,6 @@ Hide Launcher: Never -> AutoHide</p>
 
 
 <p>Reference</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[lvalue rvalue]]></title>
-    <link href="http://gavin09.github.io/Blog/blog/2012/11/28/lvalue-and-rvalue/"/>
-    <updated>2012-11-28T16:49:00+08:00</updated>
-    <id>http://gavin09.github.io/Blog/blog/2012/11/28/lvalue-and-rvalue</id>
-    <content type="html"><![CDATA[<p>今天面試的時候被問到什麼是lvalue 和 rvalue</p>
-
-<p>當下完全不知道阿!!</p>
-
-<hr />
-
-<p>lvalue 是程式等號的左邊
-rvalue 就是程式等號的右邊</p>
-
-<p>右邊的永遠是值，左邊的永遠是變數。右邊的值要給左邊
-也就是說右邊的是讀取位址<em>裡面的值</em>，讀取出來後塞入左邊的位址裡面</p>
 ]]></content>
   </entry>
   

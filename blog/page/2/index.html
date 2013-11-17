@@ -9,11 +9,7 @@
   <meta name="author" content="Gavin">
 
   
-  <meta name="description" content=" adb logcat 若要顯示log的話 JS dump(Message) CPP LOGE - Error
-LOGW - Warning
-LOGD - Debug
-LOGI - info
-">
+  <meta name="description" content="Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。 Android 有分類一些wake locks &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +65,87 @@ LOGI - info
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/Blog/blog/2013/03/29/wakelocks/">Wake Locks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-29T14:11:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+        
+         | <a href="/Blog/blog/2013/03/29/wakelocks/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Android 會要求 application 和 services 需要CPU時要用&#8221;wake locks&#8221;的方式，透過Android frameworks 還有 native Linux Libraries來完成。</p>
+
+<p>Android 有分類一些wake locks</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Flag                          </th>
+<th align="center">  CPU       </th>
+<th align="center"> Screen </th>
+<th align="center"> Keyboard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Partial  wake lock            </td>
+<td align="center">  ON        </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     </td>
+</tr>
+<tr>
+<td align="left">Screen Dim wake lock          </td>
+<td align="center">  ON        </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF     </td>
+</tr>
+<tr>
+<td align="left">Screen Brigh wake lock        </td>
+<td align="center">  ON        </td>
+<td align="center"> OFF    </td>
+<td align="center"> OFF      </td>
+</tr>
+<tr>
+<td align="left">Full Wake lock                </td>
+<td align="center">  ON        </td>
+<td align="center"> Bright </td>
+<td align="center"> Bright</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Reference:<br/>
+1. http://loda.hala01.com/2011/01/android%E7%AD%86%E8%A8%98/</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -534,54 +611,6 @@ Hide Launcher: Never -> AutoHide</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/">Lvalue Rvalue</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-28T16:49:00+08:00" pubdate data-updated="true">Nov 28<span>th</span>, 2012</time>
-        
-         | <a href="/Blog/blog/2012/11/28/lvalue-and-rvalue/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天面試的時候被問到什麼是lvalue 和 rvalue</p>
-
-<p>當下完全不知道阿!!</p>
-
-<hr />
-
-<p>lvalue 是程式等號的左邊
-rvalue 就是程式等號的右邊</p>
-
-<p>右邊的永遠是值，左邊的永遠是變數。右邊的值要給左邊
-也就是說右邊的是讀取位址<em>裡面的值</em>，讀取出來後塞入左邊的位址裡面</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/Blog/blog/page/3/">&larr; Older</a>
@@ -603,6 +632,10 @@ rvalue 就是程式等號的右邊</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/Blog/blog/2013/11/17/whole-milk-vs-low-fat-milk/">全脂牛奶 vs. 低脂牛奶</a>
+      </li>
+    
+      <li class="post">
         <a href="/Blog/blog/2013/11/13/vim-clear-unwanted-space/">vim clear unwanted</a>
       </li>
     
@@ -616,10 +649,6 @@ rvalue 就是程式等號的右邊</p>
     
       <li class="post">
         <a href="/Blog/blog/2013/06/01/python-package/">Python Recommended Package</a>
-      </li>
-    
-      <li class="post">
-        <a href="/Blog/blog/2013/06/01/python-ubuntu-install/">python-ubuntu-install</a>
       </li>
     
   </ul>
